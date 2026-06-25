@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <contributors>
+        <name>Translator</name>
+    </contributors>
+
+    <texts>
+        <text name="ose_ui_headerTitle" text="Objekt-Lager"/>
+
+        <text name="ose_ui_noObjectStorages" text="Sie haben noch keine Objektlagergebäude"/>
+        <text name="ose_ui_updating" text="Aktualisierung, bitte warten..."/>
+        <text name="ose_ui_resetAll" text="Alle Konfigurationen auf Standard zurücksetzen?"/>
+
+        <text name="ose_objectType_packedBale" text="Gepackter Ballen"/>
+        <text name="ose_category_all" text="Alles"/>
+
+        <text name="ose_button_spawnObjects" text="Auslagern"/>
+
+        <text name="ose_message_objectTriggerDisabled" text="Eingangstrigger deaktiviert"/>
+        <text name="ose_message_featureDisabled" text="Diese Funktion ist für dieses Platzierungselement nicht verfügbar."/>
+
+        <text name="ose_ui_sectionHeader" text="Objekt-Lager Weiterung"/>
+
+        <text name="ose_setting_triggersUseInGameMenu" text="Auslöser-Menü verwenden"/>
+        <text name="ose_toolTip_triggersUseInGameMenu" text="Wenn diese Option aktiviert ist, werden Interaktionsauslöser für Gebäude das vollständige Menü anstelle des Standarddialogs öffnen."/>
+
+        <text name="ose_setting_useBaleIcons" text="Ballensymbole verwenden"/>
+        <text name="ose_toolTip_useBaleIcons" text="Wenn diese Option aktiviert ist, wird im Menü nach Möglichkeit ein Ballensymbol anstelle des Standard-Fülltyp-Symbols verwendet. (Nur Ballen)"/>
+    </texts>
+</l10n>

@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="ingameMenuObjectStorageExtension" onCreate="onCreate">
+    <ThreePartBitmap profile="fs25_primaryMenuContainerBg" id="objectStorageTypesBoxBg">
+        <Bitmap profile="fs25_menuContainerArrow" id="objectStorageTypesBoxBgArrow"/>
+
+        <GuiElement profile="fs25_subCategoryContainer" id="objectStorageListsContainer">
+            <MultiTextOption profile="fs25_subCategorySelector" id="objectStorageListsSelector" onClick="updateObjectStorageLists"/>
+
+            <BoxLayout profile="fs25_subCategorySelectorBox" id="objectStorageListsDotBox">
+                <RoundCorner profile="fs25_subCategorySelectorDot"/>
+                <RoundCorner profile="fs25_subCategorySelectorDot"/>
+                <RoundCorner profile="fs25_subCategorySelectorDot"/>
+            </BoxLayout>
+
+            <GuiElement profile="fs25_subCategoryListContainer">
+                <Bitmap profile="fs25_subCategoryStartClipper" name="startClipper"/>
+                <Bitmap profile="fs25_subCategoryStopClipper" name="endClipper"/>
+
+                <SmoothList profile="ose_objectStorageList" id="objectStorageList" startClipperElementName="startClipper" endClipperElementName="endClipper" onDoubleClick="onButtonSelect" focusChangeLeft="objectStorageListsSelector" focusChangeRight="objectsList" focusChangeBottom="nil" focusChangeTop="nil">
+                    <ListItem profile="fs25_subCategoryListItem">
+                        <Bitmap profile="fs25_subCategoryListItemIconPreplaced" name="iconCustom"/>
+                        <Bitmap profile="fs25_subCategoryListItemIcon" name="icon"/>
+                        <Text profile="ose_placeablesListItemName" name="name"/>
+                        <Text profile="ose_placeablesListItemValue" name="numObjects" text="0 / 250"/>
+                        <Bitmap profile="ose_placeablesListItemInputState" name="inputState"/>
+                        <Bitmap profile="ose_placeablesListItemSupportsBales" name="supportsBales"/>
+                        <Bitmap profile="ose_placeablesListItemSupportsPallets" name="supportsPallets"/>
+                    </ListItem>
+
+                    <ListItem profile="fs25_subCategoryListItemEmpty" name="empty"/>
+                </SmoothList>
+
+                <ThreePartBitmap profile="fs25_subCategoryListSliderBox">
+                    <Slider profile="fs25_listSlider" dataElementId="objectStorageList"/>
+                </ThreePartBitmap>
+            </GuiElement>
+        </GuiElement>
+    </ThreePartBitmap>
+
+    <GuiElement profile="fs25_menuContentContainer">
+        <GuiElement profile="fs25_menuHeaderPanel" position="0px 74px">
+            <Bitmap profile="fs25_menuHeaderIconBg">
+                <Bitmap profile="fs25_menuHeaderIcon" imageSliceId="objectStorageExtension.ingameMenuIcon"/>
+            </Bitmap>
+
+            <Text profile="fs25_menuHeaderTitle" text="Object Storage" id="menuHeaderTitle"/>
+        </GuiElement>
+
+        <GuiElement profile="ose_contentContainer" id="mainContainer">
+            <ThreePartBitmap profile="fs25_secondaryMenuContainerBg" id="objectsBoxBg">
+                <ThreePartBitmap profile="fs25_secondaryMenuContainerBgTop" id="objectsBoxBgTop"/>
+                <Bitmap profile="fs25_menuContainerArrow" id="objectsBoxBgArrow"/>
+            </ThreePartBitmap>
+
+            <GuiElement profile="fs25_secondaryMenuContainer" id="objectsContainer">
+                <GuiElement profile="ose_objectsListContainer" id="objectsListContainer">
+                    <SmoothList profile="ose_objectsList" id="objectsList" startClipperElementName="startClipperProducts" endClipperElementName="endClipperProducts" listSectionHeader="section" onDoubleClick="onButtonSelect" focusChangeLeft="objectStorageList" focusChangeRight="numObjectsOptionSlider" focusChangeBottom="nil" focusChangeTop="nil">
+                        <ListItem profile="fs25_subCategoryListSectionHeader" name="section">
+                            <Text profile="fs25_subCategoryListSectionHeaderTitle" name="title"/>
+                        </ListItem>
+
+                        <ListItem profile="fs25_subCategoryListItem">
+                            <Bitmap profile="fs25_subCategoryListItemIcon" name="icon"/>
+                            <Text profile="ose_objectsListItemName" name="name"/>
+                            <Text profile="ose_objectsListItemNumObjects" name="numObjects"/>
+                            <Text profile="ose_objectsListItemSize" name="size"/>
+                            <Bitmap profile="ose_objectsListItemFermenting" name="fermenting"/>
+                        </ListItem>
+                    </SmoothList>
+
+                    <Bitmap profile="fs25_secondaryMenuStartClipper" name="startClipperProducts"/>
+                    <Bitmap profile="fs25_secondaryMenuStopClipper" name="endClipperProducts"/>
+
+                    <ThreePartBitmap profile="fs25_subCategoryListSliderBox" position="10px 0px">
+                        <Slider profile="fs25_listSlider" dataElementId="objectsList"/>
+                    </ThreePartBitmap>
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement profile="ose_detailsContainer" id="detailsContainer">
+                <Bitmap profile="ose_detailsIconGradient"/>
+                <Bitmap profile="ose_detailsIcon" id="detailsIcon"/>
+
+                <Text profile="ose_detailsIconTitle" text="Grass" id="detailsName"/>
+                <Text profile="ose_detailsTitle" position="33px -430px" id="detailsFillLevelTitle" text="$l10n_info_fillLevel:"/>
+                <Text profile="ose_detailsValue" position="-36px -430px" id="detailsFillLevelValue" text="0 l" textUpperCase="false"/>
+                <ThreePartBitmap profile="ose_separator" position="0px -460px"/>
+                <Text profile="ose_detailsTitle" position="33px -470px" id="detailsTypeTitle" text="$l10n_infohud_type:"/>
+                <Text profile="ose_detailsValue" position="-36px -470px" id="detailsTypeValue" text="Unknown"/>
+                <ThreePartBitmap profile="ose_separator" position="0px -500px"/>
+                <Text profile="ose_detailsTitle" position="33px -510px" id="detailsExtraTitle" text="$l10n_ui_details:"/>
+                <Text profile="ose_detailsValue" position="-36px -510px" id="detailsExtraValue" text="N/A"/>
+
+                <ThreePartBitmap profile="ose_separator" position="0px -685px"/>
+                <ThreePartBitmap profile="ose_amountSelectorBoxBg" id="numObjectsBoxBg"/>
+
+                <GuiElement profile="ose_amountSelectorBox" id="numObjectsBox">
+                    <Text profile="ose_amountSelectorTitle" text="$l10n_ui_objects:"/>
+                    <ThreePartBitmap profile="ose_separator"/>
+                    <OptionSlider profile="ose_optionSlider" id="numObjectsOptionSlider" onClick="onClickNumObjects" continuousInputStep="4" onFocus="updateObjectStorageLists" onLeave="updateObjectStorageLists"/>
+                </GuiElement>
+
+                <ThreePartBitmap profile="ose_infoBoxBg" id="infoBoxBg">
+                    <Bitmap profile="ose_infoBoxIcon" id="infoBoxIcon"/>
+                    <Text profile="ose_infoBoxText" id="infoBoxText"/>
+                </ThreePartBitmap>
+            </GuiElement>
+
+            <Text profile="ose_objectStorageEmptyText" id="storageIsEmptyElement" text="$l10n_warning_objectStorageIsEmpty"/>
+            <Text profile="ose_objectStorageEmptyText" id="noFilterObjectStoragesElement" text="$l10n_ui_noShopItems"/>
+            <Text profile="ose_objectStorageEmptyText" id="noObjectStoragesElement" text="$l10n_ose_ui_noObjectStorages"/>
+        </GuiElement>
+
+        <GuiElement profile="ose_contentContainer" id="configurationContainer" position="0px -56px">
+            <Bitmap profile="ose_configurationSeparator"/>
+
+            <BoxLayout profile="ose_configurationLayout" id="configurationsLayout">
+                <Text profile="ose_configurationSectionHeader" name="sectionHeader" text="$l10n_ui_settingsGeneral"/>
+
+                <Bitmap profile="ose_multiTextOptionContainerLight">
+                    <BinaryOption profile="ose_binaryOption" onFocus="onConfigurationFocusedChanged" onClick="onClickToggleInputTrigger" id="binaryToggleInputTrigger" focusId="toggleInputTrigger" focusChangeTop="nil" focusChangeBottom="totalCapacity">
+                        <Text profile="ose_multiTextOptionTooltip" name="ignore" text="$l10n_ose_message_featureDisabled"/>
+                    </BinaryOption>
+
+                    <Text profile="ose_configurationMultiTextOptionTitle" text="Input Trigger"/>
+                </Bitmap>
+
+                <Text profile="ose_configurationSectionHeader" name="sectionHeader" text="$l10n_ui_productions_buildingStorage"/>
+
+                <Bitmap profile="ose_multiTextOptionContainerDark">
+                    <TextInput profile="ose_textInput" id="textTotalCapacity" onFocus="onConfigurationFocusedChanged" onEnterPressed="onEnterTotalCapacity" onEscPressed="onEscTotalCapacity" onTextChanged="onTextChangedTotalCapacity" focusId="totalCapacity" focusChangeTop="toggleInputTrigger" focusChangeBottom="acceptedObjectTypes" focusChangeLeft="nil" focusChangeRight="nil" imeDescription="$l10n_ui_silos_totalCapacity" imePlaceholder="$l10n_ui_silos_totalCapacity" imeTitle="$l10n_ui_silos_totalCapacity">
+                        <ThreePartBitmap profile="fs25_textInputBg" position="-15px 0px">
+                            <Bitmap profile="ose_textInputBg"/>
+                            <Bitmap profile="ose_textInputIconBox" position="0px 0px">
+                                <Bitmap profile="ose_textInputIconBox" position="-244px 0px" imageRotation="180"/>
+                                <Bitmap profile="fs25_textInputIcon"/>
+                            </Bitmap>
+                        </ThreePartBitmap>
+
+                        <Text profile="ose_multiTextOptionTooltip" name="ignore" text="$l10n_ose_message_featureDisabled" position="667px 0px"/>
+                    </TextInput>
+
+                    <Text profile="ose_configurationMultiTextOptionTitle" text="$l10n_ui_silos_totalCapacity"/>
+                </Bitmap>
+
+                <Bitmap profile="ose_multiTextOptionContainerLight">
+                    <MultiTextOption profile="ose_multiTextOption" onFocus="onConfigurationFocusedChanged" onClick="onClickAcceptedObjectTypes" id="multiAcceptedObjectTypes" focusId="acceptedObjectTypes" focusChangeTop="totalCapacity" focusChangeBottom="nil">
+                        <Text profile="ose_multiTextOptionTooltip" name="ignore" text="$l10n_ose_message_featureDisabled"/>
+                    </MultiTextOption>
+
+                    <Text profile="ose_configurationMultiTextOptionTitle" text="$l10n_categoryType_objects"/>
+                </Bitmap>
+            </BoxLayout>
+        </GuiElement>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ose_objectStorageList" extends="emptyPanel" value="anchorStretchingYStretchingX">
+            <showHighlights value="true"/>
+            <listItemSpacing value="-20px"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemName" extends="fs25_subCategoryListItemName">
+            <width value="216px"/>
+            <position value="94px -18px"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemValue" extends="ose_placeablesListItemName">
+            <width value="140px"/>
+            <position value="94px -48px"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemInputState" extends="baseReference" with="anchorTopRight">
+            <size value="18px 18px"/>
+            <position value="-46px -50px"/>
+            <imageSliceId value="objectStorageExtension.inputIcon"/>
+            <imageColor value="$preset_colorWhite"/>
+            <imageSelectedColor value="$preset_fs25_colorMainDark"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemInputStateOff" extends="ose_placeablesListItemInputState" with="anchorTopRight">
+            <imageColor value="$preset_fs25_colorOrangeDark"/>
+            <imageSelectedColor value="$preset_fs25_colorOrangeDark"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemSupportsBales" extends="baseReference" with="anchorTopRight">
+            <size value="18px 18px"/>
+            <position value="-94px -50px"/>
+            <imageSliceId value="objectStorageExtension.balesIcon"/>
+            <imageColor value="$preset_colorWhite"/>
+            <imageSelectedColor value="$preset_fs25_colorMainDark"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemSupportsBalesOff" extends="ose_placeablesListItemSupportsBales" with="anchorTopRight">
+            <imageColor value="$preset_fs25_colorOrangeDark"/>
+            <imageSelectedColor value="$preset_fs25_colorOrangeDark"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemSupportsPallets" extends="baseReference" with="anchorTopRight">
+            <size value="18px 18px"/>
+            <position value="-70px -50px"/>
+            <imageSliceId value="objectStorageExtension.palletsIcon"/>
+            <imageColor value="$preset_colorWhite"/>
+            <imageSelectedColor value="$preset_fs25_colorMainDark"/>
+        </Profile>
+
+        <Profile name="ose_placeablesListItemSupportsPalletsOff" extends="ose_placeablesListItemSupportsPallets" with="anchorTopRight">
+            <imageColor value="$preset_fs25_colorOrangeDark"/>
+            <imageSelectedColor value="$preset_fs25_colorOrangeDark"/>
+        </Profile>
+
+        <Profile name="ose_contentContainer" extends="baseReference">
+            <width value="1312px"/>
+            <position value="0px 0px"/>
+        </Profile>
+
+        <Profile name="ose_objectsListContainer" extends="emptyPanel" with="anchorBottomStretchingX pivotBottomLeft">
+            <position value="20px 30px"/>
+            <absoluteSizeOffset value="80px 80px"/>
+        </Profile>
+
+        <Profile name="ose_objectsList" extends="fs25_subCategoryList" with="anchorStretchingYStretchingX"/>
+
+        <Profile name="ose_objectsListItemName" extends="fs25_subCategoryListItemName" with="anchorTopLeft">
+            <width value="215px"/>
+            <textBold value="true"/>
+            <textSelectedBold value="true"/>
+            <textUpperCase value="true"/>
+            <textLayoutMode value="scrolling"/>
+        </Profile>
+
+        <Profile name="ose_objectsListItemNumObjects" extends="ose_objectsListItemName">
+            <width value="128px"/>
+            <position value="100px -48px"/>
+            <textUpperCase value="false"/>
+        </Profile>
+
+        <Profile name="ose_objectsListItemSize" extends="ose_objectsListItemNumObjects" with="anchorTopRight">
+            <width value="54px"/>
+            <textAlignment value="right"/>
+            <position value="-42px -48px"/>
+            <textUpperCase value="false"/>
+            <textLayoutMode value="resize"/>
+        </Profile>
+
+        <Profile name="ose_objectsListItemFermenting" extends="ose_placeablesListItemInputState" with="anchorTopRight">
+            <position value="-100px -50px"/>
+            <imageSliceId value="gui.storeAttribute_time"/>
+        </Profile>
+
+        <Profile name="ose_detailsContainer" extends="baseReference" with="anchorMiddleRight">
+            <size value="750px 860px"/>
+            <position value="-50px 0px"/>
+        </Profile>
+
+        <Profile name="ose_detailsIconGradient" extends="baseReference" with="anchorTopCenter">
+            <position value="0px -10px"/>
+            <size value="468px 307px"/>
+            <imageSliceId value="gui.grey_gradient"/>
+        </Profile>
+
+        <Profile name="ose_detailsIcon" extends="baseReference" with="anchorTopCenter">
+            <size value="340px 340px"/>
+            <position value="0px -10px"/>
+            <imageSliceId value="noSlice"/>
+        </Profile>
+
+        <Profile name="ose_detailsIconTitle" extends="fs25_textDefault" with="anchorTopCenter">
+            <position value="0px -360px"/>
+            <width value="450px"/>
+            <textAlignment value="center"/>
+            <textMaxWidth value="450px"/>
+            <textSize value="32px"/>
+            <textMaxNumLines value="2"/>
+            <textUpperCase value="true"/>
+        </Profile>
+
+        <Profile name="ose_detailsTitle" extends="fs25_textDefault" with="anchorTopLeft">
+            <textBold value="true"/>
+            <textSize value="16px"/>
+            <textUpperCase value="true"/>
+            <textMaxWidth value="190px"/>
+        </Profile>
+
+        <Profile name="ose_detailsValue" extends="fs25_textDefault" with="anchorTopRight">
+            <textMaxWidth value="190px"/>
+            <textUpperCase value="true"/>
+            <textAlignment value="right"/>
+        </Profile>
+
+        <Profile name="ose_separator" extends="fs25_lineSeparatorTop">
+            <size value="730px 1dp"/>
+            <absoluteSizeOffset value="-10px 0px"/>
+            <imageColor value="$preset_fs25_colorGrey"/>
+        </Profile>
+
+        <Profile name="ose_amountSelectorBoxBg" extends="ose_infoBoxBg">
+            <position value="12px 162px"/>
+            <imageColor value="$preset_colorTransparent"/>
+            <startImageColor value="$preset_colorTransparent"/>
+            <endImageColor value="$preset_colorTransparent"/>
+        </Profile>
+
+        <Profile name="ose_amountSelectorBox" extends="emptyPanel">
+            <size value="740px 122px"/>
+            <position value="0px 161px"/>
+        </Profile>
+
+        <Profile name="ose_amountSelectorTitle" extends="fs25_textDefault" with="anchorTopLeft">
+            <textBold value="true"/>
+            <textSize value="16px"/>
+            <position value="34px -12px"/>
+            <textAlignment value="left"/>
+            <textUpperCase value="true"/>
+        </Profile>
+
+        <Profile name="ose_optionSlider" extends="fs25_multiTextOption" with="anchorBottomCenter">
+            <size value="534px 36px"/>
+            <position value="4px 32px"/>
+            <sliderOffset value="-4px"/>
+            <useFillingBar value="true"/>
+            <wrap value="false"/>
+            <autoAddDefaultElements value="true"/>
+            <updateTextPosition value="false"/>
+            <hideLeftRightButtons value="false"/>
+            <defaultProfileBgThreePart value="fs25_optionSliderBg"/>
+            <defaultProfileText value="ose_optionSliderText"/>
+            <defaultProfileSlider value="fs25_optionSliderIcon"/>
+            <defaultProfileFillingBarThreePart value="fs25_optionSliderFillingBar"/>
+            <defaultProfileButtonLeft value="ose_buttonCircleArrowLeft"/>
+            <defaultProfileButtonRight value="ose_buttonCircleArrowRight"/>
+        </Profile>
+
+        <Profile name="ose_optionSliderText" extends="fs25_textDefault" with="anchorStretchingYStretchingX">
+            <position value="70px 52px"/>
+            <size value="100% 100%"/>
+            <absoluteSizeOffset value="-4px 0px"/>
+            <textSize value="18px"/>
+            <textMaxNumLines value="1"/>
+            <textUpperCase value="true"/>
+            <textAlignment value="right"/>
+            <textLayoutMode value="scrolling"/>
+            <textScrollOnFocusOnly value="true"/>
+            <textMaxWidth value="260px"/>
+            <textBold value="true"/>
+        </Profile>
+
+        <Profile name="ose_buttonCircleArrowLeft" extends="fs25_buttonCircleArrowLeft" with="anchorStretchingYLeft">
+            <size value="42px 42px"/>
+            <position value="-70px 0px"/>
+            <imageSize value="50px 50px"/>
+            <imageSliceId value="gui.whiteCircleFilled"/>
+            <imageColor value="$preset_fs25_colorGrey"/>
+            <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageHighlightedColor value="$preset_fs25_colorMainDark"/>
+            <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+            <imageDisabledColor value="$preset_colorDisabled_30"/>
+            <iconSize value="7px 7px"/>
+            <iconRotation value="180"/>
+            <iconSliceId value="gui.arrow_round"/>
+            <iconFocusedColor value="$preset_fs25_colorMainDark"/>
+            <iconPressedColor value="$preset_colorWhite"/>
+            <iconDisabledColor value="$preset_colorWhite_25"/>
+        </Profile>
+
+        <Profile name="ose_buttonCircleArrowRight" extends="ose_buttonCircleArrowLeft" with="anchorStretchingYRight">
+            <iconRotation value="0"/>
+            <position value="70px 0px"/>
+        </Profile>
+
+        <Profile name="ose_infoBoxBg" extends="baseReference">
+            <size value="734px 120px"/>
+            <position value="12px 2px"/>
+            <imageSliceId value="gui.quantity_middle"/>
+            <imageSelectedColor value="$preset_colorWhite"/>
+            <startImageSize value="15px 0"/>
+            <startImageSliceId value="gui.quantity_left"/>
+            <startImageSelectedColor value="$preset_colorWhite"/>
+            <endImageSize value="25px 0"/>
+            <endImageSliceId value="gui.quantity_right"/>
+            <endImageSelectedColor value="$preset_colorWhite"/>
+        </Profile>
+
+        <Profile name="ose_infoBoxIcon" extends="baseReference" with="anchorMiddleLeft">
+            <position value="18px 6px"/>
+            <size value="28px 28px"/>
+            <imageSliceId value="gui.exclamationCircle"/>
+            <imageColor value="$preset_fs25_colorGreyLight"/>
+        </Profile>
+
+        <Profile name="ose_infoBoxText" extends="baseReference" with="anchorMiddleLeft">
+            <size value="95% 50%"/>
+            <absoluteSizeOffset value="56px 0px"/>
+            <position value="64px 6px"/>
+            <textSize value="16px"/>
+            <textAlignment value="left"/>
+            <textLayoutMode value="scrolling"/>
+            <textScrollOnFocusOnly value="false"/>
+            <textColor value="$preset_fs25_colorMainLight"/>
+            <textDisabledColor value="$preset_fs25_colorMainLight"/>
+        </Profile>
+
+        <Profile name="ose_objectStorageEmptyText" extends="fs25_textDefault" with="anchorMiddleCenter">
+            <position value="0px 60px"/>
+            <textSize value="24px"/>
+            <textAlignment value="center"/>
+            <textAutoWidth value="true"/>
+            <textMaxNumLines value="3"/>
+            <textMaxWidth value="800px"/>
+        </Profile>
+
+        <Profile name="ose_configurationSeparator" extends="baseReference" with="anchorStretchingYLeft pivotTopLeft">
+            <width value="1dp"/>
+            <position value="895px 0px"/>
+            <imageColor value="$preset_fs25_colorGreyLight_50"/>
+        </Profile>
+
+        <Profile name="ose_configurationLayout" extends="baseReference" with="anchorStretchingYStretchingX pivotTopCenter">
+            <size value="100% 100%"/>
+            <absoluteSizeOffset value="90px 0px"/>
+            <wrapAround value="false"/>
+            <fitFlowToElements value="true"/>
+            <flowDirection value="vertical"/>
+            <imageColor value="$preset_colorTransparent"/>
+        </Profile>
+
+        <Profile name="ose_configurationSectionHeader" extends="fs25_textDefault" with="anchorTopStretchingX">
+            <size value="100% 80px"/>
+            <textSize value="30px"/>
+            <textUpperCase value="true"/>
+        </Profile>
+
+        <Profile name="ose_multiTextOptionContainerLight" extends="fs25_multiTextOptionContainer">
+            <size value="815px 50px"/>
+            <imageColor value="0.02956 0.02956 0.02956 0.6"/>
+        </Profile>
+
+        <Profile name="ose_multiTextOptionContainerDark" extends="fs25_multiTextOptionContainer">
+            <size value="815px 50px"/>
+            <imageColor value="0.02956 0.02956 0.02956 0.2"/>
+        </Profile>
+
+        <Profile name="ose_configurationMultiTextOptionTitle" extends="fs25_textDefault" with="anchorStretchingYLeft">
+            <width value="450px"/>
+            <position value="20px 0px"/>
+            <textSize value="16px"/>
+            <textBold value="true"/>
+        </Profile>
+
+        <Profile name="ose_binaryOption" extends="fs25_binaryOption" with="anchorMiddleRight">
+            <position value="-12px 0px"/>
+            <useYesNoTexts value="false"/>
+            <focusOnHighlight value="false"/>
+        </Profile>
+
+        <Profile name="ose_multiTextOptionBg" extends="fs25_multiTextOptionBg">
+            <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <startImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+            <endImageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+        </Profile>
+
+        <Profile name="ose_multiTextOption" extends="fs25_multiTextOption" with="anchorMiddleRight">
+            <position value="-10px 0px"/>
+            <focusOnHighlight value="false"/>
+            <wrap value="false"/>
+            <hideButtonOnLimitReached value="true"/>
+            <defaultProfileBgThreePart value="ose_multiTextOptionBg"/>
+        </Profile>
+
+        <Profile name="ose_multiTextOptionTooltip" extends="fs25_textDefault" with="anchorTopRight">
+            <width value="580px"/>
+            <position value="650px 0px"/>
+            <textMaxNumLines value="2"/>
+            <textColor value="$preset_colorTransparent"/>
+            <textFocusedColor value="$preset_colorTransparent"/>
+            <textHighlightedColor value="$preset_colorTransparent"/>
+            <textDisabledColor value="$preset_fs25_colorGreyText"/>
+        </Profile>
+
+        <Profile name="ose_textInputBg" extends="ose_multiTextOptionBg" with="anchorMiddleCenter">
+            <size value="236px 34px"/>
+        </Profile>
+
+        <Profile name="ose_textInputIconBox" extends="fs25_textInputIconBox">
+            <imageHighlightedSliceId value="gui.3dShop_button_selected"/>
+        </Profile>
+
+        <Profile name="ose_textInput" extends="fs25_textInput" with="anchorMiddleRight">
+            <size value="244px 34px"/>
+            <position value="-29px 0px"/>
+            <maxInputTextWidth value="180px"/>
+            <maxCharacters value="8"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

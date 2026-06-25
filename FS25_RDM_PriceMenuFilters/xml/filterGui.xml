@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<GUI name="ingameMenuRDGLeftColumn">
+    <BoxLayout id="rdgButtonBox" profile="ingameMenuRDGSettingsBox">
+        <Button profile="rdgButtonText" id="rdgButton01" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton02" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton03" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton04" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton05" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton06" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton07" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton08" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton09" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton10" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton11" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton12" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton13" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton14" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton15" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton16" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton17" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton18" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton19" text="" onClick="" />
+        <Button profile="rdgButtonText" id="rdgButton20" text="" onClick="" />
+    </BoxLayout>
+</GUI>

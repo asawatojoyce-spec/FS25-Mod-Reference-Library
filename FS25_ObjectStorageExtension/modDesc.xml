@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="108">
+   <author>GtX</author>
+
+   <version>1.0.2.0</version>
+
+    <title>
+        <en>Object Storage Extension</en>
+        <de>Objekt-Lager Weiterung</de>
+        <fr>Extension De Stockage D'objets</fr>
+    </title>
+
+    <description>
+        <en>
+            <![CDATA[An extension for the base game 'Object Storage' system that brings back some of the features found in the original 'Object Storage' mod (FS17 - FS22).
+
+Along with improving some existing features it is also now possible for users to adjust building configurations so you can play your way.
+
+
+# Global Menu:
+A new tab is now included as part of the In-Game Menu allowing easy viewing and spawning of all stored objects.
+It is possible to adjust some menu options from the 'General Settings' screen.
+
+
+# Configuration - Input Trigger:
+It is now possible to disable each buildings input trigger, helping you avoid unwanted delivery of objects.
+
+# Configuration - Capacity:
+Do you have a building that stores too many objects for your realistic gameplay or would you love just a little more space? Now you can easily adjust the capacity of your storage buildings to a number you are happy with.
+
+# Configuration - Object Types:
+Wishing you could limit a building to bales or pallets only? This is no longer a problem, simply select the object type you wish to store.
+
+
+# Improvement - Packed Bales:
+Object storage buildings now fully support packed bales, allowing them to be cut open once removed from storage.
+
+# Improvement - Fermenting Bales:
+Fermenting bales are now correctly grouped in the menu, dialog and info pop-up once fermenting is complete without requiring a game restart.
+
+# Improvement - Multiplayer Bale Colours:
+Bale colours are now synced in multiplayer games instead of the default white. To reduce unnecessary network bandwidth bales of the same fill type and size will use the colour of the first bale added to storage similar to a single-player game.
+
+
+# NOTE:
+There are more updates planned to include extra modding options, these will be released as they are completed.
+
+
+Changelog 1.0.2.0:
+- Added fix for base game bug affecting mods that add a new page to the "In Game Menu", preventing the tab list from rebuilding correctly when joining or leaving a farm in multiplayer.
+- Fixed incorrect texts being displayed or overlaid if no storage was available as part of a filter.
+
+Changelog 1.0.1.0:
+- Fixed input trigger not working on selected mods where the input triggers scale is not set to (1 1 1).
+- Fixed random issue where the menu would not open to the 'Object Storage' page when using a buildings trigger, if used directly after entering the game.]]>
+        </en>
+        <de>
+            <![CDATA[Eine Erweiterung für das Objektlagersystem des Basisspiels, die einige Funktionen der ursprünglichen Objektlager-Mod (LS17 – LS22) zurückbringt.
+
+Neben der Verbesserung bestehender Funktionen können Benutzer nun auch Gebäudekonfigurationen anpassen und so ihr Spielerlebnis individuell gestalten.
+
+
+# Globales Menü:
+Ein neuer Tab im Spielmenü ermöglicht die einfache Anzeige und das Erzeugen aller gelagerten Objekte. Einige Menüoptionen können über die „Allgemeinen Einstellungen“ angepasst werden.
+
+
+# Konfiguration – Eingabetrigger:
+Der Eingabetrigger jedes Gebäudes kann nun deaktiviert werden, um unerwünschte Objektlieferungen zu vermeiden.
+
+# Konfiguration – Kapazität:
+Lagert ein Gebäude zu viele Objekte für ein realistisches Spielerlebnis oder benötigen Sie einfach etwas mehr Platz? Passen Sie die Kapazität Ihrer Lagergebäude jetzt ganz einfach an Ihre Bedürfnisse an.
+
+# Konfiguration – Objekttypen:
+Möchten Sie ein Gebäude auf Ballen oder Paletten beschränken? Kein Problem mehr! Wählen Sie einfach den gewünschten Objekttyp aus.
+
+
+# Verbesserung – Gepackte Ballen:
+Lagergebäude unterstützen jetzt vollständig verpackte Ballen. Diese können nach der Entnahme aus dem Lager geöffnet werden.
+
+# Verbesserung – Gärung von Ballen:
+Gärende Ballen werden nach Abschluss der Gärung nun korrekt im Menü, Dialog und Infofenster gruppiert, ohne dass ein Neustart des Spiels erforderlich ist.
+
+# Verbesserung – Ballenfarben im Mehrspielermodus:
+Die Ballenfarben sind im Mehrspielermodus nun synchronisiert und nicht mehr standardmäßig weiß. Um unnötige Netzwerkbandbreite zu sparen, verwenden Ballen mit demselben Füllmaterial und derselben Größe die Farbe des ersten eingelagerten Ballens, ähnlich wie im Einzelspielermodus.
+
+
+# HINWEIS: Weitere Updates mit zusätzlichen Modding-Optionen sind geplant und werden nach Fertigstellung veröffentlicht.
+
+
+Changelog 1.0.2.0:
+- Es wurde ein Fehlerbehebung für einen Fehler im Basisspiel hinzugefügt, der Mods betraf, die dem „In-Game-Menü“ eine neue Seite hinzufügen, wodurch die Registerkartenliste beim Beitreten zu oder Verlassen einer Farm im Mehrspielermodus nicht korrekt neu aufgebaut wurde.
+- Es wurde ein Fehler behoben, durch den falsche Texte angezeigt oder überlagert wurden, wenn im Rahmen eines Filters kein Speicherplatz verfügbar war.
+
+Changelog 1.0.1.0:
+- Der feste Eingabetrigger funktioniert nicht bei ausgewählten Mods, bei denen die Eingabetrigger-Skala nicht auf (1 1 1) eingestellt ist.
+- Es wurde ein zufälliges Problem behoben, durch das das Menü nicht zur Seite „Objektspeicher” geöffnet wurde, wenn ein Gebäudetrigger direkt nach dem Start des Spiels verwendet wurde.]]>
+        </de>
+        <fr>
+            <![CDATA[Une extension pour le système de stockage d'objets du jeu de base, qui réintègre certaines fonctionnalités du mod original « Stockage d'objets » (FS17 - FS22).
+
+Outre l'amélioration de certaines fonctionnalités existantes, il est désormais possible de personnaliser la configuration des bâtiments pour une expérience de jeu optimale.
+
+
+# Menu global :
+Un nouvel onglet a été ajouté au menu en jeu, permettant de visualiser et de faire apparaître facilement tous les objets stockés.
+Certaines options du menu sont accessibles depuis l'écran « Paramètres généraux ».
+
+
+# Configuration - Déclencheur d'entrée :
+Il est désormais possible de désactiver le déclencheur d'entrée de chaque bâtiment, évitant ainsi les livraisons d'objets indésirables.
+
+# Configuration - Capacité :
+Un bâtiment stocke trop d'objets pour un gameplay réaliste ? Besoin de plus d'espace ? Ajustez facilement la capacité de vos bâtiments de stockage selon vos besoins.
+
+# Configuration - Types d'objets :
+Vous souhaitiez limiter un bâtiment aux balles ou aux palettes ? C'est désormais possible : sélectionnez simplement le type d'objet à stocker.
+
+
+# Amélioration - Balles compactées :
+Les bâtiments de stockage prennent désormais entièrement en charge les balles compactées, ce qui permet de les ouvrir une fois retirées du stockage.
+
+# Amélioration - Balles en fermentation :
+Les balles en fermentation sont désormais correctement regroupées dans le menu, les boîtes de dialogue et les fenêtres d'information une fois la fermentation terminée, sans qu'il soit nécessaire de redémarrer le jeu.
+
+# Amélioration - Couleurs des balles en multijoueur :
+Les couleurs des balles sont désormais synchronisées en multijoueur au lieu du blanc par défaut. Afin de réduire la consommation de bande passante, les balles de même type et de même taille utiliseront la couleur de la première balle ajoutée au stockage, comme en mode solo.
+
+
+# REMARQUE :
+D'autres mises à jour sont prévues pour inclure des options de modding supplémentaires. Elles seront publiées au fur et à mesure de leur développement.
+
+
+Changelog 1.0.2.0:
+- Correction d'un bug du jeu de base affectant les mods qui ajoutent une nouvelle page au « menu du jeu », empêchant la liste des onglets de se rafraîchir correctement lors de l'entrée ou de la sortie d'une ferme en mode multijoueur.
+- Correction d'un problème d'affichage de textes erronés ou superposés lorsqu'aucun espace de stockage n'était disponible dans le cadre d'un filtre.
+
+Changelog 1.0.1.0:
+- Correction du déclencheur d'entrée qui ne fonctionnait pas sur certains mods où l'échelle du déclencheur d'entrée n'était pas réglée sur (1 1 1).
+- Correction d'un problème aléatoire empêchant l'ouverture du menu de la page « Stockage d'objets » lors de l'utilisation d'un déclencheur de bâtiment, s'il était utilisé directement après avoir lancé le jeu.]]>
+        </fr>
+    </description>
+
+    <multiplayer supported="true"/>
+    <iconFilename>icon_objectStorageExtension.dds</iconFilename>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/main.lua" />
+    </extraSourceFiles>
+
+    <!-- Support for base game and some mod fill types. -->
+    <!-- It is possible for any mod/map that adds custom fill type bales to reference them in the same way in their modDesc. -->
+    <objectStorageBaleIcons>
+        <!-- Round Bales -->
+        <baleIcon isRoundbale="true" fillType="straw"               filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleStraw.dds"/>
+        <baleIcon isRoundbale="true" fillType="silage"              filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleSilage.dds"/>
+        <baleIcon isRoundbale="true" fillType="cotton"              filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleCotton.dds"/>
+        <baleIcon isRoundbale="true" fillType="woodchips"           filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleWood.dds"/>
+        <baleIcon isRoundbale="true" fillType="drygrass_windrow"    filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleHay.dds"/>
+        <baleIcon isRoundbale="true" fillType="grass_windrow"       filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleGrass.dds"/>
+        <baleIcon isRoundbale="true" fillType="chaff"               filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleHay.dds"/>
+        <baleIcon isRoundbale="true" fillType="forage"              filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleSilage.dds"/>
+        <baleIcon isRoundbale="true" fillType="sugarBeet_cut"       filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleCotton.dds"/>
+
+        <!-- Custom Round Bale FillTypes -->
+        <baleIcon isRoundbale="true" fillType="dryalfalfa_windrow"  filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleHay.dds"/>
+        <baleIcon isRoundbale="true" fillType="alfalfa_windrow"     filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleGrass.dds"/>
+        <baleIcon isRoundbale="true" fillType="dryclover_windrow"   filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleHay.dds"/>
+        <baleIcon isRoundbale="true" fillType="clover_windrow"      filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleGrass.dds"/>
+        <baleIcon isRoundbale="true" fillType="drylucerne_windrow"  filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleHay.dds"/>
+        <baleIcon isRoundbale="true" fillType="lucerne_windrow"     filename="$dataS/menu/hud/fillTypes/hud_fill_roundBaleGrass.dds"/>
+
+        <!-- Square Bales -->
+        <baleIcon isRoundbale="false" fillType="straw"              filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleStraw.dds"/>
+        <baleIcon isRoundbale="false" fillType="silage"             filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleSilage.dds"/>
+        <baleIcon isRoundbale="false" fillType="cotton"             filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleCotton.dds"/>
+        <baleIcon isRoundbale="false" fillType="woodchips"          filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleWood.dds"/>
+        <baleIcon isRoundbale="false" fillType="drygrass_windrow"   filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleHay.dds"/>
+        <baleIcon isRoundbale="false" fillType="grass_windrow"      filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleGrass.dds"/>
+
+        <!-- Custom Square Bale FillTypes -->
+        <baleIcon isRoundbale="false" fillType="dryalfalfa_windrow" filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleHay.dds"/>
+        <baleIcon isRoundbale="false" fillType="alfalfa_windrow"    filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleGrass.dds"/>
+        <baleIcon isRoundbale="false" fillType="dryclover_windrow"  filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleHay.dds"/>
+        <baleIcon isRoundbale="false" fillType="clover_windrow"     filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleGrass.dds"/>
+        <baleIcon isRoundbale="false" fillType="drylucerne_windrow" filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleHay.dds"/>
+        <baleIcon isRoundbale="false" fillType="lucerne_windrow"    filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleGrass.dds"/>
+    </objectStorageBaleIcons>
+
+    <l10n filenamePrefix="translations/translation"/>
+</modDesc>

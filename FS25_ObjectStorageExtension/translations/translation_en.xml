@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <contributors>
+        <name>GtX</name>
+    </contributors>
+
+    <texts>
+        <text name="ose_ui_headerTitle" text="Object Storage"/>
+
+        <text name="ose_ui_noObjectStorages" text="You have no object storage buildings yet"/>
+        <text name="ose_ui_updating" text="Updating, please wait..."/>
+        <text name="ose_ui_resetAll" text="Reset all configurations to default?"/>
+
+        <text name="ose_objectType_packedBale" text="Packed Bale"/>
+        <text name="ose_category_all" text="All"/>
+
+        <text name="ose_button_spawnObjects" text="Spawn"/>
+
+        <text name="ose_message_objectTriggerDisabled" text="Input trigger disabled"/>
+        <text name="ose_message_featureDisabled" text="Feature unavailable for this placeable."/>
+
+        <text name="ose_ui_sectionHeader" text="Object Storage Extension"/>
+
+        <text name="ose_setting_triggersUseInGameMenu" text="Triggers Use Menu"/>
+        <text name="ose_toolTip_triggersUseInGameMenu" text="If turned on, building interaction triggers will open to the full menu instead of the standard dialog."/>
+
+        <text name="ose_setting_useBaleIcons" text="Use Bale Icons"/>
+        <text name="ose_toolTip_useBaleIcons" text="If turned on, where possible the menu will use a bale icon instead of the default fill type icon. (Bales Only)"/>
+    </texts>
+</l10n>

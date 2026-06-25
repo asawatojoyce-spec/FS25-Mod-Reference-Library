@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="108">
+  
+    <author>Reddog</author>  
+    <version>1.0.0.0</version>
+	
+    <title>
+      <en>Price Menu Filters</en>
+      <de>Preis-Menü Filter</de>
+      <fr>Filtres Du Menu Des Prix</fr>
+      <pl>Filtry Menu Cen</pl>
+    </title>
+	
+    <description>
+        <en><![CDATA[ Are you tired of never being able to find an item in the price menu? This mod inserts some filters onto the in-game menu Prices page to allow the product list to be filtered down to various categories. Additionally you have the ability to make your own filter items using a file in the modsettings folder.
+]]></en> 
+        <de><![CDATA[ Hast du es satt, im Preis-Menü nie das richtige Produkt zu finden?
+Dieser Mod fügt der Preis-Seite im Spiel einige Filter hinzu, mit denen du die Produktliste nach verschiedenen Kategorien eingrenzen kannst. Außerdem hast du die Möglichkeit, eigene Filter über eine Datei im ModSettings-Ordner zu erstellen.
+]]></de> 
+        <fr><![CDATA[ Vous en avez assez de ne jamais trouver un élément dans le menu des prix ?
+Ce mod ajoute des filtres à la page Prix du menu en jeu afin de permettre de trier la liste des produits selon différentes catégories. Vous avez également la possibilité de créer vos propres filtres via un fichier dans le dossier modSettings.
+]]></fr> 
+
+        <pl><![CDATA[ Masz dość tego, że nigdy nie możesz znaleźć przedmiotu w menu cen?
+Ten mod dodaje filtry do strony cen w menu gry, umożliwiając sortowanie listy produktów według różnych kategorii. Dodatkowo możesz tworzyć własne filtry za pomocą pliku w folderze modSettings.
+]]></pl> 
+    </description>
+
+    <iconFilename>icon_RDM_PriceMenuFilters.dds</iconFilename>
+
+
+    <multiplayer supported="true" />
+
+    <extraSourceFiles>
+      <sourceFile filename="lib/LogHelper.lua"/>
+      <sourceFile filename="lib/ModHelper.lua"/>
+      <sourceFile filename="RDM_PriceMenuFilters.lua"/>
+    </extraSourceFiles>
+<l10n>
+    <text name="rdm_priceCat_reset">
+        <en>Reset</en>
+        <de>Zurücksetzen</de>
+        <fr>Réinitialiser</fr>
+        <pl>Resetuj</pl>
+    </text>
+
+    <text name="rdm_priceCat_grain">
+        <en>Grain</en>
+        <de>Getreide</de>
+        <fr>Céréales</fr>
+        <pl>Zboża</pl>
+    </text>
+
+    <text name="rdm_priceCat_windrow">
+        <en>Windrow</en>
+        <de>Schwaden</de>
+        <fr>Andains</fr>
+        <pl>Pokosy</pl>
+    </text>
+
+    <text name="rdm_priceCat_bales">
+        <en>Bales</en>
+        <de>Ballen</de>
+        <fr>Balles</fr>
+        <pl>Bele</pl>
+    </text>
+
+    <text name="rdm_priceCat_rootCrop">
+        <en>Root crops</en>
+        <de>Hackfrüchte</de>
+        <fr>Racines</fr>
+        <pl>Rośliny okopowe</pl>
+    </text>
+
+    <text name="rdm_priceCat_greenVeg">
+        <en>Green vegetables</en>
+        <de>Grünes Gemüse</de>
+        <fr>Légumes verts</fr>
+        <pl>Zielone warzywa</pl>
+    </text>
+
+    <text name="rdm_priceCat_consumables">
+        <en>Consumables</en>
+        <de>Verbrauchsgüter</de>
+        <fr>Consommables</fr>
+        <pl>Materiały eksploatacyjne</pl>
+    </text>
+
+    <text name="rdm_priceCat_foodproducts">
+        <en>Food products</en>
+        <de>Lebensmittel</de>
+        <fr>Produits alimentaires</fr>
+        <pl>Produkty spożywcze</pl>
+    </text>
+
+    <text name="rdm_priceCat_nonfoodproducts">
+        <en>Non-food products</en>
+        <de>Nicht-Lebensmittel</de>
+        <fr>Produits non alimentaires</fr>
+        <pl>Produkty niespożywcze</pl>
+    </text>
+
+    <text name="rdm_priceCat_fuel">
+        <en>Fuel</en>
+        <de>Kraftstoff</de>
+        <fr>Carburant</fr>
+        <pl>Paliwo</pl>
+    </text>
+
+    <text name="rdm_priceCat_other">
+        <en>Other</en>
+        <de>Sonstiges</de>
+        <fr>Autres</fr>
+        <pl>Inne</pl>
+    </text>
+
+    <text name="rdm_priceMenu_tooManyFilters">
+        <en>Price Menu Filters: too many filters defined. Only the first 19 filters are shown.</en>
+        <de>Preis-Menü-Filter: Zu viele Filter definiert. Es werden nur die ersten 19 Filter angezeigt.</de>
+        <fr>Filtres du menu des prix : trop de filtres définis. Seuls les 19 premiers filtres sont affichés.</fr>
+        <pl>Filtry menu cen: zdefiniowano zbyt wiele filtrów. Wyświetlanych jest tylko pierwszych 19 filtrów.</pl>
+    </text>
+</l10n>
+
+
+	
+	
+	
+</modDesc>

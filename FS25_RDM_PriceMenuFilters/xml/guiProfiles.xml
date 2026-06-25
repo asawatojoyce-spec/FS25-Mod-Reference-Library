@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUIProfiles>
+
+    <Profile name="ingameMenuRDGSettingsBox" extends="emptyPanel" with="anchorTopLeft">
+        <size value="140px 620px" />
+        <position value="-120px -55px" />
+        <flowDirection value="vertical" />
+        <spacing value="2px" />
+        <frameThickness value="2px 2px 2px 2px" />
+    </Profile>
+
+    <Profile name="rdgButtonText" extends="fs25_textDefault" with="anchorTopLeft">
+        <size value="140px 28px" />
+        <textSize value="12px" />
+        <textBold value="true" />
+        <textUpperCase value="true" />
+        <textAlignment value="center" />
+        <textColor value="$preset_colorWhite_50" />
+        <textFocusedColor value="$preset_fs25_colorMainHighlight" />
+        <textHighlightedColor value="$preset_fs25_colorMainHighlight" />
+        <imageColor value="0 0 0 0" />
+		<textWrapWidth value="100px"/>
+		<textMaxWidth value="100px"/>
+		<textVerticalAlignment value="middle"/>
+		<textLayoutMode value="resize"/>
+		<textMaxNumLines value="2" /> 
+    </Profile>
+
+</GUIProfiles>

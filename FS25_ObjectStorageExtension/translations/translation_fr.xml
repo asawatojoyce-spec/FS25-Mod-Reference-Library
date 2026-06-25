@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <contributors>
+        <name>Translator</name>
+    </contributors>
+
+    <texts>
+        <text name="ose_ui_headerTitle" text="Stockage D'objets"/>
+
+        <text name="ose_ui_noObjectStorages" text="Vous ne disposez pas de bâtiments de stockage"/>
+        <text name="ose_ui_updating" text="Mise à jour en cours, veuillez patienter..."/>
+        <text name="ose_ui_resetAll" text="Réinitialiser toutes les configurations aux valeurs par défaut ?"/>
+
+        <text name="ose_objectType_packedBale" text="Balle emballée"/>
+        <text name="ose_category_all" text="Tout"/>
+
+        <text name="ose_button_spawnObjects" text="Déstocker"/>
+
+        <text name="ose_message_objectTriggerDisabled" text="Chargement désactivé"/>
+        <text name="ose_message_featureDisabled" text="Fonctionnalité indisponible pour cet élément placable."/>
+
+        <text name="ose_ui_sectionHeader" text="Extension De Stockage D'objets"/>
+
+        <text name="ose_setting_triggersUseInGameMenu" text="Déclencheurs Utiliser le menu"/>
+        <text name="ose_toolTip_triggersUseInGameMenu" text="Si cette option est activée, les déclencheurs d'interaction avec les bâtiments ouvriront le menu complet au lieu de la boîte de dialogue standard."/>
+
+        <text name="ose_setting_useBaleIcons" text="Utiliser les icônes Bale"/>
+        <text name="ose_toolTip_useBaleIcons" text="Si cette option est activée, le menu utilisera, dans la mesure du possible, une icône représentant une balle à la place de l'icône par défaut représentant le type de remplissage. (Balles uniquement)"/>
+    </texts>
+</l10n>
