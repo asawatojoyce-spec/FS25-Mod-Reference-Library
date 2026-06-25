@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+<translationContributors>Zarvaoo_16 y Funjetor</translationContributors>
+    <texts>
+        <text name="ui_mapOverviewYield" text="Mapa de rendimiento"/>	
+        <text name="ui_last_fruit" text="Ultimo Cultivo:"/>
+        <text name="ui_penultimate_fruit" text="Penúltima Cultivo:"/>
+        <text name="ui_potential_yield" text="Rendimiento de la rotación de Cultivos:"/>
+        <text name="ui_had_catch_crop" text="Cultivo intermedio:"/>
+        <text name="ui_no_catch_crop" text="Ninguno"/>
+        <text name="fallow_state" text="Tierra en barbecho"/>
+
+        <text name="ui_inGameMenuTitle" text="Planificador de rotación de Cultivos"/>
+        <text name="ui_fruitSelection" text="Cultivo"/>
+        <text name="ui_withoutCatchCrop" text="Sin Cultivo intermedio"/>
+
+        <text name="ui_button_addCropRotation" text="Agregar rotación de Cultivos"/>
+        <text name="ui_button_removeCropRotation" text="Eliminar rotación de Cultivos"/>
+        <text name="ui_add_entry_title" text="Ingrese un nombre para su rotación de Cultivos."/>
+        <text name="ui_remove_crop_rotation_title" text="Eliminar rotación de Cultivos"/>
+        <text name="ui_remove_crop_rotation" text="¿Está seguro de que desea eliminar la rotación de Cultivos '%s'?"/>
+
+        <text name="helpLine_planner" text="Planificador de rotación de Cultivos"/>
+        <text name="helpLine_planner_title" text="Planificador de rotación de Cultivos"/>
+        <text name="helpLine_planner_description" text="Puedes acceder al planificador de rotación de Cultivos desde el menú del juego y te permite planificar diferentes rotaciones de Cultivos con antelación. Para ello, puedes crear nuevas rotaciones de Cultivos con tu nombre. Una vez creada la rotación, puedes añadir o eliminar Cultivos adicionales (se requiere al menos un Cultivo, que no se puede eliminar). Para ello, simplemente pulsa el botón +/-. Puedes seleccionar los Cultivos disponibles con los controles deslizantes. También puedes seleccionar un Cultivo intermedio, que se planta antes de la cosecha real. El rendimiento esperado se muestra justo debajo de los controles deslizantes. El rendimiento se calcula a partir de los dos últimos Cultivos anteriores. Los Cultivos anteriores de la Cultivo en primera y segunda posición se completan al final de la lista."/>
+        <text name="helpLine_planner_example_title" text="Rotación de Cultivos con menos de 3 frutos"/>
+        <text name="helpLine_planner_example_description" text="Se requieren los dos últimos Cultivos anteriores para calcular el rendimiento. Si no están disponibles en el planificador, la rotación de Cultivos comienza desde el principio. Si, por ejemplo, una rotación de Cultivos solo tiene un Cultivo, se introduce el mismo Cultivo para ambos Cultivos anteriores."/>
+        <text name="helpLine_planner_scrolling_title" text="Desplazamiento"/>
+        <text name="helpLine_planner_scrolling_description" text="Dado que el planificador de rotación de Cultivos consta de dos listas anidadas, la posición del ratón es fundamental al desplazarse. Al pasar el ratón sobre el área de los títulos de rotación de Cultivos, se desplazan todas las rotaciones. Al pasar el ratón sobre el área de los Cultivos, se desplazan los Cultivos de la rotación correspondiente."/>
+
+        <text name="helpLine_crop_rotations_title" text="Rotaciones de Cultivos"/>
+        <text name="helpLine_crop_rotations_description" text="Los Cultivos que se cultivaban anteriormente en el campo influyen en el rendimiento del Cultivo actual. Esto puede tener efectos positivos o negativos. Los siguientes factores influyen:"/>
+
+        <text name="helpLine_crop_rotations_monoculture" text="Los monoCultivos tienen un impacto negativo en el rendimiento. Si los dos últimos Cultivos son iguales al actual, se producirá una pérdida del 5 % en el rendimiento."/>
+        <text name="helpLine_crop_rotations_breakPeriods" text="Ciertos Cultivos no pueden cultivarse todos los años, sino que necesitan un cierto número de descansos antes de poder volver a sembrarse en el mismo campo sin efectos negativos. Estos descansos pueden variar de una planta a otra. Si no se respetan estos descansos, se recibirá una pérdida del 10 % por cada descanso no observado."/>
+        <text name="helpLine_crop_rotations_foreCrops" text="Predecessor crops can have a negative, positive, or neutral effect on the current yield. Each plant has predecessor crops that are good, very good, or bad as predecessor crops. If you adhere to this, you can expect a higher yield. However, if you do not pay attention to this, you must expect losses. For each good preceding crop, there is a 10% or 5% yield bonus (depending on whether it was planted as the last or second-to-last preceding crop). For each very good preceding crop, there is a 15% or 10% yield bonus. For each poor preceding crop, there is a 25% or 20% yield loss."/>
+        <text name="helpLine_crop_rotations_fallow" text="Si dejas un campo en barbecho (durante al menos 12 meses), recibirás una bonificación del 5% en la próxima cosecha, ya que el suelo puede recuperarse durante este tiempo."/>
+        <text name="helpLine_crop_rotations_catchCrop" text="Ciertos Cultivos de cobertura tienen una influencia positiva, muy positiva o negativa en la siguiente cosecha. Esta influencia varía según el Cultivo de cobertura utilizado. Los buenos Cultivos de cobertura ofrecen un aumento del 10 % en el rendimiento. Los muy buenos Cultivos de cobertura ofrecen un aumento del 15 %. Los malos Cultivos de cobertura resultan en una pérdida del 10 % en el rendimiento."/>
+
+        <text name="helpLine_crop_rotations_values_title" text="Valores exactos para cada Cultivo"/>
+
+        <text name="helpLine_crop_rotations_values_grass_title" text="Hierba"/>
+        <text name="helpLine_crop_rotations_values_grass_pause" text="Pausas: 0"/>
+        <text name="helpLine_crop_rotations_values_grass_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_grass_good" text="Buenas cosechas anteriores.:"/>
+        <text name="helpLine_crop_rotations_values_grass_bad" text="Malos Cultivos anteriores:"/>
+
+        <text name="helpLine_crop_rotations_values_wheat_title" text="Trigo"/>
+        <text name="helpLine_crop_rotations_values_wheat_pause" text="Pausas: 1"/>
+        <text name="helpLine_crop_rotations_values_wheat_very_good" text="Muy buenos Cultivos precedentes: maíz, soja, patatas, remolacha azucarera, remolacha, girasol."/>
+        <text name="helpLine_crop_rotations_values_wheat_good" text="Buenos Cultivos precedentes: frijoles, guisantes"/>
+        <text name="helpLine_crop_rotations_values_wheat_bad" text="Malos Cultivos anteriores: trigo, cebada, hierba"/>
+
+        <text name="helpLine_crop_rotations_values_barley_title" text="Cebada"/>
+        <text name="helpLine_crop_rotations_values_barley_pause" text="Pausas: 1"/>
+        <text name="helpLine_crop_rotations_values_barley_very_good" text="Muy buenos Cultivos precedentes: maíz, soja, patatas, remolacha azucarera, remolacha común."/>
+        <text name="helpLine_crop_rotations_values_barley_good" text="Buenos Cultivos precedentes: trigo, avena, frijoles, guisantes, canola, girasoles."/>
+        <text name="helpLine_crop_rotations_values_barley_bad" text="Malos Cultivos anteriores: cebada, hierba"/>
+
+        <text name="helpLine_crop_rotations_values_oat_title" text="Avena"/>
+        <text name="helpLine_crop_rotations_values_oat_pause" text="Pausas: 1"/>
+        <text name="helpLine_crop_rotations_values_oat_very_good" text="Muy buenos Cultivos precedentes: trigo, cebada"/>
+        <text name="helpLine_crop_rotations_values_oat_good" text="Buenos Cultivos precedentes: maíz, soja, guisantes, patatas, canola, remolacha azucarera, girasoles."/>
+        <text name="helpLine_crop_rotations_values_oat_bad" text="Malos Cultivos anteriores: avena"/>
+
+        <text name="helpLine_crop_rotations_values_sorghum_title" text="Sorgo"/>
+        <text name="helpLine_crop_rotations_values_sorghum_pause" text="Pausas: 1"/>
+        <text name="helpLine_crop_rotations_values_sorghum_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_sorghum_good" text="Buenos Cultivos precedentes: frijoles, guisantes, soja, trigo, cebada, girasoles."/>
+        <text name="helpLine_crop_rotations_values_sorghum_bad" text="Malos Cultivos anteriores: maíz, sorgo"/>
+
+        <text name="helpLine_crop_rotations_values_soybean_title" text="soja"/>
+        <text name="helpLine_crop_rotations_values_soybean_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_soybean_very_good" text="Muy buenos Cultivos precedentes: trigo, maíz, remolacha azucarera"/>
+        <text name="helpLine_crop_rotations_values_soybean_good" text="Buenos Cultivos precedentes: cebada, avena, patatas"/>
+        <text name="helpLine_crop_rotations_values_soybean_bad" text="Malos Cultivos anteriores: soja, guisantes, girasoles, frijoles, canola"/>
+
+        <text name="helpLine_crop_rotations_values_greenbean_title" text="Frijoles"/>
+        <text name="helpLine_crop_rotations_values_greenbean_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_greenbean_very_good" text="Muy buenos Cultivos precedentes: trigo, canola, girasol, patatas, remolacha azucarera."/>
+        <text name="helpLine_crop_rotations_values_greenbean_good" text="Buenos Cultivos precedentes: cebada, avena, maíz"/>
+        <text name="helpLine_crop_rotations_values_greenbean_bad" text="Malos Cultivos anteriores: soja, frijoles, guisantes"/>
+
+        <text name="helpLine_crop_rotations_values_pea_title" text="Guisantes"/>
+        <text name="helpLine_crop_rotations_values_pea_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_pea_very_good" text="Muy buenos Cultivos precedentes: trigo, cebada, maíz, patatas."/>
+        <text name="helpLine_crop_rotations_values_pea_good" text="Buenos Cultivos precedentes: canola, girasol, remolacha azucarera."/>
+        <text name="helpLine_crop_rotations_values_pea_bad" text="Malos Cultivos anteriores: soja, frijoles, guisantes, avena"/>
+
+        <text name="helpLine_crop_rotations_values_maize_title" text="Maíz"/>
+        <text name="helpLine_crop_rotations_values_maize_pause" text="Pausas: 1"/>
+        <text name="helpLine_crop_rotations_values_maize_very_good" text="Muy buenos Cultivos precedentes:hierba"/>
+        <text name="helpLine_crop_rotations_values_maize_good" text="Buenos Cultivos precedentes: trigo, cebada, patatas"/>
+        <text name="helpLine_crop_rotations_values_maize_bad" text="Malos Cultivos anteriores: sorgo"/>
+
+        <text name="helpLine_crop_rotations_values_canola_title" text="Canola"/>
+        <text name="helpLine_crop_rotations_values_canola_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_canola_very_good" text="Muy buenos Cultivos precedentes: cebada, guisantes."/>
+        <text name="helpLine_crop_rotations_values_canola_good" text="Buenos Cultivos precedentes: trigo, avena, hierba"/>
+        <text name="helpLine_crop_rotations_values_canola_bad" text="Malos Cultivos anteriores: maíz, patatas, canola, remolacha azucarera, soja, girasol"/>
+
+        <text name="helpLine_crop_rotations_values_sunflower_title" text="Girasoles"/>
+        <text name="helpLine_crop_rotations_values_sunflower_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_sunflower_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_sunflower_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, hierba."/>
+        <text name="helpLine_crop_rotations_values_sunflower_bad" text="Malos Cultivos anteriores: girasol, canola, soja, guisantes, frijoles"/>
+
+        <text name="helpLine_crop_rotations_values_potato_title" text="Patatas"/>
+        <text name="helpLine_crop_rotations_values_potato_pause" text="Pausas: 3"/>
+        <text name="helpLine_crop_rotations_values_potato_very_good" text="Muy buenos Cultivos precedentes: soja, frijoles, guisantes."/>
+        <text name="helpLine_crop_rotations_values_potato_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, hierba."/>
+        <text name="helpLine_crop_rotations_values_potato_bad" text="Malos Cultivos anteriores: patatas, remolacha azucarera, canola, girasoles"/>
+
+        <text name="helpLine_crop_rotations_values_sugarbeet_title" text="Remolacha azucarera"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_pause" text="Pausas: 3"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_very_good" text="Muy buenos Cultivos precedentes:"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, guisantes, hierba."/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_bad" text="Malos Cultivos anteriores: maíz, soja, canola, remolacha azucarera"/>
+
+        <text name="helpLine_crop_rotations_values_onion_title" text="cebollas"/>
+        <text name="helpLine_crop_rotations_values_onion_pause" text="Pausas: 3"/>
+        <text name="helpLine_crop_rotations_values_onion_very_good" text="Muy buenos Cultivos precedentes:"/>
+        <text name="helpLine_crop_rotations_values_onion_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, soja, frijoles, guisantes, patatas."/>
+        <text name="helpLine_crop_rotations_values_onion_bad" text="Malos Cultivos anteriores: cebollas, zanahorias, chirivías, remolachas azucareras, remolachas, espinacas, girasoles, canola"/>
+
+        <text name="helpLine_crop_rotations_values_beetroot_title" text="Remolacha"/>
+        <text name="helpLine_crop_rotations_values_beetroot_pause" text="Pausas: 3"/>
+        <text name="helpLine_crop_rotations_values_beetroot_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_beetroot_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, soja, frijoles, guisantes."/>
+        <text name="helpLine_crop_rotations_values_beetroot_bad" text="Malos Cultivos anteriores: patatas, remolacha azucarera, espinacas"/>
+
+        <text name="helpLine_crop_rotations_values_carrot_title" text="Zanahorias"/>
+        <text name="helpLine_crop_rotations_values_carrot_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_carrot_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_carrot_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, soja, frijoles, guisantes, patatas."/>
+        <text name="helpLine_crop_rotations_values_carrot_bad" text="Malos Cultivos anteriores: zanahorias, chirivías"/>
+
+        <text name="helpLine_crop_rotations_values_parsnip_title" text="chirivías"/>
+        <text name="helpLine_crop_rotations_values_parsnip_pause" text="Pausas: 2"/>
+        <text name="helpLine_crop_rotations_values_parsnip_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_parsnip_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, soja, frijoles, guisantes."/>
+        <text name="helpLine_crop_rotations_values_parsnip_bad" text="Malos Cultivos anteriores: zanahorias, chirivías"/>
+
+        <text name="helpLine_crop_rotations_values_spinach_title" text="Spinach"/>
+        <text name="helpLine_crop_rotations_values_spinach_pause" text="Pausas: 0"/>
+        <text name="helpLine_crop_rotations_values_spinach_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_spinach_good" text="Buenos Cultivos precedentes: trigo, cebada, avena, soja, frijoles, guisantes."/>
+        <text name="helpLine_crop_rotations_values_spinach_bad" text="Malos Cultivos anteriores: espinacas, patatas, remolacha azucarera"/>
+
+        <text name="helpLine_crop_rotations_values_rice_title" text="Arroz"/>
+        <text name="helpLine_crop_rotations_values_rice_pause" text="Pausas: 0"/>
+        <text name="helpLine_crop_rotations_values_rice_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_rice_good" text="Buenos Cultivos precedentes: frijoles, guisantes"/>
+        <text name="helpLine_crop_rotations_values_rice_bad" text="Malos Cultivos anteriores: maíz, sorgo"/>
+
+        <text name="helpLine_crop_rotations_values_ricelonggrain_title" text="arroz de grano largo"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_pause" text="Pausas: 0"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_very_good" text="Muy buenos Cultivos precedentes.:"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_good" text="Buenos Cultivos precedentes: frijoles, guisantes"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_bad" text="Malos Cultivos anteriores: maíz, sorgo"/>
+
+        <text name="helpLine_crop_rotations_values_catchCrops_title" text="Cultivos intermedios"/>
+        <text name="helpLine_crop_rotations_values_catchCrops_description" text="Los Cultivos intermedios solo afectan al Cultivo que se siembra inmediatamente después. Pueden tener un efecto positivo o negativo. Aquí también se distingue entre Cultivos muy buenos, buenos y malos. En el mejor de los casos, el rendimiento puede aumentar un 15 %. En el mejor de los casos, solo un 10 %. En el peor de los casos, un Cultivo intermedio puede incluso causar una pérdida del 10 % en el rendimiento."/>
+
+        <text name="helpLine_crop_rotations_values_oilseedradish_title" text="Rábano olifero"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_very_good" text="Muy buena influencia: maíz, patatas, girasoles, avena."/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_good" text="Buena influencia: trigo, cebada, sorgo, remolacha azucarera, cebollas, remolacha, zanahorias, chirivías, espinacas."/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_bad" text="Mala influencia: canola, soja, guisantes, frijoles"/>
+    </texts>
+</l10n>

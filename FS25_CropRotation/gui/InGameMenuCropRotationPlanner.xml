@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="InGameMenuCropRotationPlanner">
+	<GuiElement profile="fs25_menuContainer">
+        <GuiElement profile="fs25_menuHeaderPanel">
+            <Bitmap profile="fs25_menuHeaderIconBg">
+                <Bitmap profile="cropRotationPlannerIcon" id="cropRotationPlannerIcon"/>
+            </Bitmap>
+            <Text profile="fs25_menuHeaderTitle" text="$l10n_ui_inGameMenuTitle" />
+        </GuiElement>
+
+        <GuiElement profile="entryListContainer">
+            <Bitmap profile="fs25_subCategoryStartClipper" name="startClipper" />
+            <Bitmap profile="fs25_subCategoryStopClipper" name="endClipper" />
+
+            <SmoothList profile="entryList" id="entryList" startClipperElementName="startClipper" endClipperElementName="endClipper">
+                <ListItem profile="entryTemplate" id="entryTemplate">
+                    <Text profile="entryName" name="entryName" />
+                    <Button profile="removeSelection" name="removeSelection"/>
+                    <Button profile="addSelection" name="addSelection"/>
+                    <GuiElement profile="selectionListContainer">
+                        <Bitmap profile="seperatorLeft" name="seperatorLeft"/>
+                        <SmoothList profile="selectionList" id="selectionList" name="selectionList">
+                            <ListItem profile="selectionContainer">
+                                <Button profile="yieldArrow" name="yieldArrow"/>
+                                <GuiElement profile="selectionLayout">
+                                    <MultiTextOption profile="catchCropTextOption" name="catchCropTextOption"/>
+                                    <MultiTextOption profile="fruitMultiTextOption" name="fruitMultiTextOption"/>
+                                    <Text profile="yieldFactor" name="yieldFactor" />
+                                </GuiElement>
+                            </ListItem>
+                        </SmoothList>
+                    </GuiElement>
+                </ListItem>
+            </SmoothList>
+            <ThreePartBitmap profile="fs25_subCategoryListSliderBox">
+                <Slider profile="fs25_listSlider" dataElementId="entryList" />
+            </ThreePartBitmap>
+        </GuiElement>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="cropRotationPlannerIcon" extends="baseReference">
+            <imageUVs value="0 0 1 1" />
+            <imageColor value="$preset_fs25_colorMainDark" />
+            <imageSliceId value="noSlice" />
+        </Profile>
+
+        <Profile name="entryListContainer" extends="emptyPanel" with="anchorStretchingYStretchingX"/>
+        <Profile name="entryList" extends="emptyPanel" with="anchorStretchingYStretchingX">
+            <height value="800px" />
+            <itemizedScrollDelta value="1" />
+            <listItemSpacing value="20px" />
+            <selectOnClick value="true" />
+            <showHighlights value="true" />
+        </Profile>
+        <Profile name="entryTemplate" extends="baseReference" with="anchorTopStretchingX">
+            <height value="120px" />
+            <imageColor value="$preset_colorTransparent" />
+            <imageSelectedColor value="$preset_fs25_colorGrey_20" />
+        </Profile>
+
+        <Profile name="selectionButton" extends="emptyPanel">
+            <size value="20px 22px" />
+            <handleFocus value="false" />
+            <iconSize value="20px 22px" />
+            <imageDisabledColor value="$preset_colorWhite" />
+            <iconDisabledColor value="$preset_colorWhite" />
+        </Profile>
+        <Profile name="entryName" extends="selectionButton" with="anchorMiddleLeft">
+            <width value="200px" />
+            <textSize value="20px" />
+            <textMaxNumLines value="2" />
+            <absoluteSizeOffset value="0px 10px" />
+        </Profile>
+        <Profile name="removeSelection" extends="selectionButton" with="anchorMiddleLeft">
+            <position value="200px 0px" />
+            <iconSliceId value="gui.cross" />
+        </Profile>
+        <Profile name="addSelection" extends="selectionButton" with="anchorMiddleLeft">
+            <position value="230px 0px" />
+            <iconSliceId value="gui.plus" />
+        </Profile>
+
+        <Profile name="seperatorLeft" extends="baseReference" with="anchorStretchingYLeft">
+            <position value="0 0" />
+            <size value="2dp 100%" />
+            <imageColor value="$preset_fs25_colorGreyLight" />
+            <imageUVRotation value="90" />
+        </Profile>
+
+        <Profile name="selectionListContainer" extends="emptyPanel" with="anchorStretchingYStretchingX anchorMiddleLeft">
+            <position value="260px 0px" />
+        </Profile>
+        <Profile name="selectionList" extends="baseReference" with="anchorStretchingYStretchingX anchorMiddleLeft">
+            <size value="1300px 120px" />
+            <isHorizontalList value="true" />
+            <itemizedScrollDelta value="1" />
+            <listItemSpacing value="20px" />
+        </Profile>
+        <Profile name="selectionContainer" extends="baseReference" with="anchorStretchingYStretchingX anchorMiddleLeft">
+            <size value="330px 120px" />
+            <imageColor value="$preset_colorTransparent" />
+        </Profile>
+        <Profile name="yieldArrow" extends="emptyPanel" with="anchorMiddleLeft">
+            <position value="0px 0px" />
+            <size value="15px 16px" />
+            <handleFocus value="false" />
+            <iconSize value="15px 16px" />
+            <iconSliceId value="gui.dialogue_arrow" />
+            <imageDisabledColor value="$preset_colorWhite" />
+            <iconDisabledColor value="$preset_colorWhite" />
+        </Profile>
+        <Profile name="selectionLayout" extends="emptyPanel" with="anchorStretchingYRight">
+            <position value="-30px 0px" />
+            <width value="250px" />
+            <wrapAround value="true" />
+            <absoluteSizeOffset value="0px 20px" />
+        </Profile>
+        <Profile name="fruitMultiTextOption" extends="fs25_multiTextOption" with="anchorMiddleCenter">
+            <position value="0px -5px"/>
+            <width value="250px"/>
+            <focusOnHighlight value="true" />
+            <wrap value="false" />
+            <hideButtonOnLimitReached value="true" />
+        </Profile>
+        <Profile name="catchCropTextOption" extends="fs25_multiTextOption" with="anchorTopCenter">
+            <position value="0px 0px"/>
+            <width value="250px"/>
+            <focusOnHighlight value="true" />
+            <wrap value="false" />
+            <hideButtonOnLimitReached value="true" />
+        </Profile>
+        <Profile name="yieldFactor" extends="fs25_textDefault" with="anchorBottomCenter">
+            <position value="0px 0px"/>
+            <width value="80px" />
+            <textSize value="16px" />
+            <textBold value="true" />
+            <textAlignment value="center" />
+        </Profile>
+    </GUIProfiles>
+</GUI>

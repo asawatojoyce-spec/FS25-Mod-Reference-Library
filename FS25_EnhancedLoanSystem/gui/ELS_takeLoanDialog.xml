@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" id="dialogBg" />
+
+    <GuiElement profile="ELS_takeLoanDialog" id="dialogElement">
+
+        <GuiElement profile="fs25_dialogContentContainer">
+            <BoxLayout profile="ELS_takeLoanDialogVerticalBox" position="0px -20px">
+                <Text profile="fs25_dialogTitle" text="$l10n_els_ui_takeLoanText" id="dialogTextElement"/>
+
+                <Text profile="ELS_takeLoanDialogInputText" text="$l10n_els_ui_takeLoanAmountInputText" id="loanAmountInputText"/>
+                <TextInput profile="ELS_takeLoanDialogInput" id="loanAmountInput" onEnterPressed="onEnterPressed" onTextChanged="onTextChanged" enterWhenClickOutside="false">
+                    <ThreePartBitmap profile="fs25_textInputBg" absoluteSizeOffset="0px 0px"/>
+                    <Bitmap profile="fs25_textInputIconBox" position="0px 0px">
+                        <Bitmap profile="fs25_textInputIcon" />
+                    </Bitmap>
+                </TextInput>
+                <Text profile="ELS_takeLoanDialogInputText" text="$l10n_els_ui_takeLoanDurationInputText" id="loanDurationInput"/>
+                <TextInput profile="ELS_takeLoanDialogInputYear" id="loanDurationInput" onEnterPressed="onEnterPressed" onTextChanged="onTextChanged" enterWhenClickOutside="false">
+                    <ThreePartBitmap profile="fs25_textInputBg" absoluteSizeOffset="0px 0px"/>
+                    <Bitmap profile="fs25_textInputIconBox" position="0px 0px">
+                        <Bitmap profile="fs25_textInputIcon" />
+                    </Bitmap>
+                </TextInput>
+                
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" size="300px 20px"/>
+                
+                <BoxLayout profile="ELS_takeLoanDialogResultBackground" id="buttonsPC" >
+                    <Text profile="ELS_takeLoanDialogInfoTextShort" text="$l10n_els_ui_takeLoanInterest" id="loanInterestField"/>
+                    <Text profile="ELS_takeLoanDialogInfoTextLong" text="$l10n_els_ui_takeLoanPeriodRate" id="loanPeriodRateField"/>
+                    <Text profile="ELS_takeLoanDialogInfoTextLong" text="$l10n_els_ui_takeLoanTotalAmount" id="loanTotalAmountField"/>
+                </BoxLayout>
+                
+                <ThreePartBitmap profile="fs25_lineSeparatorBottomSoft" />
+            </BoxLayout>
+        </GuiElement>
+
+        <BoxLayout profile="fs25_dialogButtonBox" id="buttonsPC" >
+            <Button profile="buttonOK" text="$l10n_els_ui_takeLoanButton" onClick="onClickOk" id="yesButton" />
+            <Bitmap profile="fs25_dialogButtonBoxSeparator" />
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickCancel" id="backButton" />
+        </BoxLayout>
+    </GuiElement>
+    
+    <GUIProfiles>
+        <Profile name="ELS_takeLoanDialog" extends="fs25_dialogBg">
+            <size value="600px 450px"/>
+        </Profile>
+        
+        <Profile name="ELS_takeLoanDialogVerticalBox" extends="emptyPanel" with="anchorMiddleRight">
+            <size value="450px 300px" />
+            <flowDirection value="vertical" />
+            <useFullVisibility value="false" />
+            <alignmentX value="center" />
+            <elementSpacing value="10px" />
+        </Profile>
+
+        <Profile name="ELS_takeLoanDialogResultBackground" extends="fs25_textInputBg" with="anchorMiddleRight">
+            <size value="370px 100px" />
+            <flowDirection value="vertical" />
+            <useFullVisibility value="false" />
+            <alignmentX value="center" />
+            <alignmentY value="middle" />
+            <elementSpacing value="10px" />
+        </Profile>
+        
+        <Profile name="ELS_takeLoanDialogInputText" extends="baseReference">
+            <size value="350px 20px"/>
+            <textSize value="16px"/>
+            <textWrapWidth value="350px"/>
+        </Profile>
+
+        <Profile name="ELS_takeLoanDialogInput" extends="fs25_textInput">
+            <size value="340px 31px"/>
+            <position value="0px 50px"/>
+            <maxCharacters value="9"/>
+        </Profile>
+
+        <Profile name="ELS_takeLoanDialogInfoTextShort" extends="baseReference">
+            <size value="350px 20px"/>
+            <textSize value="16px"/>
+            <textWrapWidth value="200px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ELS_takeLoanDialogInfoTextLong" extends="baseReference">
+            <size value="350px 20px"/>
+            <textSize value="16px"/>
+            <textWrapWidth value="300px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ELS_takeLoanDialogInputYear" extends="fs25_textInput">
+            <size value="340px 31px"/>
+            <position value="0px 50px"/>
+            <maxCharacters value="2"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

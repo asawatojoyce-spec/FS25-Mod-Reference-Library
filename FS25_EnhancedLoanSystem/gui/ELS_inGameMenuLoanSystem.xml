@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="InGameMenuLoanSystem">
+	<GuiElement profile="fs25_menuContainer">
+		<GuiElement profile="fs25_menuHeaderPanel">
+            <Text profile="ELS_headerText" text="$l10n_els_ui_inGameMenuTitle"/>
+            <RoundCorner profile="ELS_loanInterestBoxBg"/>
+			<BoxLayout profile="ELS_loanInterestBox">
+                <Text profile="fs25_shopBalance" text="$l10n_els_ui_inGameMenuLoanInterest" id="currentLoanInterest"/>
+			</BoxLayout>
+        </GuiElement>
+
+        <GuiElement profile="fs25_statisticsHeaderBox">
+            <Text profile="ELS_rowCell" position="0px 0px"    size="200px 20px" name="amount" />
+            <Text profile="ELS_rowCell" position="200px 0px"  size="200px 20px" name="interest" />
+            <Text profile="ELS_rowCell" position="400px 0px"  size="350px 20px" name="periodRate" />
+            <Text profile="ELS_rowCell" position="750px 0px"  size="250px 20px" name="duration" />
+            <Text profile="ELS_rowCell" position="1000px 0px" size="250px 20px" name="restDuration" />
+            <Text profile="ELS_rowCell" position="1250px 0px" size="250px 20px" name="restAmount" />
+            <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp" />
+        </GuiElement>
+        
+        <SmoothList profile="ELS_list" id="loanTable" listSectionHeader="section">
+            <ListItem profile="ELS_listItem" name="fieldCalculatorRowTemplate" >
+                <Text profile="ELS_rowCell" position="0px 0px"    size="200px 20px" name="amount" />
+                <Text profile="ELS_rowCell" position="200px 0px"  size="200px 20px" name="interest" />
+                <Text profile="ELS_rowCell" position="400px 0px"  size="350px 20px" name="periodRate" />
+                <Text profile="ELS_rowCell" position="750px 0px"  size="250px 20px" name="duration" />
+                <Text profile="ELS_rowCell" position="1000px 0px" size="250px 20px" name="restDuration" />
+                <Text profile="ELS_rowCell" position="1250px 0px" size="250px 20px" name="restAmount" />
+            </ListItem>
+            <ListItem profile="fs25_subCategoryListSectionHeader" name="section">
+                <Text profile="fs25_subCategoryListSectionHeaderTitle" name="title" />
+            </ListItem>
+        </SmoothList>
+        
+        <ThreePartBitmap profile="ELS_ingameMenuSlider" >
+            <Slider profile="fs25_listSlider" dataElementId="loanTable"/>
+        </ThreePartBitmap>
+    </GuiElement>
+    
+    <GUIProfiles>
+        <Profile name="ELS_headerText" extends="fs25_textDefault">
+            <size value="600px 64px" />
+            <position value="0px 0px" />
+            <textSize value="31px"/>
+            <textBold value="false"/>
+            <textUpperCase value="true"/>
+            <textDisabledColor value="$preset_colorDisabled"/>
+        </Profile>
+        
+        <Profile name="ELS_loanInterestBoxBg" extends="fs25_shopMoneyBoxBg">
+            <size value="500px 64px" />
+        </Profile>
+
+        <Profile name="ELS_loanInterestBox" extends="fs25_shopMoneyBox">
+            <size value="450px 64px" />
+        </Profile>
+
+        <Profile name="ELS_list" extends="emptyPanel" with="anchorStretchingYLeft pivotTopLeft">
+            <position value="0px -40px" />
+        </Profile>
+
+        <Profile name="ELS_listItem" extends="baseReference" with="anchorTopStretchingX alternating">
+            <height value="32px"/>
+            <imageColor value="$preset_fs25_colorGrey" />
+            <imageSelectedColor value="$preset_fs25_colorMainHighlight" />
+            <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50" />
+        </Profile>
+
+        <Profile name="ELS_ingameMenuSlider"  extends="fs25_listSliderBox" with="anchorTopRight">
+            <position value="28px -40px" />
+            <size value="6px 710px"/>
+        </Profile>
+
+        <Profile name="ELS_rowCell" extends="fs25_textDarkHighlight" with="anchorStretchingYLeft">
+            <textSize value="16px" />
+            <textBold value="true" />
+            <textUpperCase value="true" />
+            <textAlignment value="center" />
+        </Profile>
+    </GUIProfiles>
+</GUI>

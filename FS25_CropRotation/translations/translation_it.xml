@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="ui_mapOverviewYield" text="Mappa dei rendimenti"/>
+        <text name="ui_last_fruit" text="Ultimo frutto:"/>
+        <text name="ui_penultimate_fruit" text="Penultimo frutto:"/>
+        <text name="ui_potential_yield" text="Rotazione delle colture Resa:"/>
+        <text name="ui_had_catch_crop" text="Coltura intercalare:"/>
+        <text name="ui_no_catch_crop" text="Nessuna"/>
+        <text name="fallow_state" text="terreno incolto"/>
+
+        <text name="ui_inGameMenuTitle" text="Pianificatore della rotazione delle colture"/>
+        <text name="ui_fruitSelection" text="frutto"/>
+        <text name="ui_withoutCatchCrop" text="Senza coltura intercalare"/>
+
+        <text name="ui_button_addCropRotation" text="Aggiungi rotazione delle colture"/>
+        <text name="ui_button_removeCropRotation" text="Rimuovere la rotazione delle colture"/>
+        <text name="ui_add_entry_title" text="Inserisci un nome per la tua rotazione delle colture."/>
+        <text name="ui_remove_crop_rotation_title" text="Eliminare la rotazione delle colture"/>
+        <text name="ui_remove_crop_rotation" text="Vuoi davvero eliminare la rotazione delle colture ‘%s’?"/>
+
+        <text name="helpLine_planner" text="Pianificatore della rotazione delle colture"/>
+        <text name="helpLine_planner_title" text="Pianificatore della rotazione delle colture"/>
+        <text name="helpLine_planner_description" text="schiena. Il pianificatore di rotazione delle colture è accessibile dal menu di gioco e offre la possibilità di pianificare in anticipo diverse rotazioni delle colture. A tal fine è possibile creare nuove rotazioni delle colture con un nome personalizzato. Una volta creata una rotazione delle colture, è possibile aggiungere o rimuovere altri frutti (è necessario almeno un frutto, che non può essere eliminato). A tal fine è sufficiente selezionare i frutti disponibili tramite il cursore +/-. È inoltre possibile selezionare una coltura intercalare da piantare prima del raccolto vero e proprio. Sotto i cursori è possibile vedere direttamente il rendimento previsto. Il rendimento viene calcolato in base alle ultime due colture precedenti. Le colture precedenti per il frutto al primo e al secondo posto vengono riempite con quelle alla fine dell'elenco."/>
+        <text name="helpLine_planner_example_title" text="Rotazione delle colture con meno di 3 frutti"/>
+        <text name="helpLine_planner_example_description" text="Per calcolare la resa sono necessarie le ultime due colture precedenti. Se queste non sono presenti nel pianificatore, la rotazione delle colture ricomincia dall'inizio. Se una rotazione delle colture ha ad esempio un solo prodotto, per le due colture precedenti viene inserito lo stesso prodotto."/>
+        <text name="helpLine_planner_scrolling_title" text="scorrimento"/>
+        <text name="helpLine_planner_scrolling_description" text="Poiché il pianificatore di rotazione delle colture è costituito da due elenchi interconnessi, la posizione del mouse durante lo scorrimento è estremamente importante. Se il mouse si trova sopra l'area dei titoli delle rotazioni delle colture, viene eseguito lo scorrimento di tutte le rotazioni delle colture. Se il mouse si trova sull'area dei frutti, viene eseguito lo scorrimento dei frutti della rispettiva rotazione delle colture."/>
+
+        <text name="helpLine_crop_rotations_title" text="Rotazione delle colture"/>
+        <text name="helpLine_crop_rotations_description" text="I frutti coltivati in precedenza sul campo influiscono sul raccolto attuale. Ciò può avere effetti positivi o negativi. I seguenti fattori hanno un'influenza:"/>
+
+        <text name="helpLine_crop_rotations_monoculture" text="Le monocolture hanno effetti negativi sulla resa. Se gli ultimi due frutti sono uguali a quelli attuali, si ottiene una perdita del 5% sulla resa."/>
+        <text name="helpLine_crop_rotations_breakPeriods" text="Alcuni frutti non possono essere coltivati ogni anno, ma necessitano di un determinato numero di pause prima di poter essere coltivati nuovamente nello stesso campo senza conseguenze negative. Queste pause possono variare da pianta a pianta. Se non si rispettano tali pause, si subisce una perdita del 10% per ogni pausa non rispettata."/>
+        <text name="helpLine_crop_rotations_foreCrops" text="Le colture precedenti possono avere un effetto negativo, positivo o neutro sulla resa attuale. Ogni pianta ha colture precedenti che sono buone, ottime o pessime come colture precedenti. Se si rispetta questo principio, ci si può aspettare una resa maggiore. Se invece non si presta attenzione a questo aspetto, ci si deve aspettare delle perdite. Per ogni coltura precedente buona si ottiene un bonus di resa del 10% o del 5% (a seconda che sia stata piantata come ultima o penultima coltura precedente). Per ogni coltura precedente ottima si ottiene un bonus di resa del 15% o del 10%. Per ogni coltura precedente scarsa si subisce una perdita di resa del 25% o del 20%."/>
+        <text name="helpLine_crop_rotations_fallow" text="Se si lascia un campo incolto (per almeno 12 mesi), si ottiene un bonus del 5% sul raccolto successivo, poiché il terreno ha il tempo di rigenerarsi."/>
+        <text name="helpLine_crop_rotations_catchCrop" text="Alcune colture intercalari hanno un effetto positivo, molto positivo o negativo sul raccolto successivo. Questo effetto varia a seconda della coltura intercalare coltivata. Le colture intercalari positive garantiscono un bonus sul raccolto del 10%. Quelle molto positive garantiscono un bonus del 15%. Le colture intercalari negative comportano una perdita del 10% sul raccolto."/>
+
+        <text name="helpLine_crop_rotations_values_title" text="Valori precisi per ogni frutto"/>
+
+        <text name="helpLine_crop_rotations_values_grass_title" text="Erba"/>
+        <text name="helpLine_crop_rotations_values_grass_pause" text="Pause: 0"/>
+        <text name="helpLine_crop_rotations_values_grass_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_grass_good" text="Buone colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_grass_bad" text="Colture precedenti inadeguate:"/>
+
+        <text name="helpLine_crop_rotations_values_wheat_title" text="grano"/>
+        <text name="helpLine_crop_rotations_values_wheat_pause" text="Pause: 1"/>
+        <text name="helpLine_crop_rotations_values_wheat_very_good" text="Ottime colture precedenti: mais, soia, patate, barbabietola da zucchero, barbabietola rossa, girasole"/>
+        <text name="helpLine_crop_rotations_values_wheat_good" text="Buone colture precedenti: taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_wheat_bad" text="Colture precedenti inadeguate: frumento, orzo, erba"/>
+
+        <text name="helpLine_crop_rotations_values_barley_title" text="orzo"/>
+        <text name="helpLine_crop_rotations_values_barley_pause" text="Pause: 1"/>
+        <text name="helpLine_crop_rotations_values_barley_very_good" text="Ottime colture precedenti: mais, soia, patate, barbabietola da zucchero, barbabietola rossa"/>
+        <text name="helpLine_crop_rotations_values_barley_good" text="Buone colture precedenti: grano, avena,taccole, piselli, colza, girasoli"/>
+        <text name="helpLine_crop_rotations_values_barley_bad" text="Colture precedenti inadeguate: orzo, erba"/>
+
+        <text name="helpLine_crop_rotations_values_oat_title" text="avena"/>
+        <text name="helpLine_crop_rotations_values_oat_pause" text="Pause: 1"/>
+        <text name="helpLine_crop_rotations_values_oat_very_good" text="Ottime colture precedenti: frumento, orzo"/>
+        <text name="helpLine_crop_rotations_values_oat_good" text="Buone colture precedenti: mais, soia, piselli, patate, colza, barbabietola da zucchero, girasole"/>
+        <text name="helpLine_crop_rotations_values_oat_bad" text="Colture precedenti inadeguate: avena"/>
+
+        <text name="helpLine_crop_rotations_values_sorghum_title" text="sorgo"/>
+        <text name="helpLine_crop_rotations_values_sorghum_pause" text="Pause: 1"/>
+        <text name="helpLine_crop_rotations_values_sorghum_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_sorghum_good" text="Buone colture precedenti: taccole, piselli, soia, frumento, orzo, girasoli"/>
+        <text name="helpLine_crop_rotations_values_sorghum_bad" text="Colture precedenti inadatte: mais, miglio"/>
+
+        <text name="helpLine_crop_rotations_values_soybean_title" text="Semi di soia"/>
+        <text name="helpLine_crop_rotations_values_soybean_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_soybean_very_good" text="Ottime colture precedenti: grano, mais, barbabietola da zucchero"/>
+        <text name="helpLine_crop_rotations_values_soybean_good" text="Buone colture precedenti: orzo, avena, patate"/>
+        <text name="helpLine_crop_rotations_values_soybean_bad" text="Colture precedenti inadatte: soia, piselli, girasoli,taccole, colza"/>
+
+        <text name="helpLine_crop_rotations_values_greenbean_title" text="Taccole"/>
+        <text name="helpLine_crop_rotations_values_greenbean_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_greenbean_very_good" text="Ottime colture precedenti: grano, colza, girasole, patate, barbabietola da zucchero"/>
+        <text name="helpLine_crop_rotations_values_greenbean_good" text="Buone colture precedenti: orzo, avena, mais"/>
+        <text name="helpLine_crop_rotations_values_greenbean_bad" text="Colture precedenti inadatte: soia,taccole, piselli"/>
+
+        <text name="helpLine_crop_rotations_values_pea_title" text="piselli"/>
+        <text name="helpLine_crop_rotations_values_pea_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_pea_very_good" text="Ottime colture precedenti: frumento, orzo, mais, patate"/>
+        <text name="helpLine_crop_rotations_values_pea_good" text="Buone colture precedenti: colza, girasole, barbabietola da zucchero"/>
+        <text name="helpLine_crop_rotations_values_pea_bad" text="Colture precedenti inadatte: soia,taccole, piselli, avena"/>
+
+        <text name="helpLine_crop_rotations_values_maize_title" text="Mais"/>
+        <text name="helpLine_crop_rotations_values_maize_pause" text="Pause: 1"/>
+        <text name="helpLine_crop_rotations_values_maize_very_good" text="Ottime colture precedenti: erba"/>
+        <text name="helpLine_crop_rotations_values_maize_good" text="Buone colture precedenti: grano, orzo, patate"/>
+        <text name="helpLine_crop_rotations_values_maize_bad" text="Colture precedenti inadeguate: miglio"/>
+
+        <text name="helpLine_crop_rotations_values_canola_title" text="colza"/>
+        <text name="helpLine_crop_rotations_values_canola_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_canola_very_good" text="Ottime colture precedenti: orzo, piselli"/>
+        <text name="helpLine_crop_rotations_values_canola_good" text="Buone colture precedenti: grano, avena, erba"/>
+        <text name="helpLine_crop_rotations_values_canola_bad" text="Colture precedenti inadatte: mais, patate, colza, barbabietola da zucchero, soia, girasole"/>
+
+        <text name="helpLine_crop_rotations_values_sunflower_title" text="girasoli"/>
+        <text name="helpLine_crop_rotations_values_sunflower_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_sunflower_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_sunflower_good" text="Buone colture precedenti: frumento, orzo, avena, erba"/>
+        <text name="helpLine_crop_rotations_values_sunflower_bad" text="Colture precedenti inadatte: girasoli, colza, soia, piselli,taccole"/>
+
+        <text name="helpLine_crop_rotations_values_potato_title" text="patate"/>
+        <text name="helpLine_crop_rotations_values_potato_pause" text="Pause: 3"/>
+        <text name="helpLine_crop_rotations_values_potato_very_good" text="Ottime colture precedenti: soia, taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_potato_good" text="Buone colture precedenti: frumento, orzo, avena, erba"/>
+        <text name="helpLine_crop_rotations_values_potato_bad" text="Colture precedenti inadatte: patate, barbabietole da zucchero, colza, girasoli"/>
+
+        <text name="helpLine_crop_rotations_values_sugarbeet_title" text="barbabietole da zucchero"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_pause" text="Pause: 3"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_good" text="Buone colture precedenti: frumento, orzo, avena, piselli, erba"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_bad" text="Colture precedenti inadatte: mais, soia, colza, barbabietola da zucchero"/>
+
+        <text name="helpLine_crop_rotations_values_onion_title" text="cipolle"/>
+        <text name="helpLine_crop_rotations_values_onion_pause" text="Pause: 3"/>
+        <text name="helpLine_crop_rotations_values_onion_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_onion_good" text="Buone colture precedenti: frumento, orzo, avena, soia, taccole, piselli, patate"/>
+        <text name="helpLine_crop_rotations_values_onion_bad" text="Colture precedenti inadatte: cipolle, carote, pastinache, barbabietole da zucchero, barbabietole rosse, spinaci, girasoli, colza"/>
+
+        <text name="helpLine_crop_rotations_values_beetroot_title" text="Barbabietola rossa"/>
+        <text name="helpLine_crop_rotations_values_beetroot_pause" text="Pause: 3"/>
+        <text name="helpLine_crop_rotations_values_beetroot_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_beetroot_good" text="Buone colture precedenti: frumento, orzo, avena, soia, taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_beetroot_bad" text="Colture precedenti inadatte: patate, barbabietole da zucchero, spinaci"/>
+
+        <text name="helpLine_crop_rotations_values_carrot_title" text="carote"/>
+        <text name="helpLine_crop_rotations_values_carrot_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_carrot_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_carrot_good" text="Buone colture precedenti: frumento, orzo, avena, soia, taccole, taccole, patate"/>
+        <text name="helpLine_crop_rotations_values_carrot_bad" text="Colture precedenti inadatte: carote, pastinache"/>
+
+        <text name="helpLine_crop_rotations_values_parsnip_title" text="pastinaca"/>
+        <text name="helpLine_crop_rotations_values_parsnip_pause" text="Pause: 2"/>
+        <text name="helpLine_crop_rotations_values_parsnip_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_parsnip_good" text="Buone colture precedenti: frumento, orzo, avena, soia, taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_parsnip_bad" text="Colture precedenti inadatte: carote, pastinache"/>
+
+        <text name="helpLine_crop_rotations_values_spinach_title" text="Spinaci"/>
+        <text name="helpLine_crop_rotations_values_spinach_pause" text="Pause: 0"/>
+        <text name="helpLine_crop_rotations_values_spinach_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_spinach_good" text="Buone colture precedenti: frumento, orzo, avena, soia, taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_spinach_bad" text="Colture precedenti inadatte: spinaci, patate, barbabietole da zucchero"/>
+
+        <text name="helpLine_crop_rotations_values_rice_title" text="riso"/>
+        <text name="helpLine_crop_rotations_values_rice_pause" text="Pause: 0"/>
+        <text name="helpLine_crop_rotations_values_rice_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_rice_good" text="Buone colture precedenti: taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_rice_bad" text="Colture precedenti inadatte: mais, miglio"/>
+
+        <text name="helpLine_crop_rotations_values_ricelonggrain_title" text="Riso a grani lunghi"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_pause" text="Pausen: 0"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_very_good" text="Ottime colture precedenti:"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_good" text="Buone colture precedenti: taccole, piselli"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_bad" text="Colture precedenti inadatte: mais, miglio"/>
+
+        <text name="helpLine_crop_rotations_values_catchCrops_title" text="colture intercalari"/>
+        <text name="helpLine_crop_rotations_values_catchCrops_description" text="Le colture intercalari influiscono solo sul frutto che viene seminato immediatamente dopo. Possono influire positivamente o negativamente. Anche in questo caso si distingue tra frutti ottimi, buoni e cattivi. Nel migliore dei casi, la resa può aumentare del 15%. Nel caso buono solo del 10%. Nel caso peggiore, una coltura intercalare può causare addirittura una perdita di resa del 10%."/>
+
+        <text name="helpLine_crop_rotations_values_oilseedradish_title" text="rafano"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_very_good" text="Influenza molto positiva: mais, patate, girasoli, avena"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_good" text="Influenza positiva: frumento, orzo, miglio, barbabietola da zucchero, cipolle, barbabietola rossa, carote, pastinaca, spinaci"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_bad" text="Influenza negativa: colza, soia, piselli, taccole"/>
+    </texts>
+</l10n>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+    <Presets>
+        <Preset name="colorTransparent" value="0 0 0 0"/>
+        <Preset name="colorWhite" value="1 1 1 1"/>
+        <Preset name="colorDisabled" value="0.4 0.4 0.4 1"/>
+        <Preset name="colorGrayHeader" value="0.4 0.4 0.4 1"/>
+        <Preset name="colorListHeaderBackground" value="0 0 0 0.35" />
+    </Presets>
+
+    <!-- Loan InGameMenu -->
+
+    <Profile name="ELS_frame" extends="emptyPanel" with="anchorMiddleCenter">
+        <size value="1624px 776px"/>
+        <debugEnabled value="false"/>
+    </Profile>
+
+    <Profile name="ELS_headerPanel" extends="emptyPanel" with="anchorTopCenter">
+        <size value="1500px 64px"/>
+        <position value="0px 64px"/>
+    </Profile>
+
+    <Profile name="ELS_headerText" extends="fs25_textDefault">
+        <size value="600px 64px" />
+        <position value="0px 0px" />
+        <textSize value="31px"/>
+        <textBold value="false"/>
+        <textUpperCase value="true"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+    
+    <Profile name="ELS_loanInterestBoxBg" extends="fs25_shopMoneyBoxBg">
+        <size value="500px 64px" />
+    </Profile>
+
+    <Profile name="ELS_loanInterestBox" extends="fs25_shopMoneyBox">
+        <size value="450px 64x" />
+    </Profile>
+
+    <Profile name="ELS_loanInterestText" extends="fs25_textDefault">
+        <size value="450px 64px" />
+        <textSize value="31px"/>
+        <textBold value="false"/>
+        <textUpperCase value="true"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+        <textAlignment value="right"/>
+    </Profile>
+
+    <Profile name="ELS_headerBox" extends="emptyPanel" with="anchorTopCenter">
+        <size value="1500px 50px"/>
+        <alignmentX value="left"/>
+        <alignmentY value="middle"/>
+        <imageColor value="$preset_colorListHeaderBackground"/>
+        <flowDirection value="horizontal"/>
+        <wrapAround value="true"/>
+        <lateralFlowSize value="200px"/>
+        <fitToElements value="false"/>
+        <autoValidateLayout value="true"/>
+        <hasFrame value="false"/>
+    </Profile>
+
+    <Profile name="ELS_headerCell" extends="ingameMenuFrameHeaderText" with="anchorMiddleLeft">
+        <textSize value="20px"/>
+        <textBold value="false"/>
+        <textUpperCase value="false"/>
+        <textColor value="$preset_fs25_colorMainDark"/>
+        <textAlignment value="center"/>
+        <textVerticalAlignment value="middle"/>
+    </Profile>
+
+    <Profile name="ELS_ingameMenuListBox" extends="emptyPanel" with="anchorTopCenter">
+        <size value="1600px 756px"/>
+        <position value="0" />
+    </Profile>
+
+    <Profile name="ELS_list" extends="emptyPanel" with="anchorStretchingYLeft pivotTopLeft">
+        <position value="0px -40px" />
+    </Profile>
+
+    <Profile name="ELS_listItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="32px"/>
+        <imageColor value="$preset_fs25_colorGrey" />
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight" />
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50" />
+    </Profile>
+
+    <Profile name="ELS_ingameMenuSlider"  extends="fs25_listSliderBox" with="anchorTopRight">
+        <position value="28px -40px" />
+        <size value="6px 710px"/>
+    </Profile>
+
+    <Profile name="ELS_ingameMenuSliderBar" extends="fs25_listSliderBox">
+        <size value="6px 692px" />
+    </Profile>
+</GUIProfiles>

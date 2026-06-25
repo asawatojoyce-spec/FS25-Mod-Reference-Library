@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="ui_mapOverviewYield" text="Ertrags Karte"/>
+        <text name="ui_last_fruit" text="Letzte Frucht:"/>
+        <text name="ui_penultimate_fruit" text="Vorletzte Frucht:"/>
+        <text name="ui_potential_yield" text="Fruchtfolgen Ertrag:"/>
+        <text name="ui_had_catch_crop" text="Zwischenfrucht:"/>
+        <text name="ui_no_catch_crop" text="Keine"/>
+        <text name="fallow_state" text="Brachland"/>
+
+        <text name="ui_inGameMenuTitle" text="Fruchtfolgeplaner"/>
+        <text name="ui_fruitSelection" text="Frucht"/>
+        <text name="ui_withoutCatchCrop" text="Ohne Zwischenfrucht"/>
+
+        <text name="ui_button_addCropRotation" text="Fruchtfolge hinzufügen"/>
+        <text name="ui_button_removeCropRotation" text="Fruchtfolge entfernen"/>
+        <text name="ui_add_entry_title" text="Bitte gib einen Namen für deine Fruchtfolge ein."/>
+        <text name="ui_remove_crop_rotation_title" text="Fruchtfolge löschen"/>
+        <text name="ui_remove_crop_rotation" text="Möchtest du die Fruchtfolge '%s' wirklich löschen?"/>
+
+        <text name="helpLine_planner" text="Fruchtfolgeplaner"/>
+        <text name="helpLine_planner_title" text="Fruchtfolgeplaner"/>
+        <text name="helpLine_planner_description" text="Der Fruchtfolgeplaner ist im Ingame Menü erreichbar und bietet die Möglichkeit verschiedene Fruchtfolgen vorab zu planen. Hierfür können neue Fruchtfolgen mit einem eigenen Namen erstellt werden. Ist eine Fruchtfolge erstellt, können weitere Früchte zur Fruchtfolge hinzugefügt oder entfernt werden (Mindestens eine Frucht wird benötigt, welche auch nicht gelöscht werden kann). Hierfür muss man nur das +/- drücken. Die verfügbaren Früchte können über die Slider ausgewählt werden. Zudem besteht die Möglichkeit eine Zwischenfrucht auszuwählen, welche man vor der eigentlichen Fruchternte anpflanzt. Unter den Slidern sieht man dann direkt den zu erwartenen Ertrag. Der Ertrag berechnet sich aus den letzten beiden Vorfrüchten. Die Vorfrüchte für die Frucht an der ersten und zweiten Stelle werden durch die am Ende der Liste aufgefüllt."/>
+        <text name="helpLine_planner_example_title" text="Fruchtfolge mit weniger als 3 Früchten"/>
+        <text name="helpLine_planner_example_description" text="Zur Berechnung des Ertrages, werden die letzten beiden Vorfrüchte benötigt. Sind diese im Planer nicht vorhanden, so beginnt die Fruchtfolge von vorne. Hat eine Fruchtfolge beispielsweise nur eine Frucht. So wird für die beiden Vorfrüchte die gleiche Frucht eingetragen."/>
+        <text name="helpLine_planner_scrolling_title" text="Scrolling"/>
+        <text name="helpLine_planner_scrolling_description" text="Da der Fruchtfolgenplaner aus zwei in einander verschatelten Listen besteht, ist die Mausposition beim scrollen extrem wichtig. Wenn die Maus über dem Bereich für die Titel der Fruchtfolgen ist, so wird durch alle Fruchtfolgen gescrollt. Ist die Maus auf dem Bereich der Früchte, so wird durch die Früchte der jeweiligen Fruchtfolge gescrollt."/>
+
+        <text name="helpLine_crop_rotations_title" text="Fruchtfolgen"/>
+        <text name="helpLine_crop_rotations_description" text="Die Früchte, welche zuvor auf dem Feld angebaut wurden, haben Einfluss auf den Ertrag der aktuellen Frucht. Dies kann positive oder negative Auswirkungen haben. Folgende Punkte haben Einfluss:"/>
+
+        <text name="helpLine_crop_rotations_monoculture" text="Monokulturen haben negative Auswirkungen auf den Ertrag. Sollten die letzten beiden Früchte gleich der aktuellen sein, so erhält man eine 5% Einbuße auf den Ertrag."/>
+        <text name="helpLine_crop_rotations_breakPeriods" text="Bestimmte Früchte können nicht jedes Jahr angebaut werden, sondern brauchen eine bestimmte Anzahl an Pausen, bevor Sie erneut ohne negativen Einfluss auf dem selben Feld angebaut werden dürfen. Diese Pausen können von Pflanze zu Pflanze variieren. Sollte man diese Pausen nicht einhalten, so erhält man eine Einbuße von 10% pro nicht eingehaltener Pause."/>
+        <text name="helpLine_crop_rotations_foreCrops" text="Vorfrüchte können negativen, positiven oder neutralen Einfluss auf den aktuellen Ertrag nehmen. Jede Pflanze hat Vorfrüchte die gut, sehr gut oder schlecht als Vorfrucht sind. Sollte man dies Einhalten, so ist mit mehr Ertrag zu rechnen. Wenn man jedoch nicht drauf achtet, muss man mit Einbußen rechnen. Für jede gute Vorfrucht gibt es 10% oder 5% Ertragsbonus (Je nach dem ob diese als letzte oder vorletzte Vorfrucht angepflanzt wurde). Für jede sehr gute Vorfrucht gibt es 15% oder 10% Ertragsbonus. Für jede schlechte Vorfrucht gibt es 25% oder 20% Ertragseinbuße."/>
+        <text name="helpLine_crop_rotations_fallow" text="Lässt man ein Feld brach liegen (Mindestens 12 Monate), so erhält man einen 5% Bonus auf die nächste Ernte, da der Boden sich in dieser Zeit erholen kann."/>
+        <text name="helpLine_crop_rotations_catchCrop" text="Bestimmte Zwischenfrüchte haben guten, sehr guten oder schlechten Einfluss auf die nächste Ernte. Diese sind unterschiedlich je nachdem welche Zwischenfrucht angebaut wurde. Für gute Zwischenfrüchte gibt es einen Ertragsbonus von 10%. Für sehr gute Zwischenfrüchte 15%. Für schlechte Zwischenfrüchte gibt es 10% Ertragseinbuße."/>
+
+        <text name="helpLine_crop_rotations_values_title" text="Genaue Werte für jede Frucht"/>
+
+        <text name="helpLine_crop_rotations_values_grass_title" text="Grass"/>
+        <text name="helpLine_crop_rotations_values_grass_pause" text="Pausen: 0"/>
+        <text name="helpLine_crop_rotations_values_grass_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_grass_good" text="Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_grass_bad" text="Schlechte Vorfrüchte:"/>
+
+        <text name="helpLine_crop_rotations_values_wheat_title" text="Weizen"/>
+        <text name="helpLine_crop_rotations_values_wheat_pause" text="Pausen: 1"/>
+        <text name="helpLine_crop_rotations_values_wheat_very_good" text="Sehr Gute Vorfrüchte: Mais, Sojabohnen, Kartoffeln, Zuckerrüben, Rote Bete, Sonnenblumen"/>
+        <text name="helpLine_crop_rotations_values_wheat_good" text="Gute Vorfrüchte: Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_wheat_bad" text="Schlechte Vorfrüchte: Weizen, Gerste, Gras"/>
+
+        <text name="helpLine_crop_rotations_values_barley_title" text="Gerste"/>
+        <text name="helpLine_crop_rotations_values_barley_pause" text="Pausen: 1"/>
+        <text name="helpLine_crop_rotations_values_barley_very_good" text="Sehr Gute Vorfrüchte: Mais, Sojabohnen, Kartoffeln, Zuckerrüben, Rote Bete"/>
+        <text name="helpLine_crop_rotations_values_barley_good" text="Gute Vorfrüchte: Weizen, Hafer, Bohnen, Erbsen, Raps, Sonnenblumen"/>
+        <text name="helpLine_crop_rotations_values_barley_bad" text="Schlechte Vorfrüchte: Gerste, Gras"/>
+
+        <text name="helpLine_crop_rotations_values_oat_title" text="Hafer"/>
+        <text name="helpLine_crop_rotations_values_oat_pause" text="Pausen: 1"/>
+        <text name="helpLine_crop_rotations_values_oat_very_good" text="Sehr Gute Vorfrüchte: Weizen, Gerste"/>
+        <text name="helpLine_crop_rotations_values_oat_good" text="Gute Vorfrüchte: Mais, Sojabohnen, Erbsen, Kartoffeln, Raps, Zuckerrüben, Sonnenblumen"/>
+        <text name="helpLine_crop_rotations_values_oat_bad" text="Schlechte Vorfrüchte: Hafer"/>
+
+        <text name="helpLine_crop_rotations_values_sorghum_title" text="Hirse"/>
+        <text name="helpLine_crop_rotations_values_sorghum_pause" text="Pausen: 1"/>
+        <text name="helpLine_crop_rotations_values_sorghum_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_sorghum_good" text="Gute Vorfrüchte: Bohnen, Erbsen, Sojabohnen, Weizen, Gerste, Sonnenblumen"/>
+        <text name="helpLine_crop_rotations_values_sorghum_bad" text="Schlechte Vorfrüchte: Mais, Hirse"/>
+
+        <text name="helpLine_crop_rotations_values_soybean_title" text="Sojabohnen"/>
+        <text name="helpLine_crop_rotations_values_soybean_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_soybean_very_good" text="Sehr Gute Vorfrüchte: Weizen, Mais, Zuckerrüben"/>
+        <text name="helpLine_crop_rotations_values_soybean_good" text="Gute Vorfrüchte: Gerste, Hafer, Kartoffeln"/>
+        <text name="helpLine_crop_rotations_values_soybean_bad" text="Schlechte Vorfrüchte: Sojabohnen, Erbsen, Sonnenblumen, Bohnen, Raps"/>
+
+        <text name="helpLine_crop_rotations_values_greenbean_title" text="Bohnen"/>
+        <text name="helpLine_crop_rotations_values_greenbean_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_greenbean_very_good" text="Sehr Gute Vorfrüchte: Weizen, Raps, Sonnenblumen, Kartoffeln, Zuckerrüben"/>
+        <text name="helpLine_crop_rotations_values_greenbean_good" text="Gute Vorfrüchte: Gerste, Hafer, Mais"/>
+        <text name="helpLine_crop_rotations_values_greenbean_bad" text="Schlechte Vorfrüchte: Sojabohnen, Bohnen, Erbsen"/>
+
+        <text name="helpLine_crop_rotations_values_pea_title" text="Erbsen"/>
+        <text name="helpLine_crop_rotations_values_pea_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_pea_very_good" text="Sehr Gute Vorfrüchte: Weizen, Gerste, Mais, Kartoffeln"/>
+        <text name="helpLine_crop_rotations_values_pea_good" text="Gute Vorfrüchte: Raps, Sonnenblumen, Zuckerrüben"/>
+        <text name="helpLine_crop_rotations_values_pea_bad" text="Schlechte Vorfrüchte: Sojabohnen, Bohnen, Erbsen, Hafer"/>
+
+        <text name="helpLine_crop_rotations_values_maize_title" text="Mais"/>
+        <text name="helpLine_crop_rotations_values_maize_pause" text="Pausen: 1"/>
+        <text name="helpLine_crop_rotations_values_maize_very_good" text="Sehr Gute Vorfrüchte: Gras"/>
+        <text name="helpLine_crop_rotations_values_maize_good" text="Gute Vorfrüchte: Weizen, Gerste, Kartoffeln"/>
+        <text name="helpLine_crop_rotations_values_maize_bad" text="Schlechte Vorfrüchte: Hirse"/>
+
+        <text name="helpLine_crop_rotations_values_canola_title" text="Raps"/>
+        <text name="helpLine_crop_rotations_values_canola_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_canola_very_good" text="Sehr Gute Vorfrüchte: Gerste, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_canola_good" text="Gute Vorfrüchte: Weizen, Hafer, Gras"/>
+        <text name="helpLine_crop_rotations_values_canola_bad" text="Schlechte Vorfrüchte: Mais, Kartoffeln, Raps, Zuckerrüben, Sojabohnen, Sonnenblumen"/>
+
+        <text name="helpLine_crop_rotations_values_sunflower_title" text="Sonnenblumen"/>
+        <text name="helpLine_crop_rotations_values_sunflower_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_sunflower_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_sunflower_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Gras"/>
+        <text name="helpLine_crop_rotations_values_sunflower_bad" text="Schlechte Vorfrüchte: Sonnenblumen, Raps, Sojabohnen, Erbsen, Bohnen"/>
+
+        <text name="helpLine_crop_rotations_values_potato_title" text="Kartoffeln"/>
+        <text name="helpLine_crop_rotations_values_potato_pause" text="Pausen: 3"/>
+        <text name="helpLine_crop_rotations_values_potato_very_good" text="Sehr Gute Vorfrüchte: Sojabohnen, Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_potato_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Gras"/>
+        <text name="helpLine_crop_rotations_values_potato_bad" text="Schlechte Vorfrüchte: Kartoffeln, Zuckerrüben, Raps, Sonnenblumen"/>
+
+        <text name="helpLine_crop_rotations_values_sugarbeet_title" text="Zuckerrüben"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_pause" text="Pausen: 3"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Erbsen, Gras"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_bad" text="Schlechte Vorfrüchte: Mais, Sojabohnen, Raps, Zuckerrüben"/>
+
+        <text name="helpLine_crop_rotations_values_onion_title" text="Zwiebeln"/>
+        <text name="helpLine_crop_rotations_values_onion_pause" text="Pausen: 3"/>
+        <text name="helpLine_crop_rotations_values_onion_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_onion_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Sojabohnen, Bohnen, Erbsen, Kartoffeln"/>
+        <text name="helpLine_crop_rotations_values_onion_bad" text="Schlechte Vorfrüchte: Zwiebeln, Karotten, Pastinaken, Zuckerrüben, Rote Bete, Spinat, Sonnenblumen, Raps"/>
+
+        <text name="helpLine_crop_rotations_values_beetroot_title" text="Rote Bete"/>
+        <text name="helpLine_crop_rotations_values_beetroot_pause" text="Pausen: 3"/>
+        <text name="helpLine_crop_rotations_values_beetroot_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_beetroot_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Sojabohnen, Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_beetroot_bad" text="Schlechte Vorfrüchte: Kartoffeln, Zuckerrüben, Spinat"/>
+
+        <text name="helpLine_crop_rotations_values_carrot_title" text="Karotten"/>
+        <text name="helpLine_crop_rotations_values_carrot_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_carrot_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_carrot_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Sojabohnen, Bohnen, Erbsen, Kartoffeln"/>
+        <text name="helpLine_crop_rotations_values_carrot_bad" text="Schlechte Vorfrüchte: Karotten, Pastinaken"/>
+
+        <text name="helpLine_crop_rotations_values_parsnip_title" text="Pastinaken"/>
+        <text name="helpLine_crop_rotations_values_parsnip_pause" text="Pausen: 2"/>
+        <text name="helpLine_crop_rotations_values_parsnip_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_parsnip_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Sojabohnen, Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_parsnip_bad" text="Schlechte Vorfrüchte: Karotten, Pastinaken"/>
+
+        <text name="helpLine_crop_rotations_values_spinach_title" text="Spinat"/>
+        <text name="helpLine_crop_rotations_values_spinach_pause" text="Pausen: 0"/>
+        <text name="helpLine_crop_rotations_values_spinach_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_spinach_good" text="Gute Vorfrüchte: Weizen, Gerste, Hafer, Sojabohnen, Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_spinach_bad" text="Schlechte Vorfrüchte: Spinat, Kartoffeln, Zuckerrüben"/>
+
+        <text name="helpLine_crop_rotations_values_rice_title" text="Reis"/>
+        <text name="helpLine_crop_rotations_values_rice_pause" text="Pausen: 0"/>
+        <text name="helpLine_crop_rotations_values_rice_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_rice_good" text="Gute Vorfrüchte: Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_rice_bad" text="Schlechte Vorfrüchte: Mais, Hirse"/>
+
+        <text name="helpLine_crop_rotations_values_ricelonggrain_title" text="Langkornreis"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_pause" text="Pausen: 0"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_very_good" text="Sehr Gute Vorfrüchte:"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_good" text="Gute Vorfrüchte: Bohnen, Erbsen"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_bad" text="Schlechte Vorfrüchte: Mais, Hirse"/>
+
+        <text name="helpLine_crop_rotations_values_catchCrops_title" text="Zwischenfrüchte"/>
+        <text name="helpLine_crop_rotations_values_catchCrops_description" text="Zwischenfrüchte haben nur Einfluss auf die Frucht, welche direkt im Anschluss gesät wird. Sie können diese gut oder schlecht beeinflussen. Auch hier gibt es eine Unterscheidung zwischen sehr guten, guten und schlechten Früchten. Im besten Fall kann der Ertrag um 15% gesteigert werden. Im guten nur um 10%. Im schlechtesten Fall kann eine Zwischenfrucht sogar 10% Ertragsverlust bewirken."/>
+
+        <text name="helpLine_crop_rotations_values_oilseedradish_title" text="Ölrettich"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_very_good" text="Sehr Guten Einfluss: Mais, Kartoffeln, Sonnenblumen, Hafer"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_good" text="Guten Einfluss: Weizen, Gerste, Hirse, Zuckerrüben, Zwiebeln, Rote Bete, Karotten, Pastinaken, Spinat"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_bad" text="Schlechten Einfluss: Raps, Sojabohnen, Erbsen, Bohnen"/>
+    </texts>
+</l10n>

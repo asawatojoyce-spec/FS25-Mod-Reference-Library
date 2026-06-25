@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" id="dialogBg" />
+
+    <GuiElement profile="ELS_specialRedemptionPaymentDialog" id="dialogElement">
+    
+        <GuiElement profile="fs25_dialogContentContainer">
+            <BoxLayout profile="ELS_specialRedemptionPaymentBoxLayout" position="0px -20px">
+                <Text profile="fs25_dialogTitle" text="$l10n_els_ui_specialRedemptionPaymentText" id="dialogTextElement" />
+                
+                <TextInput profile="ELS_specialRedemptionPaymentDialogInput" id="amountInput" onEnterPressed="onEnterPressed" onTextChanged="onTextChanged" enterWhenClickOutside="false">
+                    <ThreePartBitmap profile="fs25_textInputBg" absoluteSizeOffset="0px 0px"/>
+                    <Bitmap profile="fs25_textInputIconBox" position="0px 0px">
+                        <Bitmap profile="fs25_textInputIcon" />
+                    </Bitmap>
+                </TextInput>
+                <Text profile="ELS_specialRedemptionPaymentRestAmount" text="$l10n_els_ui_specialRedemptionPaymentRestAmount" id="restAmountField" />
+            </BoxLayout>
+        </GuiElement>
+            
+        <ThreePartBitmap profile="fs25_lineSeparatorBottomSoft" />
+        
+        <BoxLayout profile="fs25_dialogButtonBox" id="buttonsPC" >
+            <Button profile="buttonOK" text="$l10n_els_ui_acceptSpecialRedemptionPayment" onClick="onClickOk" id="yesButton" />
+            <Bitmap profile="fs25_dialogButtonBoxSeparator" />
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickCancel" id="backButton" />
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="ELS_specialRedemptionPaymentDialog" extends="fs25_dialogBg">
+            <size value="600px 300px"/>
+        </Profile>
+
+        <Profile name="ELS_specialRedemptionPaymentBoxLayout" extends="emptyPanel" with="anchorMiddleCenter">
+            <size value="350px 200px" />
+            <flowDirection value="vertical" />
+            <useFullVisibility value="false" />
+            <alignmentX value="center" />
+            <alignmentY value="middle" />
+            <elementSpacing value="20px" />
+        </Profile>
+
+        <Profile name="ELS_specialRedemptionPaymentRestAmount" extends="fs25_textDefault">
+            <size value="350px 20px"/>
+            <textSize value="16px"/>
+            <textWrapWidth value="280px"/>
+            <textAlignment value="center"/>
+        </Profile>
+
+        <Profile name="ELS_specialRedemptionPaymentDialogInput" extends="fs25_textInput">
+            <size value="340px 31px"/>
+            <maxCharacters value="9"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

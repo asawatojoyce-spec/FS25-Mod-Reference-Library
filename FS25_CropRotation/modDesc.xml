@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="106">
+    <author>Chissel</author>
+    <version>1.0.1.0</version>
+    <title>
+        <en>Crop Rotation</en>
+        <fr>Rotation Des Cultures</fr>
+        <de>Fruchtfolge</de>
+    </title>
+    <description>
+<en>
+<![CDATA[
+This mod brings a realistic crop rotation system to Farming Simulator 25 and adds significantly more depth to farming. The yield of your fields now depends on which crops you have previously grown.
+
+Good crop rotations improve soil quality in the long term and ensure higher yields, while one-sided cultivation or unfavorable sequences deplete the soil and lead to yield losses. This makes every cultivation decision more important and strategic.
+
+In addition, the mod takes into account the use of cover crops:
+
+Suitable cover crops improve soil structure and have a positive effect on the next yield.
+
+However, incorrectly chosen cover crops can have negative effects.
+
+1.0.0.1:
+- Fixed bug on maps with removed standard fruits.
+
+1.0.1.0:
+- Add new crops
+- Fixed an error when sowing with Precision Farming
+
+]]>
+</en>
+<fr>
+<![CDATA[
+Ce mod introduit un système réaliste de rotation des cultures dans Farming Simulator 25 et apporte une profondeur significative aux travaux agricoles. Le rendement de vos champs dépend désormais des cultures que vous avez précédemment cultivées.
+
+Une bonne rotation des cultures améliore la qualité du sol sur le long terme et garantit des rendements plus élevés, tandis que la monoculture ou des successions inadaptées appauvrissent le sol et entraînent des pertes de rendement. Chaque décision de culture devient ainsi plus importante et stratégique.
+
+De plus, le mod prend en compte l'utilisation de cultures intermédiaires :
+
+Des cultures intermédiaires adaptées améliorent la structure du sol et ont un impact positif sur la récolte suivante.
+
+En revanche, des cultures intermédiaires mal choisies peuvent avoir des effets négatifs.
+
+1.0.0.1 :
+- Correction d'une erreur sur les cartes avec des fruits standard développés.
+
+1.0.1.0 :
+- Ajout de nouvelles cultures
+- Correction d'une erreur lors des semis avec l'agriculture de précision.
+
+]]>
+</fr>
+<de>
+<![CDATA[
+Diese Mod bringt ein realistisches Fruchtfolgen-System in den Landwirtschafts-Simulator 25 und verleiht dem Ackerbau deutlich mehr Tiefe. Der Ertrag deiner Felder hängt nun davon ab, welche Früchte du zuvor angebaut hast.
+
+Gute Fruchtfolgen steigern langfristig die Bodenqualität und sorgen für höhere Erträge, während einseitiger Anbau oder ungünstige Abfolgen den Boden auslaugen und zu Ertragseinbußen führen. So wird jede Anbauentscheidung wichtiger und strategischer.
+
+Zusätzlich berücksichtigt die Mod den Einsatz von Zwischenfrüchten:
+
+Passende Zwischenfrüchte verbessern die Bodenstruktur und wirken sich positiv auf den nächsten Ertrag aus.
+
+Falsch gewählte Zwischenfrüchte können hingegen negative Effekte haben.
+
+1.0.0.1:
+- Fehler auf Karten mit ausgebauten Standardfrüchten gefixt.
+
+1.0.1.0:
+- Neue Früchte hinzugefügt
+- Fehler beim säen mit Precision Farming behoben
+
+]]>
+</de>
+</description>
+    <iconFilename>icon_cropRotation.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="translations/translation"/>
+    <helpLines>
+        <category title="Crop Rotation">
+            <page title="$l10n_helpLine_planner" iconSliceId="helplineCropRotation.menuIcon">
+                <paragraph>
+                    <title text="$l10n_helpLine_planner_title" />
+                    <text text="$l10n_helpLine_planner_description" />
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_helpLine_planner_example_title" />
+                    <text text="$l10n_helpLine_planner_example_description" />
+                </paragraph>
+                <paragraph>
+                    <image filename="images/planner_scrolling.png" uvs="0px 0px 256px 265px" aspectRatio="1" displaySize="400px 400px" size="256 256"/>
+                    <title text="$l10n_helpLine_planner_scrolling_title" />
+                    <text text="$l10n_helpLine_planner_scrolling_description" />
+                </paragraph>
+            </page>
+            <page title="$l10n_helpLine_crop_rotations_title" iconSliceId="icon_crops">
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_title" />
+                    <text text="$l10n_helpLine_crop_rotations_description" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_monoculture" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_breakPeriods" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_foreCrops" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_fallow" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_catchCrop" />
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_title" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_wheat_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_wheat_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_wheat_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_wheat_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_wheat_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_barley_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_barley_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_barley_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_barley_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_barley_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_oat_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_oat_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_oat_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_oat_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_oat_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_sorghum_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_sorghum_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sorghum_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sorghum_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sorghum_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_soybean_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_soybean_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_soybean_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_soybean_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_soybean_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_greenbean_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_greenbean_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_greenbean_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_greenbean_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_greenbean_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_pea_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_pea_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_pea_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_pea_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_pea_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_maize_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_maize_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_maize_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_maize_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_maize_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_canola_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_canola_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_canola_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_canola_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_canola_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_sunflower_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_sunflower_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sunflower_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sunflower_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sunflower_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_potato_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_potato_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_potato_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_potato_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_potato_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_sugarbeet_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_sugarbeet_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sugarbeet_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sugarbeet_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_sugarbeet_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_onion_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_onion_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_onion_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_onion_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_onion_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_beetroot_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_beetroot_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_beetroot_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_beetroot_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_beetroot_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_carrot_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_carrot_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_carrot_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_carrot_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_carrot_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_parsnip_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_parsnip_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_parsnip_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_parsnip_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_parsnip_bad" />
+                </paragraph>
+
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_spinach_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_spinach_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_spinach_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_spinach_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_spinach_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_rice_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_rice_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_rice_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_rice_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_rice_bad" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_ricelonggrain_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_ricelonggrain_pause" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_ricelonggrain_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_ricelonggrain_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_ricelonggrain_bad" />
+                </paragraph>
+
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_catchCrops_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_catchCrops_description" />
+                </paragraph>
+
+                <paragraph>
+                    <title text="$l10n_helpLine_crop_rotations_values_oilseedradish_title" />
+                    <text text="$l10n_helpLine_crop_rotations_values_oilseedradish_very_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_oilseedradish_good" />
+                </paragraph>
+                <paragraph>
+                    <text text="$l10n_helpLine_crop_rotations_values_oilseedradish_bad" />
+                </paragraph>
+            </page>
+        </category>
+    </helpLines>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/CropRotation.lua"/>
+        <sourceFile filename="src/UILoader.lua"/>
+        <sourceFile filename="src/MessageTypeExtension.lua"/>
+        <sourceFile filename="src/CropRotationPlanner.lua"/>
+        <sourceFile filename="src/FieldManagerExtension.lua"/>
+    </extraSourceFiles>
+</modDesc>

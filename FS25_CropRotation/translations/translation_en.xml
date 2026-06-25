@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="ui_mapOverviewYield" text="Yield map"/>	
+        <text name="ui_last_fruit" text="Last fruit:"/>
+        <text name="ui_penultimate_fruit" text="Penultimate fruit:"/>
+        <text name="ui_potential_yield" text="Crop rotation yield:"/>
+        <text name="ui_had_catch_crop" text="Catch crop:"/>
+        <text name="ui_no_catch_crop" text="None"/>
+        <text name="fallow_state" text="Fallow Land"/>
+
+        <text name="ui_inGameMenuTitle" text="Crop Rotation Planner"/>
+        <text name="ui_fruitSelection" text="Fruit"/>
+        <text name="ui_withoutCatchCrop" text="Without catch crop"/>
+
+        <text name="ui_button_addCropRotation" text="Add Crop Rotation"/>
+        <text name="ui_button_removeCropRotation" text="Remove Crop Rotation"/>
+        <text name="ui_add_entry_title" text="Please enter a name for your crop rotation."/>
+        <text name="ui_remove_crop_rotation_title" text="Delete crop rotation"/>
+        <text name="ui_remove_crop_rotation" text="Are you sure you want to delete the crop rotation '%s'?"/>
+
+        <text name="helpLine_planner" text="Crop rotation planner"/>
+        <text name="helpLine_planner_title" text="Crop rotation planner"/>
+        <text name="helpLine_planner_description" text="The crop rotation planner can be accessed in the in-game menu and allows you to plan different crop rotations in advance. To do this, you can create new crop rotations with your own name. Once a crop rotation has been created, you can add or remove additional crops (at least one crop is required, which cannot be deleted). To do this, simply press the +/- button. The available crops can be selected using the sliders. It is also possible to select a catch crop, which is planted before the actual crop harvest. The expected yield is then displayed directly below the sliders. The yield is calculated from the last two previous crops. The previous crops for the fruit in the first and second positions are filled in at the end of the list."/>
+        <text name="helpLine_planner_example_title" text="Crop rotation with fewer than 3 fruits"/>
+        <text name="helpLine_planner_example_description" text="The last two previous crops are required to calculate the yield. If these are not available in the planner, the crop rotation starts from the beginning. If, for example, a crop rotation has only one crop, the same crop is entered for both previous crops."/>
+        <text name="helpLine_planner_scrolling_title" text="Scrolling"/>
+        <text name="helpLine_planner_scrolling_description" text="Since the crop rotation planner consists of two nested lists, the mouse position is extremely important when scrolling. When the mouse is over the area for the crop rotation titles, all crop rotations are scrolled through. When the mouse is over the area for the crops, the crops of the respective crop rotation are scrolled through."/>
+
+        <text name="helpLine_crop_rotations_title" text="Crop rotations"/>
+        <text name="helpLine_crop_rotations_description" text="The crops that were previously grown on the field have an impact on the yield of the current crop. This can have positive or negative effects. The following factors have an influence:"/>
+
+        <text name="helpLine_crop_rotations_monoculture" text="Monocultures have a negative impact on yield. If the last two crops are the same as the current one, there will be a 5% loss in yield."/>
+        <text name="helpLine_crop_rotations_breakPeriods" text="Certain crops cannot be grown every year, but need a certain number of breaks before they can be grown again on the same field without negative effects. These breaks can vary from plant to plant. If you do not observe these breaks, you will receive a 10% loss for each break not observed."/>
+        <text name="helpLine_crop_rotations_foreCrops" text="Predecessor crops can have a negative, positive, or neutral effect on the current yield. Each plant has predecessor crops that are good, very good, or bad as predecessor crops. If you adhere to this, you can expect a higher yield. However, if you do not pay attention to this, you must expect losses. For each good preceding crop, there is a 10% or 5% yield bonus (depending on whether it was planted as the last or second-to-last preceding crop). For each very good preceding crop, there is a 15% or 10% yield bonus. For each poor preceding crop, there is a 25% or 20% yield loss."/>
+        <text name="helpLine_crop_rotations_fallow" text="If you leave a field fallow (for at least 12 months), you will receive a 5% bonus on the next harvest, as the soil can recover during this time."/>
+        <text name="helpLine_crop_rotations_catchCrop" text="Certain catch crops have a good, very good, or bad influence on the next harvest. These vary depending on which catch crop was grown. Good cover crops give a 10% yield bonus. Very good cover crops give a 15% bonus. Bad cover crops result in a 10% yield loss."/>
+
+        <text name="helpLine_crop_rotations_values_title" text="Exact values for each crop"/>
+
+        <text name="helpLine_crop_rotations_values_grass_title" text="Grass"/>
+        <text name="helpLine_crop_rotations_values_grass_pause" text="Pauses: 0"/>
+        <text name="helpLine_crop_rotations_values_grass_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_grass_good" text="Good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_grass_bad" text="Bad preceding crops:"/>
+
+        <text name="helpLine_crop_rotations_values_wheat_title" text="Wheat"/>
+        <text name="helpLine_crop_rotations_values_wheat_pause" text="Pauses: 1"/>
+        <text name="helpLine_crop_rotations_values_wheat_very_good" text="Very good preceding crops: maize, soybeans, potatoes, sugar beets, beetroot, sunflowers"/>
+        <text name="helpLine_crop_rotations_values_wheat_good" text="Good preceding crops: beans, peas"/>
+        <text name="helpLine_crop_rotations_values_wheat_bad" text="Bad preceding crops: wheat, barley, grass"/>
+
+        <text name="helpLine_crop_rotations_values_barley_title" text="Barley"/>
+        <text name="helpLine_crop_rotations_values_barley_pause" text="Pauses: 1"/>
+        <text name="helpLine_crop_rotations_values_barley_very_good" text="Very good preceding crops: maize, soybeans, potatoes, sugar beets, beetroot"/>
+        <text name="helpLine_crop_rotations_values_barley_good" text="Good preceding crops: wheat, oats, beans, peas, canola, sunflowers"/>
+        <text name="helpLine_crop_rotations_values_barley_bad" text="Bad preceding crops: barley, grass"/>
+
+        <text name="helpLine_crop_rotations_values_oat_title" text="Oats"/>
+        <text name="helpLine_crop_rotations_values_oat_pause" text="Pauses: 1"/>
+        <text name="helpLine_crop_rotations_values_oat_very_good" text="Very good preceding crops: wheat, barley"/>
+        <text name="helpLine_crop_rotations_values_oat_good" text="Good preceding crops: maize, soybeans, peas, potatoes, canola, sugar beets, sunflowers"/>
+        <text name="helpLine_crop_rotations_values_oat_bad" text="Bad preceding crops: oats"/>
+
+        <text name="helpLine_crop_rotations_values_sorghum_title" text="Sorghum"/>
+        <text name="helpLine_crop_rotations_values_sorghum_pause" text="Pauses: 1"/>
+        <text name="helpLine_crop_rotations_values_sorghum_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_sorghum_good" text="Good preceding crops: beans, peas, soybeans, wheat, barley, sunflowers"/>
+        <text name="helpLine_crop_rotations_values_sorghum_bad" text="Bad preceding crops: maize, sorghum"/>
+
+        <text name="helpLine_crop_rotations_values_soybean_title" text="Soybeans"/>
+        <text name="helpLine_crop_rotations_values_soybean_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_soybean_very_good" text="Very good preceding crops: wheat, maize, sugar beets"/>
+        <text name="helpLine_crop_rotations_values_soybean_good" text="Good preceding crops: Barley, oats, potatoes"/>
+        <text name="helpLine_crop_rotations_values_soybean_bad" text="Bad preceding crops: Soybeans, peas, sunflowers, beans, canola"/>
+
+        <text name="helpLine_crop_rotations_values_greenbean_title" text="Beans"/>
+        <text name="helpLine_crop_rotations_values_greenbean_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_greenbean_very_good" text="Very good preceding crops: wheat, canola, sunflowers, potatoes, sugar beets"/>
+        <text name="helpLine_crop_rotations_values_greenbean_good" text="Good preceding crops: barley, oats, maize"/>
+        <text name="helpLine_crop_rotations_values_greenbean_bad" text="Bad preceding crops: soybeans, beans, peas"/>
+
+        <text name="helpLine_crop_rotations_values_pea_title" text="Peas"/>
+        <text name="helpLine_crop_rotations_values_pea_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_pea_very_good" text="Very good preceding crops: wheat, barley, maize, potatoes"/>
+        <text name="helpLine_crop_rotations_values_pea_good" text="Good preceding crops: canola, sunflowers, sugar beets"/>
+        <text name="helpLine_crop_rotations_values_pea_bad" text="Bad preceding crops: soybeans, beans, peas, oats"/>
+
+        <text name="helpLine_crop_rotations_values_maize_title" text="Maize"/>
+        <text name="helpLine_crop_rotations_values_maize_pause" text="Pauses: 1"/>
+        <text name="helpLine_crop_rotations_values_maize_very_good" text="Very good preceding crops: grass"/>
+        <text name="helpLine_crop_rotations_values_maize_good" text="Good preceding crops: wheat, barley, potatoes"/>
+        <text name="helpLine_crop_rotations_values_maize_bad" text="Bad preceding crops: sorghum"/>
+
+        <text name="helpLine_crop_rotations_values_canola_title" text="Canola"/>
+        <text name="helpLine_crop_rotations_values_canola_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_canola_very_good" text="Very good preceding crops: barley, peas"/>
+        <text name="helpLine_crop_rotations_values_canola_good" text="Good preceding crops: wheat, oats, grass"/>
+        <text name="helpLine_crop_rotations_values_canola_bad" text="Bad preceding crops: maize, potatoes, canola, sugar beets, soybeans, sunflowers"/>
+
+        <text name="helpLine_crop_rotations_values_sunflower_title" text="Sunflowers"/>
+        <text name="helpLine_crop_rotations_values_sunflower_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_sunflower_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_sunflower_good" text="Good preceding crops: wheat, barley, oats, grass"/>
+        <text name="helpLine_crop_rotations_values_sunflower_bad" text="Bad preceding crops: sunflowers, canola, soybeans, peas, beans"/>
+
+        <text name="helpLine_crop_rotations_values_potato_title" text="Potatoes"/>
+        <text name="helpLine_crop_rotations_values_potato_pause" text="Pauses: 3"/>
+        <text name="helpLine_crop_rotations_values_potato_very_good" text="Very good preceding crops: soybeans, beans, peas"/>
+        <text name="helpLine_crop_rotations_values_potato_good" text="Good preceding crops: wheat, barley, oats, grass"/>
+        <text name="helpLine_crop_rotations_values_potato_bad" text="Bad preceding crops: potatoes, sugar beets, canola, sunflowers"/>
+
+        <text name="helpLine_crop_rotations_values_sugarbeet_title" text="Sugar beet"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_pause" text="Pauses: 3"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_good" text="Good preceding crops: wheat, barley, oats, peas, grass"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_bad" text="Bad preceding crops: maize, soybeans, canola, sugar beets"/>
+
+        <text name="helpLine_crop_rotations_values_onion_title" text="Onions"/>
+        <text name="helpLine_crop_rotations_values_onion_pause" text="Pauses: 3"/>
+        <text name="helpLine_crop_rotations_values_onion_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_onion_good" text="Good preceding crops: wheat, barley, oats, soybeans, beans, peas, potatoes"/>
+        <text name="helpLine_crop_rotations_values_onion_bad" text="Bad preceding crops: onions, carrots, parsnips, sugar beets, beetroot, spinach, sunflowers, canola"/>
+
+        <text name="helpLine_crop_rotations_values_beetroot_title" text="Beetroot"/>
+        <text name="helpLine_crop_rotations_values_beetroot_pause" text="Pauses: 3"/>
+        <text name="helpLine_crop_rotations_values_beetroot_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_beetroot_good" text="Good preceding crops: wheat, barley, oats, soybeans, beans, peas"/>
+        <text name="helpLine_crop_rotations_values_beetroot_bad" text="Bad preceding crops: potatoes, sugar beets, spinach"/>
+
+        <text name="helpLine_crop_rotations_values_carrot_title" text="Carrots"/>
+        <text name="helpLine_crop_rotations_values_carrot_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_carrot_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_carrot_good" text="Good preceding crops: wheat, barley, oats, soybeans, beans, peas, potatoes"/>
+        <text name="helpLine_crop_rotations_values_carrot_bad" text="Bad preceding crops: carrots, parsnips"/>
+
+        <text name="helpLine_crop_rotations_values_parsnip_title" text="Parsnips"/>
+        <text name="helpLine_crop_rotations_values_parsnip_pause" text="Pauses: 2"/>
+        <text name="helpLine_crop_rotations_values_parsnip_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_parsnip_good" text="Good preceding crops: wheat, barley, oats, soybeans, beans, peas"/>
+        <text name="helpLine_crop_rotations_values_parsnip_bad" text="Bad preceding crops: carrots, parsnips"/>
+
+        <text name="helpLine_crop_rotations_values_spinach_title" text="Spinach"/>
+        <text name="helpLine_crop_rotations_values_spinach_pause" text="Pauses: 0"/>
+        <text name="helpLine_crop_rotations_values_spinach_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_spinach_good" text="Good preceding crops: wheat, barley, oats, soybeans, beans, peas"/>
+        <text name="helpLine_crop_rotations_values_spinach_bad" text="Bad preceding crops: Spinach, potatoes, sugar beets"/>
+
+        <text name="helpLine_crop_rotations_values_rice_title" text="Rice"/>
+        <text name="helpLine_crop_rotations_values_rice_pause" text="Pauses: 0"/>
+        <text name="helpLine_crop_rotations_values_rice_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_rice_good" text="Good preceding crops: beans, peas"/>
+        <text name="helpLine_crop_rotations_values_rice_bad" text="Bad preceding crops: maize, sorghum"/>
+
+        <text name="helpLine_crop_rotations_values_ricelonggrain_title" text="Long grain rice"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_pause" text="Pauses: 0"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_very_good" text="Very good preceding crops:"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_good" text="Good preceding crops: beans, peas"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_bad" text="Bad preceding crops: maize, sorghum"/>
+
+        <text name="helpLine_crop_rotations_values_catchCrops_title" text="Catch crops"/>
+        <text name="helpLine_crop_rotations_values_catchCrops_description" text="Catch crops only affect the crop that is sown immediately afterwards. They can have a positive or negative effect. Here, too, there is a distinction between very good, good, and bad crops. In the best case, the yield can be increased by 15%. In the good case, only by 10%. In the worst case, a catch crop can even cause a 10% loss in yield."/>
+
+        <text name="helpLine_crop_rotations_values_oilseedradish_title" text="Oilseed radish"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_very_good" text="Very good influence: maize, potatoes, sunflowers, oats"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_good" text="Good influence: wheat, barley, sorghum, sugar beets, onions, beetroot, carrots, parsnips, spinach"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_bad" text="Bad influence: canola, soybeans, peas, beans"/>
+    </texts>
+</l10n>

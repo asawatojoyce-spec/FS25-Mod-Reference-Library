@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="ui_mapOverviewYield" text="Carte de rendement"/>
+        <text name="ui_last_fruit" text="Précédent cultural (N-1) :"/>
+        <text name="ui_penultimate_fruit" text="Anté-précédent (N-2) :"/>
+        <text name="ui_potential_yield" text="Potentiel de rendement :"/>
+        <text name="ui_had_catch_crop" text="Couvert végétal :"/>
+        <text name="ui_no_catch_crop" text="Aucun"/>
+        <text name="fallow_state" text="Terre en jachère"/>
+
+        <text name="ui_inGameMenuTitle" text="Planificateur de rotations"/>
+        <text name="ui_fruitSelection" text="Culture"/>
+        <text name="ui_withoutCatchCrop" text="Sans couvert végétal"/>
+
+        <text name="ui_button_addCropRotation" text="Ajouter une rotation"/>
+        <text name="ui_button_removeCropRotation" text="Supprimer la rotation"/>
+        <text name="ui_add_entry_title" text="Veuillez nommer votre rotation."/>
+        <text name="ui_remove_crop_rotation_title" text="Suppression de rotation"/>
+        <text name="ui_remove_crop_rotation" text="Êtes-vous sûr de vouloir supprimer la rotation '%s' ?"/>
+
+        <text name="helpLine_planner" text="Planificateur de rotations"/>
+        <text name="helpLine_planner_title" text="Planificateur de rotations"/>
+        <text name="helpLine_planner_description" text="Le planificateur, accessible via le menu, vous permet de concevoir vos successions de cultures à l'avance. Vous pouvez créer et nommer vos propres cycles de rotation. Une fois la rotation créée, ajoutez ou retirez des cultures (une culture minimum est requise). Utilisez les boutons +/- pour ajuster la séquence et les curseurs pour sélectionner l'espèce. Vous pouvez également intégrer un couvert végétal avant la récolte principale. Le rendement prévisionnel s'affiche sous les curseurs, calculé sur la base des deux précédents culturaux (N-1 et N-2). Ces précédents sont automatiquement remplis en fin de liste pour boucler le cycle."/>
+        <text name="helpLine_planner_example_title" text="Rotation courte (moins de 3 cultures)"/>
+        <text name="helpLine_planner_example_description" text="Le calcul du rendement repose sur l'historique des deux dernières cultures. Si elles sont absentes du planificateur, la rotation se répète automatiquement. Par exemple, pour une monoculture, la même espèce sera considérée comme précédent N-1 et N-2."/>
+        <text name="helpLine_planner_scrolling_title" text="Navigation"/>
+        <text name="helpLine_planner_scrolling_description" text="Le planificateur étant composé de listes imbriquées, le positionnement de la souris est important. Placez le curseur sur les titres pour faire défiler les différentes rotations, ou sur la zone des cultures pour faire défiler les étapes d'une rotation spécifique."/>
+
+        <text name="helpLine_crop_rotations_title" text="Rotations culturales"/>
+        <text name="helpLine_crop_rotations_description" text="L'historique parcellaire influence directement le potentiel de rendement de la culture en place. Ces effets peuvent être bénéfiques (effet précédent) ou nuisibles (fatigue du sol, maladies). Voici les facteurs pris en compte :"/>
+
+        <text name="helpLine_crop_rotations_monoculture" text="La monoculture impacte négativement le rendement. Si les deux précédents sont identiques à la culture en place, une pénalité de 5 % est appliquée."/>
+        <text name="helpLine_crop_rotations_breakPeriods" text="Certaines espèces nécessitent un temps de retour (fréquence de rotation) spécifique avant de pouvoir être réimplantées sur la même parcelle. Le non-respect de ce délai entraîne une perte de 10 % par année manquante."/>
+        <text name="helpLine_crop_rotations_foreCrops" text="La tête de rotation ou le précédent cultural peut avoir un effet positif, neutre ou négatif. Chaque espèce possède des précédents favorables ou défavorables. Respecter ces successions garantit un meilleur potentiel. Un bon précédent offre un bonus de 5 % ou 10 % (selon sa position N-1 ou N-2). Un très bon précédent octroie 10 % ou 15 %. À l'inverse, un mauvais précédent engendre des pertes allant de 20 % à 25 %."/>
+        <text name="helpLine_crop_rotations_fallow" text="Mettre une parcelle en jachère (repos du sol pendant au moins 12 mois) octroie un bonus de 5 % sur la récolte suivante, grâce à la régénération du sol."/>
+        <text name="helpLine_crop_rotations_catchCrop" text="L'implantation d'un couvert végétal influence la culture suivante. Un couvert adapté apporte un bonus de 10 %, voire 15 % pour les très bonnes associations. Attention, un mauvais choix peut provoquer un effet négatif et une perte de 10 %."/>
+
+        <text name="helpLine_crop_rotations_values_title" text="Valeurs agronomiques par culture"/>
+
+        <text name="helpLine_crop_rotations_values_grass_title" text="Herbe"/>
+        <text name="helpLine_crop_rotations_values_grass_pause" text="Temps de retour : 0 an"/>
+        <text name="helpLine_crop_rotations_values_grass_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_grass_good" text="Bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_grass_bad" text="Mauvais précédents :"/>
+
+        <text name="helpLine_crop_rotations_values_wheat_title" text="Blé"/>
+        <text name="helpLine_crop_rotations_values_wheat_pause" text="Temps de retour : 1 an"/>
+        <text name="helpLine_crop_rotations_values_wheat_very_good" text="Très bons précédents : maïs, soja, pommes de terre, betteraves sucrières, betteraves rouges, tournesol"/>
+        <text name="helpLine_crop_rotations_values_wheat_good" text="Bons précédents : haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_wheat_bad" text="Mauvais précédents : blé, orge, herbe"/>
+
+        <text name="helpLine_crop_rotations_values_barley_title" text="Orge"/>
+        <text name="helpLine_crop_rotations_values_barley_pause" text="Temps de retour : 1 an"/>
+        <text name="helpLine_crop_rotations_values_barley_very_good" text="Très bons précédents : maïs, soja, pommes de terre, betteraves sucrières, betteraves rouges"/>
+        <text name="helpLine_crop_rotations_values_barley_good" text="Bons précédents : blé, avoine, haricots, pois, colza, tournesol"/>
+        <text name="helpLine_crop_rotations_values_barley_bad" text="Mauvais précédents : orge, herbe"/>
+
+        <text name="helpLine_crop_rotations_values_oat_title" text="Avoine"/>
+        <text name="helpLine_crop_rotations_values_oat_pause" text="Temps de retour : 1 an"/>
+        <text name="helpLine_crop_rotations_values_oat_very_good" text="Très bons précédents : blé, orge"/>
+        <text name="helpLine_crop_rotations_values_oat_good" text="Bons précédents : maïs, soja, pois, pommes de terre, colza, betteraves sucrières, tournesol"/>
+        <text name="helpLine_crop_rotations_values_oat_bad" text="Mauvais précédents : avoine"/>
+
+        <text name="helpLine_crop_rotations_values_sorghum_title" text="Sorgho"/>
+        <text name="helpLine_crop_rotations_values_sorghum_pause" text="Temps de retour : 1 an"/>
+        <text name="helpLine_crop_rotations_values_sorghum_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_sorghum_good" text="Bons précédents : haricots, pois, soja, blé, orge, tournesol"/>
+        <text name="helpLine_crop_rotations_values_sorghum_bad" text="Mauvais précédents : maïs, sorgho"/>
+
+        <text name="helpLine_crop_rotations_values_soybean_title" text="Soja"/>
+        <text name="helpLine_crop_rotations_values_soybean_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_soybean_very_good" text="Très bons précédents : blé, maïs, betteraves sucrières"/>
+        <text name="helpLine_crop_rotations_values_soybean_good" text="Bons précédents : orge, avoine, pommes de terre"/>
+        <text name="helpLine_crop_rotations_values_soybean_bad" text="Mauvais précédents : soja, pois, tournesol, haricots, colza"/>
+
+        <text name="helpLine_crop_rotations_values_greenbean_title" text="Haricots"/>
+        <text name="helpLine_crop_rotations_values_greenbean_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_greenbean_very_good" text="Très bons précédents : blé, colza, tournesol, pommes de terre, betteraves sucrières"/>
+        <text name="helpLine_crop_rotations_values_greenbean_good" text="Bons précédents : orge, avoine, maïs"/>
+        <text name="helpLine_crop_rotations_values_greenbean_bad" text="Mauvais précédents : soja, haricots, pois"/>
+
+        <text name="helpLine_crop_rotations_values_pea_title" text="Pois"/>
+        <text name="helpLine_crop_rotations_values_pea_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_pea_very_good" text="Très bons précédents : blé, orge, maïs, pommes de terre"/>
+        <text name="helpLine_crop_rotations_values_pea_good" text="Bons précédents : colza, tournesol, betteraves sucrières"/>
+        <text name="helpLine_crop_rotations_values_pea_bad" text="Mauvais précédents : soja, haricots, pois, avoine"/>
+
+        <text name="helpLine_crop_rotations_values_maize_title" text="Maïs"/>
+        <text name="helpLine_crop_rotations_values_maize_pause" text="Temps de retour : 1 an"/>
+        <text name="helpLine_crop_rotations_values_maize_very_good" text="Très bons précédents : herbe"/>
+        <text name="helpLine_crop_rotations_values_maize_good" text="Bons précédents : blé, orge, pommes de terre"/>
+        <text name="helpLine_crop_rotations_values_maize_bad" text="Mauvais précédents : sorgho"/>
+
+        <text name="helpLine_crop_rotations_values_canola_title" text="Colza"/>
+        <text name="helpLine_crop_rotations_values_canola_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_canola_very_good" text="Très bons précédents : orge, pois"/>
+        <text name="helpLine_crop_rotations_values_canola_good" text="Bons précédents : blé, avoine, herbe"/>
+        <text name="helpLine_crop_rotations_values_canola_bad" text="Mauvais précédents : maïs, pommes de terre, colza, betteraves sucrières, soja, tournesol"/>
+
+        <text name="helpLine_crop_rotations_values_sunflower_title" text="Tournesol"/>
+        <text name="helpLine_crop_rotations_values_sunflower_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_sunflower_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_sunflower_good" text="Bons précédents : blé, orge, avoine, herbe"/>
+        <text name="helpLine_crop_rotations_values_sunflower_bad" text="Mauvais précédents : tournesol, colza, soja, pois, haricots"/>
+
+        <text name="helpLine_crop_rotations_values_potato_title" text="Pommes de terre"/>
+        <text name="helpLine_crop_rotations_values_potato_pause" text="Temps de retour : 3 ans"/>
+        <text name="helpLine_crop_rotations_values_potato_very_good" text="Très bons précédents : soja, haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_potato_good" text="Bons précédents : blé, orge, avoine, herbe"/>
+        <text name="helpLine_crop_rotations_values_potato_bad" text="Mauvais précédents : pommes de terre, betteraves sucrières, colza, tournesol"/>
+
+        <text name="helpLine_crop_rotations_values_sugarbeet_title" text="Betterave sucrière"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_pause" text="Temps de retour : 3 ans"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_good" text="Bons précédents : blé, orge, avoine, pois, herbe"/>
+        <text name="helpLine_crop_rotations_values_sugarbeet_bad" text="Mauvais précédents : maïs, soja, colza, betteraves sucrières"/>
+
+        <text name="helpLine_crop_rotations_values_onion_title" text="Oignons"/>
+        <text name="helpLine_crop_rotations_values_onion_pause" text="Temps de retour : 3 ans"/>
+        <text name="helpLine_crop_rotations_values_onion_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_onion_good" text="Bons précédents : blé, orge, avoine, soja, haricots, pois, pommes de terre"/>
+        <text name="helpLine_crop_rotations_values_onion_bad" text="Mauvais précédents : oignons, carottes, panais, betteraves sucrières, betteraves rouges, épinards, tournesol, colza"/>
+
+        <text name="helpLine_crop_rotations_values_beetroot_title" text="Betterave rouge"/>
+        <text name="helpLine_crop_rotations_values_beetroot_pause" text="Temps de retour : 3 ans"/>
+        <text name="helpLine_crop_rotations_values_beetroot_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_beetroot_good" text="Bons précédents : blé, orge, avoine, soja, haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_beetroot_bad" text="Mauvais précédents : pommes de terre, betteraves sucrières, épinards"/>
+
+        <text name="helpLine_crop_rotations_values_carrot_title" text="Carottes"/>
+        <text name="helpLine_crop_rotations_values_carrot_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_carrot_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_carrot_good" text="Bons précédents : blé, orge, avoine, soja, haricots, pois, pommes de terre"/>
+        <text name="helpLine_crop_rotations_values_carrot_bad" text="Mauvais précédents : carottes, panais"/>
+
+        <text name="helpLine_crop_rotations_values_parsnip_title" text="Panais"/>
+        <text name="helpLine_crop_rotations_values_parsnip_pause" text="Temps de retour : 2 ans"/>
+        <text name="helpLine_crop_rotations_values_parsnip_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_parsnip_good" text="Bons précédents : blé, orge, avoine, soja, haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_parsnip_bad" text="Mauvais précédents : carottes, panais"/>
+
+        <text name="helpLine_crop_rotations_values_spinach_title" text="Épinards"/>
+        <text name="helpLine_crop_rotations_values_spinach_pause" text="Temps de retour : 0 an"/>
+        <text name="helpLine_crop_rotations_values_spinach_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_spinach_good" text="Bons précédents : blé, orge, avoine, soja, haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_spinach_bad" text="Mauvais précédents : épinards, pommes de terre, betteraves sucrières"/>
+
+        <text name="helpLine_crop_rotations_values_rice_title" text="Riz"/>
+        <text name="helpLine_crop_rotations_values_rice_pause" text="Temps de retour : 0 an"/>
+        <text name="helpLine_crop_rotations_values_rice_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_rice_good" text="Bons précédents : haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_rice_bad" text="Mauvais précédents : maïs, sorgho"/>
+
+        <text name="helpLine_crop_rotations_values_ricelonggrain_title" text="Riz long grain"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_pause" text="Temps de retour : 0 an"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_very_good" text="Très bons précédents :"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_good" text="Bons précédents : haricots, pois"/>
+        <text name="helpLine_crop_rotations_values_ricelonggrain_bad" text="Mauvais précédents : maïs, sorgho"/>
+
+        <text name="helpLine_crop_rotations_values_catchCrops_title" text="Couverts végétaux"/>
+        <text name="helpLine_crop_rotations_values_catchCrops_description" text="Les couverts végétaux (semés entre deux récoltes) impactent uniquement la culture suivante. Selon l'espèce choisie, l'effet peut être bénéfique ou négatif. Dans le meilleur des cas, le rendement augmente de 15 %. Un bon couvert apporte 10 %. Un mauvais choix peut engendrer une perte de 10 %."/>
+
+        <text name="helpLine_crop_rotations_values_oilseedradish_title" text="Radis fourrager"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_very_good" text="Influence très favorable : maïs, pommes de terre, tournesol, avoine"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_good" text="Influence favorable : blé, orge, sorgho, betteraves sucrières, oignons, betteraves rouges, carottes, panais, épinards"/>
+        <text name="helpLine_crop_rotations_values_oilseedradish_bad" text="Influence défavorable : colza, soja, pois, haricots"/>
+    </texts>
+</l10n>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="95">
+    <author>Chissel</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Enhanced Loan System</en>
+        <de>Erweitertes Kredit System</de>
+    </title>
+    <description>
+<en>
+<![CDATA[
+This mod makes the credit system a bit more realistic. However, the standard game credits will be deactivated. If a farm still has a loan, it will be transferred to the new system.
+
+With this system it is possible to take annuity loans. For this, a loan with a fixed amount, a term and a loan interest rate is concluded. This calculates the monthly installment, which is debited at the end of each month.
+The bank requires collateral here, so the maximum loan amount is calculated from the current sales value of your vehicles, fields (60%), cash and your already current loans.
+To make this a bit more realistic the loan rate can go up, down or stay the same each month. This makes it all the more crucial when the loan is taken out. However, you can also change this variable loan interest rate to a fixed loan interest rate in the settings.
+
+There are also various setting options that allow the credit system to be adapted to personal preferences.
+
+How does an annuity loan work? Here is a brief explanation:
+An annuity loan has an annuity, the monthly installment, and a loan interest rate. This annuity is made up of the repayment amount and the interest amount. The interest amount is calculated by multiplying the loan interest rate by the remaining amount of the loan. As a result, the interest amount keeps decreasing and the repayment amount keeps increasing.
+]]>
+</en>
+<de>
+<![CDATA[
+Dieser Mod macht das Kreditsystem etwas realistischer. Die Standardspiel Kredite werden hierbei jedoch deaktiviert. Sollte eine Farm noch einen Kredit haben, so wird dieser in das neue System übertragen.
+
+Mit diesem System ist es möglich Annuitätendarlehn aufzunehmen. Hierfür wird ein Kredit mit einem festen Betrag, einer Laufzeit und einem Kreditzins abgeschlossen. Dadurch wird die monatliche Rate berechnet, die jeweils zum Monatsende abgebucht wird.
+Die Bank verlangt hierbei eine Sicherheit, sodass der maximale Kredithöhe sich aus dem aktuellen Verkaufswert deiner Fahrzeuge, Felder, Bargeld und deinen bereits laufenden Krediten berechnet.
+Um dies etwas realistischer zu gestalten kann der Kreditzins jeden Monat steigen, fallen oder gleich bleiben. Dadurch wird es umso entscheidender, wann der Kredit abgeschlossen wird. Diesen variablen Kreditzins kann man jedoch auch in den Einstellungen auf einen festen Kreditzins ändern.
+
+Außerdem gibt es verschiedene Einstellmöglichkeiten, wodurch das Kreditsystem an die persönlichen Vorlieben angepasst werden kann.
+
+Wie funktioniert ein Annuitätendarlehn? Hier eine kurze Erklärung:
+Ein Annuitätendarlehn besitzt eine Annuität, die monatliche Rate, und einem Kreditzins. Diese Annuität setzt sich aus dem Tilgungsbetrag und dem Zinsbetrag zusammen. Der Zinsbetrag wird berechnet durch den Kreditzins multipliziert mit dem Restbetrag des Kredites. Dadurch sinkt der Zinsbetrag immer weiter und der Tilgungsbetrag steigt.
+]]>
+</de>
+</description>
+    <iconFilename>icon_enhancedLoanSystem.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="translations/translation"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/ELS_main.lua"/>
+    </extraSourceFiles>
+</modDesc>
