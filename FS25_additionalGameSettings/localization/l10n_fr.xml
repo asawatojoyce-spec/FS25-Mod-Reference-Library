@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+	<elements>
+		<e k="global_ags_ui_ingameMenuAdditionalSettings" v="Paramètres additionnels"/>
+		<e k="ags_ui_currentTimeHour" v="Heure"/>
+		<e k="ags_ui_currentTimeDate" v="Date"/>
+		<e k="ags_ui_currentTimeDateShort" v="Court"/>
+		<e k="ags_ui_currentTimeDateLong" v="Longue"/>
+		<e k="ags_ui_crosshairPartial" v="Partiel"/>
+		<e k="ags_ui_clockPositionTopRight" v="Coin supérieur droit"/>
+		<e k="ags_ui_clockPositionBottomRight" v="Coin inférieur droit"/>
+		<e k="ags_ui_clockPositionTopLeft" v="Coin supérieur gauche"/>
+		<e k="ags_ui_clockPositionBottomLeft" v="Coin inférieur gauche"/>
+		<e k="ags_ui_clockPositionTop" v="Haut"/>
+		<e k="ags_ui_clockPositionBottom" v="Bas"/>
+		<e k="ags_ui_allItems" v="Tous les articles"/>
+		<e k="ags_ui_basicItems" v="Objets de base"/>
+		<e k="ags_ui_folder" v="Dossier"/>
+		<e k="ags_ui_hold" v="Appuyer et maintenir"/>
+		<e k="ags_ui_press" v="Appuyer"/>
+		<e k="ags_button_quitGame" v="Quitter le jeu"/>
+		<e k="ags_hud" v="HUD"/>
+		<e k="ags_crosshair" v="Réticule"/>
+		<e k="ags_date" v="Date actuelle"/>
+		<e k="ags_clockPosition" v="Position de l'horloge"/>
+		<e k="ags_hourFormat" v="Système horaire sur 24 heures"/>
+		<e k="ags_fadeEffect" v="Effet de fondu"/>
+		<e k="ags_dialogBoxes" v="Boîtes de dialogue d'information"/>
+		<e k="ags_vehicleCamera" v="Fluidité de la caméra du véhicule"/>
+		<e k="ags_playerCamera" v="Fluidité de la caméra du joueur"/>
+		<e k="ags_easyMotorStart" v="Démarrage simplifié du moteur"/>
+		<e k="ags_autostart" v="Démarrage automatique de la partie"/>
+		<e k="ags_storeItems" v="Objets en magasin"/>
+		<e k="ags_lighting" v="Éclairage personnalisé"/>
+		<e k="ags_dof" v="Profondeur de champ (DoF)"/>
+		<e k="ags_guiCamera" v="Déplacement de la caméra sur les bords"/>
+		<e k="ags_clockBackground" v="Contexte de l'horloge"/>
+		<e k="ags_dateColor" v="Couleur de l'horloge"/>
+		<e k="ags_framerateLimiter" v="Limite FPS"/>
+		<e k="ags_blinkingWarnings" v="Notifications clignotantes"/>
+		<e k="ags_clockBold" v="Police en gras"/>
+		<e k="ags_hudColor" v="Couleur de l'interface"/>
+		<e k="ags_torch" v="Commande simplifiée de la lampe torche"/>
+		<e k="ags_walkMode" v="Mode de marche"/>
+		<e k="ags_crouchMode" v="Mode accroupi"/>
+		<e k="ags_runMode" v="Course plus rapide"/>
+		<e k="ags_toolTip_hud" v="Visibilité de l'interface du jeu."/>
+		<e k="ags_toolTip_crosshair" v="Visibilité du réticule."/>
+		<e k="ags_toolTip_date" v="Affichage de la date actuelle."/>
+		<e k="ags_toolTip_clockPosition" v="Modifiez la position de l'horloge avec la date actuelle."/>
+		<e k="ags_toolTip_hourFormat" v="Système horaire sur 24 heures."/>
+		<e k="ags_toolTip_fadeEffect" v="Effet de fondu lors du changement de caméra."/>
+		<e k="ags_toolTip_dialogBoxes" v="Visibilité des boîtes de dialogue qui s'affichent, par exemple après l'achat ou la vente d'un véhicule."/>
+		<e k="ags_toolTip_vehicleCamera" v="Fluidité du mouvement de la caméra du véhicule."/>
+		<e k="ags_toolTip_playerCamera" v="Fluidité du mouvement de la caméra du joueur."/>
+		<e k="ags_toolTip_easyMotorStart" v="Démarrage du moteur après avoir appuyé sur la touche d'accélérateur."/>
+		<e k="ags_toolTip_autostart" v="Lancez automatiquement le jeu lorsque vous sélectionnez une sauvegarde de partie."/>
+		<e k="ags_toolTip_storeItems" v="Visibilité des machines et objets hors modification/DLC dans le menu magasin."/>
+		<e k="ags_toolTip_lighting" v="Paramètres d'éclairage personnalisés. Vous pouvez ajouter votre propre éclairage en créant un dossier de paramètres dans (%s)."/>
+		<e k="ags_toolTip_dof" v="Profondeur de champ."/>
+		<e k="ags_toolTip_guiCamera" v="Déplacement de la caméra sur les bords de l'écran en mode placement d'objet."/>
+		<e k="ags_toolTip_clockBackground" v="Arrière-plan de l'horloge avec la date actuelle."/>
+		<e k="ags_toolTip_dateColor" v="Couleur de l'horloge avec la date actuelle."/>
+		<e k="ags_toolTip_framerateLimiter" v="Limite d'images affichées par seconde."/>
+		<e k="ags_toolTip_blinkingWarnings" v="Visibilité des notifications affichées au centre de l'écran."/>
+		<e k="ags_toolTip_clockBold" v="Police en gras de l'horloge avec la date actuelle."/>
+		<e k="ags_toolTip_hudColor" v="Sélection de la couleur de l'interface du jeu."/>
+		<e k="ags_toolTip_torch" v="La lampe de poche peut être éteinte avec le même bouton que celui utilisé pour l'allumer."/>
+		<e k="ags_toolTip_walkMode" v="La façon de basculer entre le mode marche et course."/>
+		<e k="ags_toolTip_crouchMode" v="Basculer en mode accroupi."/>
+		<e k="ags_toolTip_runMode" v="Courir plus vite en appuyant deux fois sur la touche."/>
+		<e k="ags_button_quitMenu" v="Quitter au menu"/>
+		<e k="ags_toolTip_hudDisabled" v="Ce paramètre nécessite l’activation des HUDs."/>
+		<e k="ags_toolTip_easyMotorStartDisabled" v="Ce paramètre nécessite l’activation du démarrage manuel du moteur."/>
+		<e k="ags_toolTip_runModeDisabled" v="Ce paramètre nécessite l’activation de la course rapide en appuyant sur la touche."/>
+		<e k="ags_toolTip_clockDisabled" v="Ce paramètre nécessite l’activation de l’horloge avec la date actuelle."/>
+	</elements>
+</l10n>

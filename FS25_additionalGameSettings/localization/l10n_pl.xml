@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+	<elements>
+		<e k="global_ags_ui_ingameMenuAdditionalSettings" v="Ustawienia dodatkowe"/>
+		<e k="ags_ui_currentTimeHour" v="Godzina"/>
+		<e k="ags_ui_currentTimeDate" v="Data"/>
+		<e k="ags_ui_currentTimeDateShort" v="Krótka"/>
+		<e k="ags_ui_currentTimeDateLong" v="Długa"/>
+		<e k="ags_ui_crosshairPartial" v="Tylko podczas interakcji"/>
+		<e k="ags_ui_clockPositionTopRight" v="Prawy górny róg"/>
+		<e k="ags_ui_clockPositionBottomRight" v="Prawy dolny róg"/>
+		<e k="ags_ui_clockPositionTopLeft" v="Lewy górny róg"/>
+		<e k="ags_ui_clockPositionBottomLeft" v="Lewy dolny róg"/>
+		<e k="ags_ui_clockPositionTop" v="Góra"/>
+		<e k="ags_ui_clockPositionBottom" v="Dół"/>
+		<e k="ags_ui_allItems" v="Wszystkie"/>
+		<e k="ags_ui_basicItems" v="Podstawowe"/>
+		<e k="ags_ui_folder" v="Folder"/>
+		<e k="ags_ui_month1" v="stycznia"/>
+		<e k="ags_ui_month2" v="lutego"/>
+		<e k="ags_ui_month3" v="marca"/>
+		<e k="ags_ui_month4" v="kwietnia"/>
+		<e k="ags_ui_month5" v="maja"/>
+		<e k="ags_ui_month6" v="czerwca"/>
+		<e k="ags_ui_month7" v="lipca"/>
+		<e k="ags_ui_month8" v="sierpnia"/>
+		<e k="ags_ui_month9" v="września"/>
+		<e k="ags_ui_month10" v="października"/>
+		<e k="ags_ui_month11" v="listopada"/>
+		<e k="ags_ui_month12" v="grudnia"/>
+		<e k="ags_ui_hold" v="Naciśnij i przytrzymaj"/>
+		<e k="ags_ui_press" v="Naciśnij"/>
+		<e k="ags_button_quitGame" v="Wyjdź do pulpitu"/>
+		<e k="ags_hud" v="Interfejs"/>
+		<e k="ags_crosshair" v="Celownik"/>
+		<e k="ags_date" v="Aktualna data"/>
+		<e k="ags_clockPosition" v="Pozycja zegara"/>
+		<e k="ags_hourFormat" v="24-godzinny format czasu"/>
+		<e k="ags_fadeEffect" v="Efekt zanikania"/>
+		<e k="ags_dialogBoxes" v="Informacyjne okna dialogowe"/>
+		<e k="ags_vehicleCamera" v="Płynność kamery pojazdu"/>
+		<e k="ags_playerCamera" v="Płynność kamery gracza"/>
+		<e k="ags_easyMotorStart" v="Uproszczone uruchamianie silnika"/>
+		<e k="ags_autostart" v="Automatyczne uruchamianie zapisu"/>
+		<e k="ags_storeItems" v="Obiekty w sklepie"/>
+		<e k="ags_lighting" v="Niestandardowe oświetlenie"/>
+		<e k="ags_dof" v="Głębia ostrości (DoF)"/>
+		<e k="ags_guiCamera" v="Przesuwanie kamery na krawędziach"/>
+		<e k="ags_clockBackground" v="Tło zegara"/>
+		<e k="ags_dateColor" v="Kolor zegara"/>
+		<e k="ags_framerateLimiter" v="Limit FPS"/>
+		<e k="ags_blinkingWarnings" v="Migające powiadomienia"/>
+		<e k="ags_clockBold" v="Pogrubienie czcionki"/>
+		<e k="ags_hudColor" v="Kolor interfejsu"/>
+		<e k="ags_torch" v="Prosta obsługa latarki"/>
+		<e k="ags_walkMode" v="Tryb biegania"/>
+		<e k="ags_crouchMode" v="Tryb kucania"/>
+		<e k="ags_runMode" v="Szybsze bieganie"/>
+		<e k="ags_toolTip_hud" v="Widoczność interfejsu."/>
+		<e k="ags_toolTip_crosshair" v="Widoczność celownika."/>
+		<e k="ags_toolTip_date" v="Wyświetlanie aktualnej daty."/>
+		<e k="ags_toolTip_clockPosition" v="Pozycja zegara z aktualną datą."/>
+		<e k="ags_toolTip_hourFormat" v="24-godzinny system czasu."/>
+		<e k="ags_toolTip_fadeEffect" v="Czas trwania efektu zanikania widocznego podczas zmiany kamery."/>
+		<e k="ags_toolTip_dialogBoxes" v="Widoczność okien dialogowych wyświetlanych np. po zakupie lub sprzedaży maszyny."/>
+		<e k="ags_toolTip_vehicleCamera" v="Płynne ruchy kamery pojazdu."/>
+		<e k="ags_toolTip_playerCamera" v="Płynne ruchy kamery gracza."/>
+		<e k="ags_toolTip_easyMotorStart" v="Uruchamianie silnika poprzez naciśnięcie klawisza przyspieszenia."/>
+		<e k="ags_toolTip_autostart" v="Automatyczne uruchamianie zapisu gry po zakończeniu wczytywania."/>
+		<e k="ags_toolTip_storeItems" v="Filtrowanie przedmiotów wyświetlanych w menu sklepu."/>
+		<e k="ags_toolTip_lighting" v="Niestandardowa konfiguracja oświetlenia. Możesz dodać własną konfigurację tworząc folder z ustawieniami w (%s)."/>
+		<e k="ags_toolTip_dof" v="Głębia ostrości."/>
+		<e k="ags_toolTip_guiCamera" v="Przesuwanie kamery za pomocą myszy w trybie stawiania obiektów."/>
+		<e k="ags_toolTip_clockBackground" v="Tło zegara z aktualną datą."/>
+		<e k="ags_toolTip_dateColor" v="Kolor zegara z aktualną datą."/>
+		<e k="ags_toolTip_framerateLimiter" v="Limit wyświetlanych klatek na sekundę."/>
+		<e k="ags_toolTip_blinkingWarnings" v="Widoczność powiadomień wyświetlanych po środku ekranu."/>
+		<e k="ags_toolTip_clockBold" v="Pogrubienie czcionki zegara z aktualną datą."/>
+		<e k="ags_toolTip_hudColor" v="Wybór koloru interfejsu gry."/>
+		<e k="ags_toolTip_torch" v="Latarkę można wyłączyć tym samym przyciskiem, którym ją włączono."/>
+		<e k="ags_toolTip_walkMode" v="Przełączanie trybu biegania."/>
+		<e k="ags_toolTip_crouchMode" v="Przełączanie trybu kucania."/>
+		<e k="ags_toolTip_runMode" v="Szybsze bieganie po dwukrotnym wciśnięciu klawisza."/>
+		<e k="ags_button_quitMenu" v="Wyjdź do menu"/>
+		<e k="ags_toolTip_hudDisabled" v="To ustawienie wymaga włączenia HUD-ów."/>
+		<e k="ags_toolTip_easyMotorStartDisabled" v="To ustawienie wymaga włącznia manualnego rozruchu silnika."/>
+		<e k="ags_toolTip_runModeDisabled" v="To ustawienie wymaga włączenia szybszego biegania poprzez naciśnięcie klawisza."/>
+		<e k="ags_toolTip_clockDisabled" v="To ustawienie wymaga włączenia zegara z aktualną datą."/>
+	</elements>
+</l10n>

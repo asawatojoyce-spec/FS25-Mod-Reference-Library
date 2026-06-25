@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+	<elements>
+		<e k="global_ags_ui_ingameMenuAdditionalSettings" v="Additional settings"/>
+		<e k="ags_ui_currentTimeHour" v="Hour"/>
+		<e k="ags_ui_currentTimeDate" v="Date"/>
+		<e k="ags_ui_currentTimeDateShort" v="Short"/>
+		<e k="ags_ui_currentTimeDateLong" v="Long"/>
+		<e k="ags_ui_crosshairPartial" v="Partial"/>
+		<e k="ags_ui_clockPositionTopRight" v="Top right corner"/>
+		<e k="ags_ui_clockPositionBottomRight" v="Bottom right corner"/>
+		<e k="ags_ui_clockPositionTopLeft" v="Top left corner"/>
+		<e k="ags_ui_clockPositionBottomLeft" v="Bottom left corner"/>
+		<e k="ags_ui_clockPositionTop" v="Top"/>
+		<e k="ags_ui_clockPositionBottom" v="Bottom"/>
+		<e k="ags_ui_allItems" v="All items"/>
+		<e k="ags_ui_basicItems" v="Default items"/>
+		<e k="ags_ui_folder" v="Folder"/>
+		<e k="ags_ui_hold" v="Press and hold"/>
+		<e k="ags_ui_press" v="Press"/>
+		<e k="ags_button_quitGame" v="Quit to desktop"/>
+		<e k="ags_hud" v="HUD"/>
+		<e k="ags_crosshair" v="Crosshair"/>
+		<e k="ags_date" v="Current date"/>
+		<e k="ags_clockPosition" v="Clock position"/>
+		<e k="ags_hourFormat" v="24-hour clock"/>
+		<e k="ags_fadeEffect" v="Fade effect"/>
+		<e k="ags_dialogBoxes" v="Informational dialog boxes"/>
+		<e k="ags_vehicleCamera" v="Vehicle camera smoothness"/>
+		<e k="ags_playerCamera" v="Player camera smoothness"/>
+		<e k="ags_easyMotorStart" v="Easier engine starting"/>
+		<e k="ags_autostart" v="Autostart"/>
+		<e k="ags_storeItems" v="Items in the shop"/>
+		<e k="ags_lighting" v="Custom lighting"/>
+		<e k="ags_dof" v="Depth of field (DoF)"/>
+		<e k="ags_guiCamera" v="Camera scrolling on edges"/>
+		<e k="ags_clockBackground" v="Clock background"/>
+		<e k="ags_dateColor" v="Clock color"/>
+		<e k="ags_framerateLimiter" v="FPS limit"/>
+		<e k="ags_blinkingWarnings" v="Blinking warnings"/>
+		<e k="ags_clockBold" v="Bold font"/>
+		<e k="ags_hudColor" v="Interface color"/>
+		<e k="ags_torch" v="Simple flashlight control"/>
+		<e k="ags_walkMode" v="Walk mode"/>
+		<e k="ags_crouchMode" v="Crouch mode"/>
+		<e k="ags_runMode" v="Faster running"/>
+		<e k="ags_toolTip_hud" v="Interface visibility."/>
+		<e k="ags_toolTip_crosshair" v="Crosshair visibility."/>
+		<e k="ags_toolTip_date" v="Display of the current date."/>
+		<e k="ags_toolTip_clockPosition" v="Clock position of the current date."/>
+		<e k="ags_toolTip_hourFormat" v="24-hour time system."/>
+		<e k="ags_toolTip_fadeEffect" v="Fade in effect when switching cameras."/>
+		<e k="ags_toolTip_dialogBoxes" v="Visibility of dialog boxes that are displayed, e.g. after buying or selling a machine."/>
+		<e k="ags_toolTip_vehicleCamera" v="Smooth vehicle camera movements."/>
+		<e k="ags_toolTip_playerCamera" v="Smooth player camera movements."/>
+		<e k="ags_toolTip_easyMotorStart" v="Starting the engine by pressing the accelerate key."/>
+		<e k="ags_toolTip_autostart" v="Automatically start the game when loading is complete."/>
+		<e k="ags_toolTip_storeItems" v="Filtering objects displayed in the store menu."/>
+		<e k="ags_toolTip_lighting" v="Custom lighting configuration. You can add your own configuration by creating a settings folder in (%s)."/>
+		<e k="ags_toolTip_dof" v="Depth of field."/>
+		<e k="ags_toolTip_guiCamera" v="Move the camera with the mouse in object placement mode."/>
+		<e k="ags_toolTip_clockBackground" v="Background of the clock with current date."/>
+		<e k="ags_toolTip_dateColor" v="The color of the clock with the current date."/>
+		<e k="ags_toolTip_framerateLimiter" v="Limit of displayed frames per second."/>
+		<e k="ags_toolTip_blinkingWarnings" v="Visibility of notifications displayed in the center of the screen."/>
+		<e k="ags_toolTip_clockBold" v="Bold font for the clock with the current date."/>
+		<e k="ags_toolTip_hudColor" v="Selecting the color of the game interface."/>
+		<e k="ags_toolTip_torch" v="The flashlight can be turned off with the same button used to turn it on."/>
+		<e k="ags_toolTip_walkMode" v="Toggle walk mode."/>
+		<e k="ags_toolTip_crouchMode" v="Toggle crouch mode."/>
+		<e k="ags_toolTip_runMode" v="Run faster by double-pressing the key."/>
+		<e k="ags_button_quitMenu" v="Quit to menu"/>
+		<e k="ags_toolTip_hudDisabled" v="This setting requires enabling the HUDs."/>
+		<e k="ags_toolTip_easyMotorStartDisabled" v="This setting requires enabling manual engine start."/>
+		<e k="ags_toolTip_runModeDisabled" v="This setting requires enabling faster running by pressing the key."/>
+		<e k="ags_toolTip_clockDisabled" v="This setting requires enabling the clock with the current date."/>
+	</elements>
+</l10n>

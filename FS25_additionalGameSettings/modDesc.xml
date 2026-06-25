@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="105">
+	<author>Rockstar</author>
+
+	<version>1.0.0.5</version>
+
+	<title>
+		<en>Additional Game Settings</en>
+		<de>Zusätzliche Spieleinstellungen</de>
+		<fr>Paramètres De Jeu Supplémentaires</fr>
+		<pl>Dodatkowe Ustawienia Gry</pl>
+		<ru>Дополнительные Настройки Игры</ru>
+	</title>
+
+	<description>
+		<en>
+			<![CDATA[This mod adds a new settings tab to the pause menu.
+
+Available functions:
+- Enable/disable the interface,
+- Change the interface color (custom colors can be added to the file ".../modSettings/FS25_additionalGameSettings/uiColors.xml"),
+- Enable/disable the crosshair,
+- Display a transition effect when switching cameras,
+- Enable/disable unnecessary informational windows,
+- Enable/disable blinking notifications,
+- Enable/disable mouse camera movement in object placement mode,
+- Enable/disable automatic game save start,
+- Filter objects in the shop (all/base/mods/DLC),
+- Toggle lighting from other maps (custom lighting can be added to the folder ".../modSettings/FS25_additionalGameSettings/lighting"),
+- Smooth camera movements,
+- Start the vehicle engine by pressing the acceleration key,
+- Enable/disable depth of field (DoF),
+- Enable/disable camera collision,
+- Display the current date (customizable format/position/background/color/font boldness),
+- Added "Quit to desktop" button.
+
+Changelog 1.0.0.1:
+- Added support for version 1.6.0.0 of the game,
+- Added the ability to change the HUD color for mods: Courseplay, Enhanced Vehicle, Extended Game Info Display.
+
+Changelog 1.0.0.2:
+- Added an option to switch between walking and running mode (press and hold/press),
+- Added an option to switch between walking and crouching mode (press and hold/press),
+- Added the ability to choose a custom color for HUDs and the clock,
+- Fixed clock HUD scaling.
+
+Changelog 1.0.0.3:
+- Fixed an issue with the unavailable HUD color change option,
+- Fixed the error ".../AdditionalSettings.lua:1363: attempt to index nil with 'delete'".
+
+Changelog 1.0.0.4:
+- Fixed the function "Easier engine starting", which was not working after patch 1.7.0.0,
+- Fixed an issue where the month name was displayed incorrectly on the clock (November instead of October),
+- Added an option to run faster by double-pressing a key.
+
+Changelog 1.0.0.5:
+- Added tooltips for disabled interface options,
+- Improved compatibility with some mods.]]></en>
+		<de>
+			<![CDATA[Diese Mod fügt dem Pausenmenü einen neuen Einstellungstab hinzu.
+
+Verfügbare Funktionen:
+- Aktivieren/Deaktivieren der Benutzeroberfläche,
+- Ändern der Benutzeroberflächenfarbe (benutzerdefinierte Farben können in der Datei ".../modSettings/FS25_additionalGameSettings/uiColors.xml" hinzugefügt werden),
+- Aktivieren/Deaktivieren des Fadenkreuzes,
+- Anzeigen eines Übergangseffekts beim Kamerawechsel,
+- Aktivieren/Deaktivieren unnötiger Informationsfenster,
+- Aktivieren/Deaktivieren blinkender Benachrichtigungen,
+- Aktivieren/Deaktivieren der Maus-Kamerabewegung im Objektplatzierungsmodus,
+- Aktivieren/Deaktivieren des automatischen Spielstarts bei Speichern,
+- Objekte im Shop filtern (alle/Basis/Mods/DLC),
+- Beleuchtung von anderen Karten ein-/ausschalten (benutzerdefinierte Beleuchtung kann im Ordner ".../modSettings/FS25_additionalGameSettings/lighting" hinzugefügt werden),
+- Kamerabewegungen glätten,
+- Fahrzeugmotor durch Drücken der Beschleunigungstaste starten,
+- Aktivieren/Deaktivieren der Tiefenschärfe (DoF),
+- Aktivieren/Deaktivieren der Kamerakollision,
+- Aktuelles Datum anzeigen (anpassbares Format/Position/Hintergrund/Farbe/Schriftstärke),
+- Ein "Zum Desktop zurückkehren"-Button wurde hinzugefügt.
+
+Changelog 1.0.0.1:
+- Unterstützung für Version 1.6.0.0 des Spiels hinzugefügt,
+- Möglichkeit zur Änderung der HUD-Farbe für die Mods hinzugefügt: Courseplay, Enhanced Vehicle, Extended Game Info Display.
+
+Changelog 1.0.0.2:
+- Eine Option zum Umschalten zwischen Geh-und Laufmodus wurde hinzugefügt (drücken und halten/drücken),
+- Eine Option zum Umschalten zwischen Geh-und Hockmodus wurde hinzugefügt (drücken und halten/drücken),
+- Die Möglichkeit hinzugefügt, eine benutzerdefinierte Farbe für HUDs und die Uhr auszuwählen,
+- Skalierung des Uhr-HUDs behoben.
+
+Changelog 1.0.0.3:
+- Ein Problem mit der nicht verfügbaren HUD-Farbänderungsoption wurde behoben,
+- Fehler ".../AdditionalSettings.lua:1363: attempt to index nil with 'delete'" wurde behoben.
+
+Changelog 1.0.0.4:
+- Die Funktion "Einfacherer Motorstart", die nach Patch 1.7.0.0 nicht funktionierte, wurde behoben,
+- Ein Problem wurde behoben, bei dem der Monatsname auf der Uhr falsch angezeigt wurde (November statt Oktober),
+- Eine Option zum schnelleren Laufen durch doppeltes Drücken einer Taste wurde hinzugefügt.
+
+Changelog 1.0.0.5:
+- Hinweise für deaktivierte Schnittstellenoptionen hinzugefügt,
+- Verbesserte Kompatibilität mit einigen Mods.]]></de>
+		<fr>
+			<![CDATA[Ce mod ajoute un nouvel onglet de paramètres au menu pause.
+
+Fonctions disponibles :
+- Activer/désactiver l'interface utilisateur,
+- Modifier la couleur de l'interface utilisateur (des couleurs personnalisées peuvent être ajoutées dans le fichier ".../modSettings/FS25_additionalGameSettings/uiColors.xml"),
+- Activer/désactiver le réticule,
+- Afficher un effet de transition lors du changement de caméra,
+- Activer/désactiver les fenêtres d'information inutiles,
+- Activer/désactiver les notifications clignotantes,
+- Activer/désactiver le mouvement de la caméra par la souris en mode placement d'objets,
+- Activer/désactiver le lancement automatique du jeu après sauvegarde,
+- Filtrer les objets dans la boutique (tous/de base/mods/DLC),
+- Activer/désactiver l'éclairage d'autres cartes (des éclairages personnalisés peuvent être ajoutés dans le dossier ".../modSettings/FS25_additionalGameSettings/lighting"),
+- Lisser les mouvements de la caméra,
+- Démarrer le moteur du véhicule en appuyant sur la touche d'accélération,
+- Activer/désactiver la profondeur de champ (DoF),
+- Activer/désactiver la collision de la caméra,
+- Afficher la date actuelle (format/position/fond/couleur/épaisseur de police personnalisables),
+- Un bouton "Retourner au bureau" a été ajouté.
+
+Changelog 1.0.0.1:
+- Prise en charge de la version 1.6.0.0 du jeu,
+- Ajout de la possibilité de changer la couleur du HUD pour les mods : Courseplay, Enhanced Vehicle, Extended Game Info Display.
+
+Changelog 1.0.0.2:
+- Ajout d'une option pour basculer entre le mode marche et course (appuyer et maintenir/appuyer),
+- Ajout d'une option pour basculer entre le mode marche et accroupi (appuyer et maintenir/appuyer),
+- Ajout de la possibilité de choisir une couleur personnalisée pour les HUD et l'horloge,
+- Correction de l'échelle du HUD de l'horloge.
+
+Changelog 1.0.0.3:
+- Correction d’un problème avec l’option de changement de couleur du HUD indisponible.
+- Correction de l'erreur ".../AdditionalSettings.lua:1363: attempt to index nil with 'delete'".
+
+Changelog 1.0.0.4:
+- Correction de la fonction "Démarrage moteur simplifié" qui ne fonctionnait plus après le patch 1.7.0.0,
+- Correction d’un problème où le nom du mois s’affichait incorrectement sur l’horloge (novembre au lieu d’octobre),
+- Une option pour courir plus vite en appuyant deux fois sur une touche a été ajoutée.
+
+Changelog 1.0.0.5:
+- Ajout d’info-bulles pour les options d’interface désactivées,
+- Compatibilité améliorée avec certains mods.]]></fr>
+		<pl>
+			<![CDATA[Ten mod dodaje zakładkę z nowymi ustawieniami do menu pauzy.
+
+Dostępne funkcje:
+- Włączanie/wyłączanie interfejsu,
+- Zmiana koloru interfejsu (można dodać własne kolory do pliku ".../modSettings/FS25_additionalGameSettings/uiColors.xml"),
+- Włączanie/wyłączanie celownika,
+- Wyświetlanie efektu przejścia przy zmianie kamer,
+- Włączanie/wyłączanie zbędnych okien informacyjnych,
+- Włączanie/wyłączanie migających powiadomień,
+- Włączanie/wyłączanie przesuwania kamery myszą w trybie stawiania obiektów,
+- Włączanie/wyłączanie automatycznego startu zapisu gry,
+- Filtrowanie obiektów w sklepie (wszystkie/podstawowe/mody/dlc),
+- Przełączanie oświetlenia z innych map (można dodać własne oświetlenie do folderu ".../modSettings/FS25_additionalGameSettings/lighting"),
+- Wygładzanie ruchów kamery,
+- Uruchamianie silnika pojazdu przez naciśnięcie przycisku przyspieszenia,
+- Włączanie/wyłączanie głębi ostrości (DoF),
+- Włączanie/wyłączanie kolizji kamery,
+- Wyświetlanie bieżącej daty (możliwość dostosowania formatu/pozycji/tła/koloru/pogrubienia czcionki),
+- Dodano przycisk "Wyjdź do pulpitu".
+
+Changelog 1.0.0.1:
+- Dodano wsparcie dla wersji 1.6.0.0 gry,
+- Dodano możliwość zmiany koloru HUD dla modów: Courseplay, Enhanced Vehicle, Extended Game Info Display.
+
+Changelog 1.0.0.2:
+- Dodano opcje przełączania między trybem chodzenia i biegania (naciśnij i przytrzymaj/naciśnij),
+- Dodano opcje przełączania między trybem chodzenia i kucania (naciśnij i przytrzymaj/naciśnij),
+- Dodano możliwość wyboru niestandardowego koloru dla HUD-ów i zegara,
+- Naprawiono skalowanie HUD zegara.
+
+Changelog 1.0.0.3:
+- Naprawiono problem z niedostepną opcją zmiany koloru HUD-ów,
+- Naprawiono błąd ".../AdditionalSettings.lua:1363: attempt to index nil with 'delete'".
+
+Changelog 1.0.0.4:
+- Naprawiono funkcję "Uproszczone uruchamianie silnika", która nie działała po patchu 1.7.0.0,
+- Naprawiono problem z niepoprawnym wyświetlaniem nazwy miesiąca (listopad zamiast październik ) na zegarze,
+- Dodano opcję szybszego biegania po podwójnym naciśnięciu klawisza.
+
+Changelog 1.0.0.5:
+- Dodano podpowiedzi dla wyłączonych opcji interfejsu,
+- Poprawiono kompatybilność z niektórymi modami.]]></pl>
+		<ru>
+			<![CDATA[Этот мод добавляет новую вкладку настроек в меню паузы.
+
+Доступные функции:
+- Включение/отключение пользовательского интерфейса,
+- Изменение цвета пользовательского интерфейса (настраиваемые цвета можно добавить в файл ".../modSettings/FS25_additionalGameSettings/uiColors.xml"),
+- Включение/отключение прицела,
+- Отображение эффекта перехода при смене камеры,
+- Включение/отключение ненужных информационных окон,
+- Включение/отключение мигающих уведомлений,
+- Включение/отключение движения камеры с помощью мыши в режиме размещения объектов,
+- Включение/отключение автоматического запуска игры после сохранения,
+- Фильтрация объектов в магазине (все/основные/моды/DLC),
+- Включение/отключение освещения с других карт (настраиваемое освещение можно добавить в папку ".../modSettings/FS25_additionalGameSettings/lighting"),
+- Сглаживание движений камеры,
+- Запуск двигателя транспортного средства нажатием кнопки ускорения,
+- Включение/отключение глубины резкости (DoF),
+- Включение/отключение столкновений камеры,
+- Отображение текущей даты (настраиваемый формат/позиция/фон/цвет/толщина шрифта),
+- Добавлена ​​кнопка "Выйти на рабочий стол".
+
+Changelog 1.0.0.1:
+- Добавлена поддержка версии 1.6.0.0 игры,
+- Добавлена возможность изменения цвета HUD для модов: Courseplay, Enhanced Vehicle, Extended Game Info Display.
+
+Changelog 1.0.0.2:
+- Добавлена опция переключения между режимами ходьбы и бега (нажать и удерживать/нажать),
+- Добавлена опция переключения между режимами ходьбы и приседания (нажать и удерживать/нажать),
+- Добавлена возможность выбора пользовательского цвета для HUD-ов и часов,
+- Исправлено масштабирование HUD часов.
+
+Changelog 1.0.0.3:
+- Исправлена проблема с недоступной опцией изменения цвета HUD,
+- Исправлена ошибка ".../AdditionalSettings.lua:1363: attempt to index nil with 'delete'".
+
+Changelog 1.0.0.4:
+- Исправлена функция "Упрощённый запуск двигателя", не работавшая после патча 1.7.0.0,
+- Исправлена ошибка, из-за которой на часах некорректно отображалось название месяца (ноябрь вместо октября),
+- Добавлена опция быстрого бега при двойном нажатии клавиши.
+
+Changelog 1.0.0.5:
+- Добавлены подсказки для отключённых параметров интерфейса,
+- Улучшена совместимость с некоторыми модами.]]></ru>
+	</description>
+
+	<iconFilename>icon_additionalGameSettings.png</iconFilename>
+
+	<multiplayer supported="true"/>
+
+	<extraSourceFiles>
+		<sourceFile filename="scripts/utils/AdditionalSettingsUtil.lua"/>
+		<sourceFile filename="scripts/AdditionalSettingsManager.lua"/>
+		<sourceFile filename="scripts/AdditionalSettings.lua"/>
+		<sourceFile filename="scripts/gui/AdditionalSettingsGui.lua"/>
+		<sourceFile filename="scripts/gui/AdditionalSettingsPage.lua"/>
+	</extraSourceFiles>
+
+	<l10n filenamePrefix="localization/l10n"/>
+</modDesc>

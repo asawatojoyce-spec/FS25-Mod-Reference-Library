@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+	<elements>
+		<e k="global_ags_ui_ingameMenuAdditionalSettings" v="Дополнительные настройки"/>
+		<e k="ags_ui_currentTimeHour" v="Час"/>
+		<e k="ags_ui_currentTimeDate" v="Дата"/>
+		<e k="ags_ui_currentTimeDateShort" v="Короткий"/>
+		<e k="ags_ui_currentTimeDateLong" v="Длинный"/>
+		<e k="ags_ui_crosshairPartial" v="Частичное"/>
+		<e k="ags_ui_clockPositionTopRight" v="Правый верхний угол"/>
+		<e k="ags_ui_clockPositionBottomRight" v="Правый нижний угол"/>
+		<e k="ags_ui_clockPositionTopLeft" v="Левый верхний угол"/>
+		<e k="ags_ui_clockPositionBottomLeft" v="Левый нижний угол"/>
+		<e k="ags_ui_clockPositionTop" v="Верх"/>
+		<e k="ags_ui_clockPositionBottom" v="Низ"/>
+		<e k="ags_ui_allItems" v="Все объекты"/>
+		<e k="ags_ui_basicItems" v="Основные объекты"/>
+		<e k="ags_ui_folder" v="Папка"/>
+		<e k="ags_ui_hold" v="Нажать и удерживать"/>
+		<e k="ags_ui_press" v="Нажать"/>
+		<e k="ags_button_quitGame" v="Выйти на рабочий стол"/>
+		<e k="ags_hud" v="HUD"/>
+		<e k="ags_crosshair" v="Перекрестие"/>
+		<e k="ags_date" v="Текущая дата"/>
+		<e k="ags_clockPosition" v="Положение часов"/>
+		<e k="ags_hourFormat" v="24-часовой формат времени"/>
+		<e k="ags_fadeEffect" v="Эффект перехода"/>
+		<e k="ags_dialogBoxes" v="Информационные диалоговые окна"/>
+		<e k="ags_vehicleCamera" v="Плавность камеры автомобиля"/>
+		<e k="ags_playerCamera" v="Плавность камеры игрока"/>
+		<e k="ags_easyMotorStart" v="Более легкий запуск двигателя"/>
+		<e k="ags_autostart" v="Автозапуск игры"/>
+		<e k="ags_storeItems" v="Предметы в магазине"/>
+		<e k="ags_lighting" v="Индивидуальное освещение"/>
+		<e k="ags_dof" v="Глубина резкости (DoF)"/>
+		<e k="ags_guiCamera" v="Перемещение камеры по краям"/>
+		<e k="ags_clockBackground" v="Фон часов"/>
+		<e k="ags_dateColor" v="Цвет часов"/>
+		<e k="ags_framerateLimiter" v="Предел FPS"/>
+		<e k="ags_blinkingWarnings" v="Мигающие уведомления"/>
+		<e k="ags_clockBold" v="Шрифт жирный"/>
+		<e k="ags_hudColor" v="Цвет интерфейса"/>
+		<e k="ags_torch" v="Упрощенное управление фонариком"/>
+		<e k="ags_walkMode" v="Режим ходьбы"/>
+		<e k="ags_crouchMode" v="Режим приседания"/>
+		<e k="ags_runMode" v="Быстрый бег"/>
+		<e k="ags_toolTip_hud" v="Видимость интерфейса."/>
+		<e k="ags_toolTip_crosshair" v="Видимость прицела."/>
+		<e k="ags_toolTip_date" v="Текущая дата отображается в выбранном углу экрана."/>
+		<e k="ags_toolTip_clockPosition" v="Измените положение часов, отображающих текущую дату."/>
+		<e k="ags_toolTip_hourFormat" v="24-часовая система времени."/>
+		<e k="ags_toolTip_fadeEffect" v="Продолжительность эффекта перехода при переключении камер."/>
+		<e k="ags_toolTip_dialogBoxes" v="Видимость отображаемых диалоговых окон, например после покупки или продажи машины."/>
+		<e k="ags_toolTip_vehicleCamera" v="Плавное движение камеры автомобиля."/>
+		<e k="ags_toolTip_playerCamera" v="Плавное движение камеры игрока."/>
+		<e k="ags_toolTip_easyMotorStart" v="Запуск двигателя после нажатия клавиши акселератора."/>
+		<e k="ags_toolTip_autostart" v="Автоматический запуск игры после завершения загрузки."/>
+		<e k="ags_toolTip_storeItems" v="Видимость машин без модов/DLC в меню магазина."/>
+		<e k="ags_toolTip_lighting" v="Пользовательские настройки освещения. Вы можете добавить собственное освещение, создав папку настроек в (%s). "/>
+		<e k="ags_toolTip_dof" v="Глубина резкости."/>
+		<e k="ags_toolTip_guiCamera" v="Перемещение камеры по краям экрана в режиме размещения объекта."/>
+		<e k="ags_toolTip_clockBackground" v="Фон часов с текущей датой."/>
+		<e k="ags_toolTip_dateColor" v="Цвет часов с текущей датой."/>
+		<e k="ags_toolTip_framerateLimiter" v="Предельное количество отображаемых кадров в секунду."/>
+		<e k="ags_toolTip_blinkingWarnings" v="Видимость уведомлений, отображаемых в центре экрана."/>
+		<e k="ags_toolTip_clockBold" v="Жирный шрифт часов с текущей датой."/>
+		<e k="ags_toolTip_hudColor" v="Выбор цвета интерфейса игры."/>
+		<e k="ags_toolTip_torch" v="Фонарик можно выключить той же кнопкой, что и включить."/>
+		<e k="ags_toolTip_walkMode" v="Способ переключения между режимами ходьбы и бега."/>
+		<e k="ags_toolTip_crouchMode" v="Переключение режима приседания."/>
+		<e k="ags_toolTip_runMode" v="Бег быстрее при двойном нажатии клавиши."/>
+		<e k="ags_button_quitMenu" v="Выйти в меню"/>
+		<e k="ags_toolTip_hudDisabled" v="Этот параметр требует включения HUD."/>
+		<e k="ags_toolTip_easyMotorStartDisabled" v="Этот параметр требует включения ручного запуска двигателя."/>
+		<e k="ags_toolTip_runModeDisabled" v="Этот параметр требует включения быстрого бега путем нажатия клавиши."/>
+		<e k="ags_toolTip_clockDisabled" v="Этот параметр требует включения часов с текущей датой."/>
+	</elements>
+</l10n>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI>
+	<GuiElement profile="fs25_menuContainer">
+		<BoxLayout profile="fs25_subCategorySelectorTabbedBox">
+			<Button profile="fs25_subCategorySelectorTabbedTab" id="additionalSettingsTab" text="$l10n_ags_ui_ingameMenuAdditionalSettings" onClick="onClickAdditionalSettings">
+				<ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+			</Button>
+		</BoxLayout>
+		<GuiElement profile="fs25_subCategorySelectorTabbedContainer" id="additionalSettingsPage">
+			<ScrollingLayout profile="fs25_settingsLayout" id="additionalSettingsLayout">
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkHUD">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_hud"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_hud"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<Button profile="fs25_settingsColorButton" onClick="onClickButton" id="buttonHudColor">
+						<ThreePartBitmap profile="fs25_colorButtonPicked"/>
+						<Bitmap profile="fs25_settingsColorButtonIconBox">
+							<Bitmap profile="fs25_settingsColorButtonIcon"/>
+						</Bitmap>
+						<Bitmap profile="fs25_colorButtonOverlay"/>
+						<Text profile="fs25_colorButtonTooltip" name="ignore" text="$l10n_ags_toolTip_hudColor"/>
+						<ThreePartBitmap profile="fs25_settingsColorButtonPicked"/>
+					</Button>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_hudDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_hudColor"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiCrosshair" texts="$l10n_ui_on|$l10n_ags_ui_crosshairPartial|$l10n_ui_off">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_crosshair"/>
+					</MultiTextOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_hudDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_crosshair"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiFadeEffect">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_fadeEffect"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_fadeEffect"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkDialogBoxes">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_dialogBoxes"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_dialogBoxes"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkBlinkingWarnings">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_blinkingWarnings"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_blinkingWarnings"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkGuiCamera">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_guiCamera"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_guiCamera"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkAutostart">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_autostart"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_autostart"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="mulitStoreItems" texts="$l10n_ags_ui_allItems|$l10n_ags_ui_basicItems|$l10n_ui_modsAndDlcs|$l10n_button_modHub|$l10n_modHub_dlc">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_storeItems"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_storeItems"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="mulitFramerateLimiter">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_framerateLimiter"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_framerateLimiter"/>
+				</Bitmap>
+				<Text profile="fs25_settingsSectionHeader" name="sectionHeader" text="$l10n_modHub_gameplay"/>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiLighting">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_lighting"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_lighting"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiVehicleCamera">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_vehicleCamera"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_vehicleCamera"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiPlayerCamera">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_playerCamera"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_playerCamera"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkEasyMotorStart">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_easyMotorStart"/>
+					</BinaryOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_easyMotorStartDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_easyMotorStart"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkDoF">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_dof"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_dof"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkCameraCollisions">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_toolTip_cameraCheckCollision"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_setting_cameraCheckCollision"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkTorch">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_torch"/>
+					</BinaryOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_torch"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiWalkMode" texts="$l10n_ags_ui_hold|$l10n_ags_ui_press">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_walkMode"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_walkMode"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiRunMode">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_runMode"/>
+					</MultiTextOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_runModeDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_runMode"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiCrouchMode" texts="$l10n_ags_ui_hold|$l10n_ags_ui_press">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_crouchMode"/>
+					</MultiTextOption>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_crouchMode"/>
+				</Bitmap>
+				<Text profile="fs25_settingsSectionHeader" name="sectionHeader" text="$l10n_introduction_monthInfo"/>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiDate">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_date"/>
+					</MultiTextOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_hudDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_date"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<Button profile="fs25_settingsColorButton" onClick="onClickButton" id="buttonDateColor">
+						<ThreePartBitmap profile="fs25_colorButtonPicked"/>
+						<Bitmap profile="fs25_settingsColorButtonIconBox">
+							<Bitmap profile="fs25_settingsColorButtonIcon"/>
+						</Bitmap>
+						<Bitmap profile="fs25_colorButtonOverlay"/>
+						<Text profile="fs25_colorButtonTooltip" name="ignore" text="$l10n_ags_toolTip_dateColor"/>
+						<ThreePartBitmap profile="fs25_settingsColorButtonPicked"/>
+					</Button>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_clockDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_dateColor"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="multiClockPosition" texts="$l10n_ags_ui_clockPositionTopRight|$l10n_ags_ui_clockPositionBottomRight|$l10n_ags_ui_clockPositionTopLeft|$l10n_ags_ui_clockPositionBottomLeft|$l10n_ags_ui_clockPositionTop|$l10n_ags_ui_clockPositionBottom">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_clockPosition"/>
+					</MultiTextOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_clockDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_clockPosition"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkClockBackground">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_clockBackground"/>
+					</BinaryOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_clockDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_clockBackground"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkClockBold">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_clockBold"/>
+					</BinaryOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_clockDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_clockBold"/>
+				</Bitmap>
+				<Bitmap profile="fs25_multiTextOptionContainer">
+					<BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="checkHourFormat">
+						<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_ags_toolTip_hourFormat"/>
+					</BinaryOption>
+					<Button profile="fs25_settingsMultiTextOptionLocked" name="iconDisabled" onClick="onClickLockedIcon" onFocus="onFocusLockedIcon">
+						<Text profile="fs25_multiTextOptionTooltip" text="$l10n_ags_toolTip_hudDisabled" position="940px 0px"/>
+					</Button>
+					<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ags_hourFormat"/>
+				</Bitmap>
+			</ScrollingLayout>
+			<Bitmap profile="fs25_settingsTooltipSeparator" id="additionalSettingsSeparator"/>
+		</GuiElement>
+	</GuiElement>
+	<GUIProfiles>
+		<Profile name="fs25_settingsColorButton" extends="fs25_colorButton" with="pivotMiddleRight">
+			<size value="276px 32px"/>
+			<position value="-12px 0px"/>
+			<focusOnHighlight value="true"/>
+		</Profile>
+		<Profile name="fs25_settingsColorButtonPicked" extends="fs25_colorButtonPicked">
+			<imageColor value="0 0 0 0"/>
+			<imageDisabledColor value="0 0 0 0.75"/>
+			<startImageColor value="0 0 0 0"/>
+			<startImageDisabledColor value="0 0 0 0.75"/>
+			<endImageColor value="0 0 0 0"/>
+			<endImageDisabledColor value="0 0 0 0.75"/>
+		</Profile>
+		<Profile name="fs25_colorButtonTooltip" extends="fs25_multiTextOptionTooltip" with="pivotMiddleRight"/>
+		<Profile name="fs25_settingsColorButtonIconBox" extends="fs25_colorButtonIconBox">
+			<imageDisabledColor value="1 1 1 0.25"/>
+		</Profile>
+		<Profile name="fs25_settingsColorButtonIcon" extends="fs25_colorButtonIcon">
+			<imageDisabledColor value="1 1 1 0.25"/>
+		</Profile>
+	</GUIProfiles>
+</GUI>
