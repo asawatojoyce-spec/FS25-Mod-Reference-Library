@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="ui_header_title" text="Farm Valuation"/>
+        <text name="ui_header_lineitem" text="Line Item"/>
+        <text name="ui_header_category" text="Category"/>
+        <text name="ui_header_details" text="Details"/>
+        <text name="ui_header_value" text="Value"/>
+        <text name="ui_header_net_worth" text="Net Worth"/>
+        <text name="ui_header_day" text="Day"/>
+        <text name="ui_footer_total" text="Total"/>
+        <text name="ui_farm_value" text="Farm Value"/>
+        <text name="ui_farm_value_history" text="Farm Value History"/>
+        <text name="table_cat_cash" text="Cash"/>
+        <text name="table_cat_equipment" text="Equipment"/>
+        <text name="table_cat_property" text="Property"/>
+        <text name="table_cat_inventory" text="Inventory"/>
+        <text name="table_cash" text="Cash"/>
+        <text name="table_loan" text="Loan"/>
+        <text name="table_placeable" text="Building"/>
+        <text name="table_livestock" text="Livestock"/>
+        <text name="table_fill" text="Fill"/>
+        <text name="table_land" text="Farmland"/>
+        <text name="details_age" text="Age"/>
+        <text name="details_age_month_unit" text="Months"/>
+        <text name="details_age_year_unit" text="Years"/>
+        <text name="details_operating_time" text="Hours"/>
+    </texts>
+</l10n>

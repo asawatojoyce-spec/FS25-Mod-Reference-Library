@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="105">
+    <author>Kastor [D-S-Agrarservice]</author>
+    <version>1.0.0.2</version>
+
+<title>
+<en>Bale Storage</en>
+<de>Ballenlager</de>
+<fr>Stockage De Balles</fr>
+</title>
+
+- Bitte ändere zu folgendem: (Copy/Paste)
+<description>
+<en><![CDATA[Bale storage for field edge or yard.
+
+Bale storage 150
+Category: Storages
+Price: 2000$
+Capacity: 150 pieces
+Daily cost: 0$/d
+Size: about 12m x 6m
+
+Bale storage 350
+Category: Storages
+Price: 2200$
+Capacity: 350 pieces
+Daily cost: 0$/d
+Size: approx. 24m x 6m
+
+Bale storage 800
+Category: Storages
+Price: 2500$
+Capacity: 800 pieces
+Daily cost: 0$/d
+Size: approx. 24m x 10m
+
+Changelog:
+v1.0.0.2
+-Demolition issue fixed
+v1.0.0.1
+-Collision with bale stack removed as requested and recommended
+]]>
+</en>
+<de><![CDATA[Ballenlager für Feldrand oder Hof.
+
+Ballenlager 150
+Shopkategorie: Lager
+Preis: 2000€
+Kapazität: 150 Stück
+Tageskosten: 0€/d
+Größe: ca. 12m x 6m
+
+Ballenlager 350
+Shopkategorie: Lager
+Preis: 2200€
+Kapazität: 350 Stück
+Tageskosten: 0€/d
+Größe: ca. 24m x 6m
+
+Ballenlager 800
+Shopkategorie: Lager
+Preis: 2500€
+Kapazität: 800 Stück
+Tageskosten: 0€/d
+Größe: ca. 24m x 10m
+
+Changelog:
+v1.0.0.2
+-Abriss Problem Behoben
+v1.0.0.1
+-Kollision beim Ballenstapel auf Wunsch und Empfehlung entfernt
+]]>
+</de>
+<fr><![CDATA[Entrepôt de balles pour le bord du champ ou la cour.
+
+Entrepôt de balles 150
+Stockage De Balles 150
+prix : 2000€
+Capacité : 150 pièces
+Coût journalier : 0€/d
+Taille : environ 12m x 6m
+
+Entrepôt de balles 350
+Stockage De Balles 150
+Prix : 2200€
+Capacité : 350 pièces
+Coût journalier : 0€/d
+Taille : environ 24m x 6m
+
+Entrepôt de balles 800
+Stockage De Balles 150
+Prix : 2500€
+Capacité : 800 pièces
+Coût journalier : 0€/d
+Taille : environ 24m x 10m
+
+Journal des modifications :
+v1.0.0.2
+-Problème de démolition corrigé
+v1.0.0.1
+- Collision avec la pile de balles supprimée comme demandé et recommandé.
+]]>
+</fr>
+</description>
+
+    <iconFilename>iconBaleStorage.dds</iconFilename>
+    <multiplayer supported="true"/> 
+
+    <storeItems>
+        <storeItem rootNode="placeable" xmlFilename="xml/objectStorageBale150.xml"/>
+		<storeItem rootNode="placeable" xmlFilename="xml/objectStorageBale350.xml"/>
+		<storeItem rootNode="placeable" xmlFilename="xml/objectStorageBale800.xml"/>
+    </storeItems>
+
+<l10n>
+<text name="storeItem_baleStorage150">
+<en>Bale Storage 150</en>
+<de>Ballenlager 150</de>
+<de>Stockage De Balles 150</de>
+</text>
+<text name="storeItem_baleStorage350">
+<en>Bale Storage 350</en>
+<de>Ballenlager 350</de>
+<de>Stockage De Balles 350</de>
+</text>
+<text name="storeItem_baleStorage800">
+<en>Bale Storage 800</en>
+<de>Ballenlager 800</de>
+<de>Stockage De Balles 800</de>
+</text>
+</l10n>
+</modDesc>

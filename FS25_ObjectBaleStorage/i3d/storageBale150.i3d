@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="storageBale150.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.10"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="6" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="storageBale150.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="objectStorage" lodDistance="0 100" nodeId="17">
+      <TransformGroup name="testArea1Start" translation="-6.25 0 -4" nodeId="18">
+        <TransformGroup name="testArea1End" translation="12.5 7.5 8" nodeId="19"/>
+      </TransformGroup>
+      <TransformGroup name="clearArea1Start" translation="-6.25 0 -2.2" nodeId="20">
+        <TransformGroup name="clearArea1Width" translation="0 0 9.11471" nodeId="21"/>
+        <TransformGroup name="clearArea1Height" translation="12.5 0 0" nodeId="22"/>
+      </TransformGroup>
+      <TransformGroup name="levelArea1Start" translation="-6.7 0 -2.2" nodeId="23">
+        <TransformGroup name="levelArea1Width" translation="0 0 9" nodeId="24"/>
+        <TransformGroup name="levelArea1Height" translation="12.9905 0 0" nodeId="25"/>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.25 0 -2.33779" nodeId="26">
+        <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.5 0 9.63864" nodeId="27"/>
+      </TransformGroup>
+      <TransformGroup name="objectStorage" nodeId="28">
+        <TransformGroup name="areas" nodeId="29">
+          <TransformGroup name="spawnArea1Start" translation="5.92705 -0.01 2.5066" rotation="0 -90 0" nodeId="30">
+            <TransformGroup name="spawnArea1End" translation="3 0 6" nodeId="31"/>
+          </TransformGroup>
+          <TransformGroup name="storageArea1Start" translation="5.73878 0 -2" rotation="0 -90 0" nodeId="32">
+            <TransformGroup name="storageArea1End" translation="4 0 11.5164" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="objectTrigger" translation="-3.78704 0 3.25632" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x50000" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+          <TransformGroup name="objectTriggerMarker" nodeId="35"/>
+          <TransformGroup name="markerEggs" translation="-1.94345 0.02 -1.04005" nodeId="36">
+            <Shape name="markerEggsDecal1" shapeId="2" clipDistance="100" nodeId="37" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="markerEggsDecal2" translation="3.5 0 0" shapeId="3" clipDistance="100" nodeId="38" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="markerEggsDecal3" translation="3.5 0 2.97342" shapeId="4" clipDistance="100" nodeId="39" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <Shape name="markerEggsDecal4" translation="0 0 2.97342" shapeId="5" clipDistance="100" nodeId="40" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            <TransformGroup name="markerEggs" translation="-0.26951 0 -4.21627" nodeId="41">
+              <Shape name="markerEggsDecal1" shapeId="2" clipDistance="100" nodeId="42" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              <Shape name="markerEggsDecal2" translation="12 0 0" shapeId="3" clipDistance="100" nodeId="43" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              <Shape name="markerEggsDecal3" translation="12 0 4" shapeId="4" clipDistance="100" nodeId="44" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+              <Shape name="markerEggsDecal4" translation="0 0 4" shapeId="5" clipDistance="100" nodeId="45" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="7"/>
+            </TransformGroup>
+          </TransformGroup>
+        </Shape>
+        <Shape name="playerTrigger" translation="7.0506 0.5 3.03188" shapeId="6" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+          <TransformGroup name="playerTriggerMarker" nodeId="47"/>
+        </Shape>
+        <Shape name="infoTrigger" translation="0 1.66444 0.954195" shapeId="7" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="49">
+        <Shape name="cube" translation="0 -0.0708972 0" shapeId="8" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
