@@ -1,0 +1,74 @@
+# FS25 Knowledge + Trust System v1.0
+
+---
+
+# PURPOSE
+
+Defines:
+- what is known
+- what is trusted
+- what is partially known
+- how evidence is weighted
+
+---
+
+# TRUST LEVELS
+
+| Level | Meaning |
+|------|--------|
+| T0 | Unverified hypothesis |
+| T1 | Structural pattern only |
+| T2 | Engine-aligned inference |
+| T3 | Reference-supported knowledge |
+| T4 | Fully validated system behavior |
+
+---
+
+# ACCESS STATES
+
+| State | Meaning |
+|------|--------|
+| A0 | Not accessible |
+| A1 | Exists but unread |
+| A2 | Partial content available |
+| A3 | Fully readable |
+| A4 | Runtime validated |
+
+---
+
+# REVALIDATION SYSTEM
+
+## Commands
+
+---
+
+# RULE
+
+No file is permanently trusted.
+
+All references degrade over time unless revalidated.
+
+---
+
+# REFERENCE TYPES
+
+## Known Good Mods
+- FS base game systems
+- Courseplay (external GitHub reference)
+- validated GIANTS UI systems
+
+## LUADOC
+- highest priority reference source
+- overrides mod assumptions
+
+---
+
+# TRUST RULE
+
+> Access does not equal truth.
+
+A file being present does NOT mean it is valid.
+
+---
+
+# END FILE

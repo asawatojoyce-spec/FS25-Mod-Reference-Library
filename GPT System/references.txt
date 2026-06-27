@@ -1,0 +1,783 @@
+# FS25 Seasons Animals Project
+
+# REFERENCE_LIBRARY_v2.md
+
+## Purpose
+
+Master index of the project's authoritative reference materials.
+
+Use this file first when starting a new conversation.
+
+Load order:
+
+1. REFERENCE_LIBRARY_v2.md
+2. CURRENT_STATE_v1.md (or latest)
+3. UNIFIED_RULE_SET_v2.md
+4. PROJECT_RULES_v2.md
+5. LAYER_GOVERNANCE_v1.md
+6. ENCYCLOPEDIA_v2.md
+7. CONFLICT_LAYER_v2.md
+8. BRAIN_v2.md
+
+---
+
+# PROJECT STATE SNAPSHOT
+
+## Project
+
+FS19 Seasons Animals → FS25 Rewrite
+
+## Working Baseline
+
+FS25_SeasonsAnimals.zip
+
+Trust Preference:
+
+Logs > Working Mods > Documentation
+
+## Current Phase
+
+GUI Ownership Discovery
+
+## Current Major Blockers
+
+1. Exact creator of pageFrames
+2. Exact page registration workflow
+3. Exact page insertion path into pagingElement
+
+## Highest Confidence Active Theory
+
+Engine creates structure.
+
+Mods extend existing structure.
+
+pageFrames are likely engine-owned and created during menu initialization.
+
+## Active Conflict Leader
+
+C001
+
+Question:
+
+Who creates pageFrames?
+
+Status:
+
+OPEN
+
+Current Winner:
+
+Project Theory
+
+## Current Rewrite Strategy
+
+Remove FS19 ownership assumptions.
+
+Move registration upward toward owner-level systems.
+
+Validate using logs.
+
+## Most Important Technical References
+
+1. Logs
+2. FS25_SeasonsAnimals.zip
+3. Courseplay
+4. Community LUADOC
+
+## Next Investigation
+
+Reverse engineer mature mods and engine ownership chains to identify:
+
+* Registration workflow
+* Initialization workflow
+* Page insertion workflow
+
+---
+
+# GOVERNANCE REFERENCES
+
+## UNIFIED_RULE_SET_v2.md
+
+Purpose:
+Project Constitution
+
+Authority:
+Very High
+
+---
+
+## PROJECT_RULES_v2.md
+
+Purpose:
+Knowledge Management
+
+Authority:
+Very High
+
+---
+
+## LAYER_GOVERNANCE_v1.md
+
+Purpose:
+Layer Definitions and Movement
+
+Authority:
+Very High
+
+---
+
+# KNOWLEDGE REFERENCES
+
+## ENCYCLOPEDIA_v2.md
+
+Purpose:
+Promoted Truths
+
+Authority:
+High
+
+---
+
+## CONFLICT_LAYER_v2.md
+
+Purpose:
+Track Contradictions
+
+Authority:
+Medium-High
+
+---
+
+# OPERATIONAL REFERENCES
+
+## CURRENT_STATE_v1.md
+
+Purpose:
+Current Status
+
+Authority:
+High
+
+---
+
+# REASONING REFERENCES
+
+## BRAIN_v2.md
+
+Purpose:
+Reasoning Methodology
+
+Authority:
+Reference Only
+
+---
+
+# TECHNICAL REFERENCES
+
+## Logs
+
+Authority:
+Absolute
+
+Purpose:
+Final Source of Truth
+
+---
+
+## FS25_SeasonsAnimals.zip
+
+Authority:
+Very High
+
+Purpose:
+Working Baseline
+
+Status:
+Working
+
+---
+
+## Courseplay
+
+Authority:
+High
+
+Purpose:
+Mature Mod Reference
+
+---
+
+## Community LUADOC
+
+Authority:
+Medium-High
+
+Purpose:
+API and Engine Reference
+
+Source:
+
+https://umbraprior.github.io/FS25-Community-LUADOC/
+
+---
+
+# MASTER PRINCIPLE
+
+Truth is determined by:
+
+Logs
+↓
+Working Baseline
+↓
+Mature Working Mods
+↓
+Documentation
+↓
+Theory
+
+---
+
+---
+
+# REFERENCE REGISTRY v2
+## Permanent Reference Dataset IDs
+
+Purpose:
+
+Provide stable identifiers for every known-good reference dataset.
+
+Registry IDs NEVER change.
+
+Canonical filenames MAY change.
+
+The Registry ID is the authoritative identifier used by:
+
+- BOOT
+- REVALIDATE
+- VERIFY
+- STATUS
+- OMEGA
+- Resource Searches
+
+---
+
+## REF001
+
+Logical Name:
+
+Additional Game Settings
+
+Canonical Filename:
+
+FS25_additionalGameSettings.zip
+
+Aliases:
+
+- Additional Game Settings
+- Additional Settings
+- AGS
+- Game Settings
+- Settings Mod
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Escape menu ordering
+
+Settings page registration
+
+Trust Layer:
+
+T3
+
+---
+
+## REF002
+
+Logical Name:
+
+Courseplay
+
+Canonical Filename:
+
+FS25_Courseplay.zip
+
+Aliases:
+
+- Courseplay
+- CP
+- FS25 Courseplay
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Large-scale mature architecture
+
+GUI ownership
+
+XML
+
+Menu registration
+
+Trust Layer:
+
+T3
+
+---
+
+## REF003
+
+Logical Name:
+
+Crop Rotation
+
+Canonical Filename:
+
+FS25_CropRotation.zip
+
+Aliases:
+
+- Crop Rotation
+- Rotation
+- CropRotation
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Gameplay systems
+
+Season architecture
+
+Trust Layer:
+
+T3
+
+---
+
+## REF004
+
+Logical Name:
+
+Easy Dev Controls
+
+Canonical Filename:
+
+FS25_EasyDevControls.zip
+
+Aliases:
+
+- Easy Dev Controls
+- EDC
+- Dev Controls
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Developer tools
+
+UI injection
+
+Trust Layer:
+
+T3
+
+---
+
+## REF005
+
+Logical Name:
+
+Enhanced Help Menu
+
+Canonical Filename:
+
+FS25_EnhancedHelpMenu.zip
+
+Aliases:
+
+- Enhanced Help
+- Help Menu
+- Help
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Menu pages
+
+Trust Layer:
+
+T3
+
+---
+
+## REF006
+
+Logical Name:
+
+Enhanced Loan System
+
+Canonical Filename:
+
+FS25_EnhancedLoanSystem.zip
+
+Aliases:
+
+- Enhanced Loan System
+- Loan System
+- Loans
+- ELS
+- Loan Mod
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Escape menu pages
+
+GUI Profiles
+
+XML
+
+Trust Layer:
+
+T3
+
+---
+
+## REF007
+
+Logical Name:
+
+Net Worth Tracker
+
+Canonical Filename:
+
+FS25_netWorthTracker.zip
+
+Aliases:
+
+- Net Worth Tracker
+- Net Worth
+- NetWorthTracker
+- Worth Tracker
+- NWT
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Delegates
+
+Statistics
+
+Frame architecture
+
+Trust Layer:
+
+T3
+
+---
+
+## REF008
+
+Logical Name:
+
+Object Bale Storage
+
+Canonical Filename:
+
+FS25_ObjectBaleStorage.zip
+
+Aliases:
+
+- Object Bale Storage
+- Bale Storage
+- OBS
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Storage systems
+
+Trust Layer:
+
+T3
+
+---
+
+## REF009
+
+Logical Name:
+
+Object Storage Extension
+
+Canonical Filename:
+
+FS25_ObjectStorageExtension.zip
+
+Aliases:
+
+- Object Storage Extension
+- Object Storage
+- Storage Extension
+- OSE
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Frame hierarchy
+
+Tree layout
+
+XML ownership
+
+Trust Layer:
+
+T3
+
+---
+
+## REF010
+
+Logical Name:
+
+Price Menu Filters
+
+Canonical Filename:
+
+FS25_RDM_PriceMenuFilters.zip
+
+Aliases:
+
+- Price Menu Filters
+- Price Filters
+- PMF
+- Filters
+- RDM Filters
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Sorting
+
+Filtering
+
+Injected controls
+
+Trust Layer:
+
+T3
+
+---
+
+## REF011
+
+Logical Name:
+
+UsedPlus
+
+Canonical Filename:
+
+FS25_UsedPlus-master.zip
+
+Aliases:
+
+- UsedPlus
+- Used Plus
+- Used+
+
+Category:
+
+Known Good Mod
+
+Purpose:
+
+Gameplay architecture
+
+Vehicle systems
+
+Trust Layer:
+
+T3
+
+---
+
+## REF012
+
+Logical Name:
+
+Community LUADOC
+
+Canonical Filename:
+
+FS25-Community-LUADOC-main.zip
+
+Aliases:
+
+- LUADOC
+- Community LUADOC
+- LuaDoc
+- FS25 LUADOC
+
+Category:
+
+Documentation
+
+Purpose:
+
+Engine API
+
+Class hierarchy
+
+Engine ownership
+
+Trust Layer:
+
+T3
+
+---
+
+## REF013
+
+Logical Name:
+
+Lua Scripting Reference
+
+Canonical Filename:
+
+FS25-lua-scripting-main.zip
+
+Aliases:
+
+- Lua Scripting
+- Lua Reference
+- Lua Docs
+- Engine Scripts
+
+Category:
+
+Documentation
+
+Purpose:
+
+Lua API
+
+Engine scripting
+
+Trust Layer:
+
+T3
+
+---
+
+# REVALIDATE REGISTRY RULES
+
+The Modding OS SHALL resolve commands in the following order:
+
+1. Registry ID
+
+Example:
+
+REVALIDATE REF009
+
+↓
+
+Object Storage Extension
+
+2. Canonical Filename
+
+Example:
+
+REVALIDATE FS25_ObjectStorageExtension.zip
+
+3. Logical Name
+
+Example:
+
+REVALIDATE Object Storage Extension
+
+4. Alias Resolution
+
+Example:
+
+REVALIDATE OSE
+
+↓
+
+Object Storage Extension
+
+---
+
+# STATUS OUTPUT
+
+Every REVALIDATE command SHALL report:
+
+Registry ID
+
+Logical Name
+
+Canonical Filename
+
+Registry Status
+
+Access State
+
+Inspection State
+
+Omega Readiness
+
+Trust Layer
+
+Example:
+
+Registry ID:
+REF009
+
+Logical Name:
+Object Storage Extension
+
+Canonical Filename:
+FS25_ObjectStorageExtension.zip
+
+Registry:
+Registered
+
+Access:
+A4
+
+Inspection:
+Verified
+
+Omega:
+READY
+
+Trust:
+T3

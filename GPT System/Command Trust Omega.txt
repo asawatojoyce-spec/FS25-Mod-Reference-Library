@@ -1,0 +1,231 @@
+# FS25_Modding_OS_v1.0
+
+## 🔥 PURPOSE
+
+This file defines the core operating system layer for FS25 modding development.
+
+It introduces:
+
+- Natural language command interpretation
+- Dataset revalidation system (Omega)
+- Trust layers for mod references
+- File + log visibility awareness
+- UI + Lua + XML diagnostic routing
+- Persistent mod knowledge architecture
+
+---
+
+# 🧠 SECTION 1 — CORE DESIGN PHILOSOPHY
+
+## PRINCIPLES
+
+- Treat all data as non-trustworthy until revalidated
+- Never assume file availability from upload alone
+- Prefer explicit retrieval over memory assumptions
+- Convert natural language into structured commands
+- Resolve ambiguity through layered interpretation
+
+---
+
+# 🧩 SECTION 2 — COMMAND INTERPRETER (OMEGA LAYER)
+
+## 🧠 CORE IDEA
+
+All user input is interpreted as either:
+
+- COMMAND
+- INTENT
+- DATASET QUERY
+
+---
+
+## 🔥 PRIMARY COMMANDS
+
+### 🧩 REVALIDATE
+
+```text
+REVALIDATE <dataset>
+
+Triggers full Omega validation pipeline.
+
+🧠 BOOT
+BOOT
+
+Initializes system state, loads known-good references, and runs dataset health check.
+
+🔍 VERIFY
+VERIFY <file/dataset>
+
+Lightweight version of REVALIDATE (single-pass search only).
+
+🔁 REFRESH
+REFRESH <dataset>
+
+Re-attempts retrieval without full Omega expansion.
+
+📊 STATUS
+STATUS <dataset>
+
+Returns last known trust state without re-search.
+
+🧠 SECTION 3 — NATURAL LANGUAGE PARSER
+✔ SYSTEM UNDERSTANDS:
+SHORT COMMANDS
+Input	Command
+reval log	REVALIDATE(log)
+revalidate log	REVALIDATE(log)
+log check	VERIFY(log)
+is log there	STATUS(log)
+refresh log	REFRESH(log)
+TYPO TOLERANCE RULES
+
+System auto-corrects:
+
+missing letters
+repeated letters
+phonetic shorthand
+compressed typing
+
+Example:
+
+"revaldiate logg" → REVALIDATE(log)
+INTENT DETECTION
+
+Triggers REVALIDATE automatically if:
+
+file/log/mod mentioned
+uncertainty expressed
+“can you see”
+“do you have”
+“is it there”
+🔥 SECTION 4 — OMEGA REVALIDATION PIPELINE
+🧩 STEP 1 — NORMALIZATION
+lowercase
+remove punctuation
+expand shorthand
+map dataset aliases
+🧩 STEP 2 — DATASET CLASSIFICATION
+Dataset	Type
+log	runtime logs
+lua	script layer
+xml	UI layout
+ui	interface system
+mod	full mod package
+seasons	SeasonsAnimals system
+🧩 STEP 3 — MULTI-LAYER SEARCH STACK
+Layer A — Direct retrieval
+
+file_search.msearch(dataset keywords)
+
+Layer B — Engine context expansion
+
+FS25 UI, Lua, mod injection, lifecycle terms
+
+Layer C — Diagnostic fallback
+
+log, error, warning, crash, UI failure patterns
+
+🧩 STEP 4 — TRUST CLASSIFICATION OUTPUT
+🟢 A — VERIFIED AVAILABLE
+fully retrievable
+usable in analysis
+🟡 B — PARTIAL ACCESS
+fragments only
+incomplete dataset
+🔴 C — UNAVAILABLE
+not currently accessible
+requires re-upload or re-index
+🧠 SECTION 5 — TRUST LAYER SYSTEM
+TRUST LEVELS
+🟢 T3 — KNOWN GOOD (REFERENCE SAFE)
+verified mods
+LUADOC
+validated FS25 patterns
+🟡 T2 — PARTIAL TRUST
+inferred behavior
+partial logs
+incomplete mods
+🔴 T1 — UNTRUSTED
+unverified assumptions
+missing files
+AI speculation
+🧠 SECTION 6 — FILE + LOG MODEL
+FILE RULE
+upload ≠ availability
+availability ≠ retrievable
+retrievable ≠ trusted
+FILE STATES
+State	Meaning
+A	fully retrievable
+B	partial
+C	unavailable
+🧠 SECTION 7 — FS25 UI DIAGNOSTIC ROUTING
+
+When UI fails:
+
+System automatically checks:
+
+InGameMenu.onLoad hook
+registerPage execution
+loadControlFromFile validity
+TabbedMenuFrameElement inheritance
+XML binding correctness
+pagingTabList rebuild state
+🧠 SECTION 8 — KNOWN-GOOD REFERENCE MODEL
+
+Trusted references:
+
+LUADOC (highest authority)
+FS25 base UI system
+validated mods from library
+Courseplay (external GitHub reference)
+🧠 SECTION 9 — SYSTEM BOOT PROCESS
+
+On BOOT:
+
+Load known-good references
+Initialize REVALIDATE system
+Register command interpreter
+Set trust layers active
+Prepare dataset registry
+🔥 SECTION 10 — SYSTEM EXTENSIBILITY
+
+System supports:
+
+new commands
+new datasets
+new trust layers
+plugin-style mod analysis modules
+🧠 END OF FS25 MODDING OS v1.0
+
+---
+
+# 🚀 WHAT YOU NOW HAVE
+
+This file defines:
+
+✔ A full command OS  
+✔ Omega revalidation engine  
+✔ Natural language → command mapping  
+✔ Trust tier system  
+✔ FS25 UI diagnostic routing  
+✔ File/log retrieval model  
+✔ Known-good reference framework  
+
+---
+
+# 🔥 NEXT STEP (OPTIONAL)
+
+If you want to push this further, I can help you build:
+
+## 🧠 FS25 MODDING OS v1.1
+
+Which would include:
+
+- automatic log parsing rules
+- UI failure auto-detection
+- Lua crash signature classification
+- mod conflict resolver system
+- “auto-debug mode” command
+
+Just say **next** 👍

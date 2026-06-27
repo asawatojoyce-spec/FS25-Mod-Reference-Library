@@ -1,0 +1,126 @@
+# FS25 Engine Failure Model v1.0
+
+---
+
+# PURPOSE
+
+This document defines **why systems fail in FS25 UI + Lua architecture**, based on observed engine behavior patterns.
+
+It converts debugging from:
+
+> reactive diagnosis
+
+into:
+
+> predictive failure modeling
+
+---
+
+# CORE INSIGHT
+
+FS25 UI failures are NOT random.
+
+They follow deterministic lifecycle constraints inside the GIANTS Engine.
+
+---
+
+# 🔥 PRIMARY FAILURE CATEGORIES
+
+## 1. UI TIMING FAILURE (MOST COMMON)
+
+### Symptoms:
+- menu tab does not appear
+- registerPage runs but UI is invisible
+- pagingTabList missing entries
+- XML loads but never displays
+
+### Root Cause Pattern:
+
+> UI injection occurs AFTER InGameMenu layout finalization
+
+---
+
+### Engine Rule:
+
+```text id="fs25_rule_1"
+InGameMenu layout is fully initialized BEFORE late mod scripts finish loadMapFinished()
+
+
+---
+
+# 🚨 CRITICAL INSIGHT
+
+> The InGameMenu is fully constructed BEFORE loadMapFinished completes.
+
+This is the most important rule in FS25 UI debugging.
+
+---
+
+# 🔥 SAFE VS UNSAFE HOOK ZONES
+
+## ✔ SAFE ZONES (Injection Allowed)
+
+### 1. InGameMenu.onLoad (PRIMARY SAFE POINT)
+
+- pages array still mutable
+- tab list still building
+- registerPage is effective
+- XML binding still accepted
+
+---
+
+### 2. Early Script Load (global scope execution)
+
+- class definitions safe
+- hook binding safe
+- appendedFunction injection safe
+
+---
+
+## ❌ UNSAFE ZONES (COMMON FAILURE POINTS)
+
+### 1. loadMapFinished
+
+- UI already built
+- tab system already cached
+- late injection partially ignored
+
+---
+
+### 2. Post-render UI updates
+
+- XML loaded but not bound
+- controls exist but not registered
+- pagingTabList frozen
+
+---
+
+# 🔥 TAB REGISTRATION TIMING MODEL
+
+
+---
+
+# 💥 WHY YOUR TAB WAS NOT APPEARING
+
+Omega diagnosis using this map:
+
+## FAILURE CHAIN:
+
+1. Hook executed during loadMapFinished (TOO LATE)
+2. InGameMenu already in post-load phase
+3. pages table already partially finalized
+4. registerPage executed outside safe window
+5. pagingTabList rebuild ignored or cached
+6. tab icon never committed to UI render tree
+
+---
+
+
+---
+
+# 🔥 NEW ENGINE RULE DISCOVERED
+
+```text id="fs25_rule_4"
+If registerPage is called after pagingTabList initial build,
+the tab may be registered but never rendered.
+

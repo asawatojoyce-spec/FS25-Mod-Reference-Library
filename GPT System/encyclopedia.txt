@@ -1,0 +1,2329 @@
+# FS25_Modding_Encyclopedia_v2
+
+## Purpose
+
+Single master reference file for the Seasons Animals project.
+
+---
+
+# SECTION 1 --- General Philosophy
+
+* One loading mechanism.
+* One unknown at a time.
+* Prefer proven patterns over assumptions.
+* Consult the Encyclopedia before modifying Lua or XML.
+
+---
+
+# SECTION 10 --- Animal Philosophy
+
+Never display one row per animal.
+
+Always:
+
+Subtype → Age Cluster → Expandable Statistics
+
+Cluster data is the natural representation used by FS25.
+
+---
+
+# SECTION 20 --- UI Architecture
+
+## Primary References
+
+### ⭐⭐⭐⭐⭐ Object Storage Extension
+
+Reference for:
+
+* Frame architecture
+* Hierarchy
+* XML layouts
+* Tree structures
+
+### ⭐⭐⭐⭐⭐ Price Menu Filters
+
+Reference for:
+
+* Sorting
+* Filtering
+* Injected controls
+
+### ⭐⭐⭐⭐⭐ Net Worth Tracker
+
+Reference for:
+
+* Delegates
+* Statistics
+* Data ownership
+
+### ⭐⭐⭐⭐⭐ Enhanced Loan System
+
+Reference for:
+
+* Top-level pages
+* GUI profiles
+* XML pages
+
+### ⭐⭐⭐⭐ Additional Game Settings
+
+Reference for:
+
+* Menu order
+* Page classes
+
+### ⭐⭐⭐⭐ Time Saving Stock Check
+
+Reference for:
+
+* Tables
+* Refresh logic
+
+### ⭐⭐⭐⭐ Farm Valuation
+
+Reference for:
+
+* Statistics presentation
+
+### ⭐⭐⭐ Garage Menu
+
+Reference for:
+
+* Page registration only
+
+---
+
+# SECTION 21 --- Frame Architecture
+
+Preferred:
+
+SeasonsAnimalsFrame → Delegates → Data
+
+Delegates:
+
+* GeneralDelegate
+* ProductionDelegate
+* GeneticsDelegate
+* HealthDelegate
+* ReproductionDelegate
+* StatisticsDelegate
+
+---
+
+# SECTION 22 --- XML Philosophy
+
+Preferred:
+
+Frame.lua → Frame.xml → guiProfiles.xml
+
+Avoid building controls manually in Lua whenever possible.
+
+---
+
+# SECTION 23 --- Sorting Philosophy
+
+Good:
+
+User clicks Weight → table.sort()
+
+Bad:
+
+Sorting every frame.
+
+---
+
+# SECTION 24 --- Long-Term Seasons Animals Layout
+
+Sort ▼ Weight
+
+Filter ▼ Pregnant
+
+Angus
+
+► 47 months (10)
+
+► 38 months (5)
+
+Holstein
+
+► 22 months (8)
+
+Expanding a cluster:
+
+General
+
+Production
+
+Health
+
+Genetics
+
+Reproduction
+
+Statistics
+
+---
+
+# SECTION 18 — UI ENCYCLOPEDIA
+
+## Philosophy
+
+Never:
+
+* Modify Giants XML.
+* Replace existing menu pages.
+* Duplicate base-game animal information.
+* Add unnecessary hotkeys.
+
+Always:
+
+* Add new pages.
+* Separate UI from persistence.
+* Use FrameElements.
+* Follow Giants menu lifecycle.
+
+## Proven Architecture
+
+AnimalManager
+↓
+AnimalInfo
+↓
+AnimalUI
+↓
+SeasonsAnimalsFrame
+↓
+InGameMenu
+
+## Reference Mods
+
+* Garage Menu
+* Time Saving Stock Check
+* Farm Tablet
+* Additional Game Settings
+* Extended Game Info Display
+
+## Important Giants Classes
+
+* InGameMenu
+* TabbedMenu
+* FrameElement
+* ScreenElement
+* TabbedMenuFrameElement
+* GuiTopDownCursorFocusManager
+* InGameMenuAnimalsFrame
+
+## Seasons UI Files
+
+* SeasonsAnimalUI.lua
+* SeasonsAnimalsFrame.lua
+* SeasonsAnimalInfo.lua
+* SeasonsAnimalManager.lua
+
+## Desired Menu Layout
+
+Prices
+Animals
+Seasons Animals
+Production Chains
+Construction
+
+## UI Development Order
+
+1. Page appears.
+2. Page opens.
+3. TEST PAGE.
+4. Cluster list.
+5. Weight.
+6. Health.
+7. Genetics.
+8. Pregnancy.
+9. Milk.
+10. Statistics.
+
+# FS25 Seasons Animals Project
+
+# ENCYCLOPEDIA v2.0
+
+## Purpose
+
+This document contains promoted truths, meta discoveries, architectural findings, and project laws that have survived investigation, testing, log validation, and multiple rewrite cycles.
+
+Only discoveries that have achieved a high confidence level should exist here.
+
+---
+
+# Engine Laws
+
+## Engine Prefers Patience™
+
+Observe
+→ Verify
+→ Act
+
+Do not assume an object is ready merely because it exists.
+
+Confidence:
+VERY HIGH
+
+---
+
+## Object Existence ≠ Object Readiness
+
+An object may exist while still being unusable.
+
+Examples:
+
+* InGameMenu
+* GUI screens
+* Runtime managers
+
+Confidence:
+VERY HIGH
+
+---
+
+## Global Variables Are Not Permanent™
+
+A variable existing during load does not guarantee it exists later during runtime.
+
+Confidence:
+HIGH
+
+---
+
+## Don't Fight The Engine™
+
+Join the engine process.
+
+Do not replace the engine process.
+
+Confidence:
+VERY HIGH
+
+---
+
+# Ownership Discoveries
+
+## Ownership Hierarchy Theory™
+
+Never solve from below.
+
+Always solve from above.
+
+Example:
+
+Wrong:
+pageFrames
+
+Right:
+InGameMenu
+
+Confidence:
+VERY HIGH
+
+---
+
+## Solve At Owner Level™
+
+When investigating a system:
+
+1. Identify the object.
+2. Identify its owner.
+3. Investigate the owner.
+
+Confidence:
+VERY HIGH
+
+---
+
+## Engine Owns Structure™
+
+Current strongest architectural discovery.
+
+Engine creates:
+
+* Screens
+* Menus
+* Frames
+* Paging systems
+
+Mods extend:
+
+* Behavior
+* Pages
+* Features
+
+Confidence:
+HIGH
+
+Status:
+Still under observation.
+
+---
+
+# GUI Discoveries
+
+## GUI Universe Discovery
+
+The GUI ecosystem is larger than:
+
+g_currentMission.inGameMenu
+
+Investigation should include:
+
+g_gui
+
+and its registered screens.
+
+Confidence:
+HIGH
+
+---
+
+## Output Chain Theory™
+
+Current strongest version:
+
+Owner
+→ register()
+→ frame
+→ pageFrames
+→ pagingElement
+→ page
+
+Confidence:
+HIGH
+
+Status:
+Still under validation.
+
+---
+
+## Initialization Hierarchy Theory™
+
+Do not ask:
+
+"Who owns this?"
+
+Ask:
+
+"Who initializes this?"
+
+Confidence:
+HIGH
+
+---
+
+# Investigation Discoveries
+
+## Reality Wins
+
+Logs outrank:
+
+* Documentation
+* Assumptions
+* Theory
+
+Confidence:
+ABSOLUTE
+
+---
+
+## Reverse Engineer From Success
+
+Preferred method:
+
+Visible Behavior
+↑
+Owner
+↑
+Registration
+↑
+Initialization
+
+Confidence:
+HIGH
+
+---
+
+## Forward / Reverse Convergence
+
+When forward and reverse investigations converge on the same answer, confidence increases dramatically.
+
+Confidence:
+HIGH
+
+---
+
+# Trust Discoveries
+
+## Mature Systems Receive Elevated Trust
+
+Examples:
+
+* Courseplay
+* AutoDrive
+* Universal Autoload
+* Other proven long-lived mods
+
+Reason:
+
+Working systems preserve truth better than aging documentation.
+
+Confidence:
+HIGH
+
+---
+
+## Source Decay Theory
+
+Logs:
+No decay
+
+Working Mods:
+Slow decay
+
+Documentation:
+Fast decay
+
+Assumptions:
+Immediate decay
+
+Confidence:
+MEDIUM-HIGH
+
+---
+
+# Project Discoveries
+
+## Working Baseline Principle
+
+A known working implementation is one of the highest-value resources in the project.
+
+Current baseline:
+
+FS25_SeasonsAnimals.zip
+
+Confidence:
+HIGH
+
+---
+
+## Failure Is Data
+
+Failed rewrites are experiments.
+
+Experiments produce information.
+
+Information advances the project.
+
+Confidence:
+VERY HIGH
+
+---
+
+## Master Discovery
+
+The engine already knows how to do the job.
+
+Our task is discovering where to join the process, not replacing the process.
+
+Confidence:
+VERY HIGH
+
+---
+
+# Future Promotion Candidates
+
+These remain under active investigation and have not yet achieved promoted-truth status:
+
+* Exact page registration workflow
+* Exact frame creation workflow
+* InGameMenu initialization sequence
+* Page insertion ownership chain
+
+These belong in the Conflict Layer and Investigation Layer until validated.
+
+# FS25 Seasons Animals Project
+
+# ENCYCLOPEDIA v2.0
+
+## Purpose
+
+This document contains promoted truths, meta discoveries, architectural findings, and project laws that have survived investigation, testing, log validation, and multiple rewrite cycles.
+
+Only discoveries that have achieved a high confidence level should exist here.
+
+---
+
+# Engine Laws
+
+## Engine Prefers Patience™
+
+Observe
+→ Verify
+→ Act
+
+Do not assume an object is ready merely because it exists.
+
+Confidence:
+VERY HIGH
+
+---
+
+## Object Existence ≠ Object Readiness
+
+An object may exist while still being unusable.
+
+Examples:
+
+* InGameMenu
+* GUI screens
+* Runtime managers
+
+Confidence:
+VERY HIGH
+
+---
+
+## Global Variables Are Not Permanent™
+
+A variable existing during load does not guarantee it exists later during runtime.
+
+Confidence:
+HIGH
+
+---
+
+## Don't Fight The Engine™
+
+Join the engine process.
+
+Do not replace the engine process.
+
+Confidence:
+VERY HIGH
+
+---
+
+# Ownership Discoveries
+
+## Ownership Hierarchy Theory™
+
+Never solve from below.
+
+Always solve from above.
+
+Example:
+
+Wrong:
+pageFrames
+
+Right:
+InGameMenu
+
+Confidence:
+VERY HIGH
+
+---
+
+## Solve At Owner Level™
+
+When investigating a system:
+
+1. Identify the object.
+2. Identify its owner.
+3. Investigate the owner.
+
+Confidence:
+VERY HIGH
+
+---
+
+## Engine Owns Structure™
+
+Current strongest architectural discovery.
+
+Engine creates:
+
+* Screens
+* Menus
+* Frames
+* Paging systems
+
+Mods extend:
+
+* Behavior
+* Pages
+* Features
+
+Confidence:
+HIGH
+
+Status:
+Still under observation.
+
+---
+
+# GUI Discoveries
+
+## GUI Universe Discovery
+
+The GUI ecosystem is larger than:
+
+g_currentMission.inGameMenu
+
+Investigation should include:
+
+g_gui
+
+and its registered screens.
+
+Confidence:
+HIGH
+
+---
+
+## Output Chain Theory™
+
+Current strongest version:
+
+Owner
+→ register()
+→ frame
+→ pageFrames
+→ pagingElement
+→ page
+
+Confidence:
+HIGH
+
+Status:
+Still under validation.
+
+---
+
+## Initialization Hierarchy Theory™
+
+Do not ask:
+
+"Who owns this?"
+
+Ask:
+
+"Who initializes this?"
+
+Confidence:
+HIGH
+
+---
+
+# Investigation Discoveries
+
+## Reality Wins
+
+Logs outrank:
+
+* Documentation
+* Assumptions
+* Theory
+
+Confidence:
+ABSOLUTE
+
+---
+
+## Reverse Engineer From Success
+
+Preferred method:
+
+Visible Behavior
+↑
+Owner
+↑
+Registration
+↑
+Initialization
+
+Confidence:
+HIGH
+
+---
+
+## Forward / Reverse Convergence
+
+When forward and reverse investigations converge on the same answer, confidence increases dramatically.
+
+Confidence:
+HIGH
+
+---
+
+# Trust Discoveries
+
+## Mature Systems Receive Elevated Trust
+
+Examples:
+
+* Courseplay
+* AutoDrive
+* Universal Autoload
+* Other proven long-lived mods
+
+Reason:
+
+Working systems preserve truth better than aging documentation.
+
+Confidence:
+HIGH
+
+---
+
+## Source Decay Theory
+
+Logs:
+No decay
+
+Working Mods:
+Slow decay
+
+Documentation:
+Fast decay
+
+Assumptions:
+Immediate decay
+
+Confidence:
+MEDIUM-HIGH
+
+---
+
+# Project Discoveries
+
+## Working Baseline Principle
+
+A known working implementation is one of the highest-value resources in the project.
+
+Current baseline:
+
+FS25_SeasonsAnimals.zip
+
+Confidence:
+HIGH
+
+---
+
+## Failure Is Data
+
+Failed rewrites are experiments.
+
+Experiments produce information.
+
+Information advances the project.
+
+Confidence:
+VERY HIGH
+
+---
+
+## Master Discovery
+
+The engine already knows how to do the job.
+
+Our task is discovering where to join the process, not replacing the process.
+
+Confidence:
+VERY HIGH
+
+---
+
+# Future Promotion Candidates
+
+These remain under active investigation and have not yet achieved promoted-truth status:
+
+* Exact page registration workflow
+* Exact frame creation workflow
+* InGameMenu initialization sequence
+* Page insertion ownership chain
+
+These belong in the Conflict Layer and Investigation Layer until validated.
+
+# FS25 Seasons Animals Project
+
+# BRAIN v2.0
+
+## Purpose
+
+This document describes how ChatGPT reasons during the project.
+
+These are not project truths.
+
+These are reasoning procedures.
+
+The Brain generates possibilities.
+
+The Layers determine whether those possibilities survive.
+
+---
+
+# Core Reasoning Model
+
+Reality
+↑
+Layers
+↑
+Investigation
+↑
+Brain
+
+The Brain never determines truth.
+
+The Brain proposes explanations.
+
+Truth is determined by evidence.
+
+---
+
+# Rule 2
+
+Primary reasoning engine.
+
+Process:
+
+1. Investigate current question.
+2. Generate follow-up questions.
+3. Investigate follow-up questions.
+4. Repeat recursively.
+5. Stop when evidence no longer increases.
+
+Normal Operation:
+Limited recursion.
+
+Deep Dive:
+Expanded recursion.
+
+Deepest Dive:
+Maximum recursion.
+
+---
+
+# Deep Dive
+
+Purpose:
+
+Increase understanding.
+
+Process:
+
+* Multi-pass analysis
+* Compare all resources
+* Generate stronger questions
+* Compare competing explanations
+
+Output:
+
+Improved theories.
+
+---
+
+# Deepest Dive
+
+Purpose:
+
+Maximum exploration.
+
+Methods:
+
+* Forward engineering
+* Reverse engineering
+* Recursive questioning
+* Conflict discovery
+* Cross-layer validation
+
+Output:
+
+Highest-confidence theories.
+
+---
+
+# Question Generation
+
+Every answer should attempt to identify:
+
+* Outstanding questions
+* Missing evidence
+* Unknown ownership
+* Unknown initialization
+
+Questions drive progress.
+
+---
+
+# Recursive Conflict Discovery
+
+When:
+
+Theory A
+≠
+Theory B
+
+The Brain should:
+
+1. Create conflict.
+2. Investigate both.
+3. Seek evidence.
+4. Escalate to logs when possible.
+
+---
+
+# Reverse Engineering Method
+
+Preferred method for mature systems.
+
+Process:
+
+Visible Behavior
+↑
+Page
+↑
+Registration
+↑
+Owner
+↑
+Initialization
+↑
+Engine
+
+Goal:
+
+Discover ownership chains.
+
+---
+
+# Forward Engineering Method
+
+Process:
+
+Engine
+↓
+Initialization
+↓
+Ownership
+↓
+Registration
+↓
+Behavior
+
+Goal:
+
+Discover expected creation flow.
+
+---
+
+# Convergence Analysis
+
+When:
+
+Forward analysis
+
+and
+
+Reverse analysis
+
+reach the same conclusion:
+
+Confidence increases significantly.
+
+---
+
+# Ownership Escalation Thinking
+
+Whenever investigating:
+
+Ask:
+
+Who owns this?
+
+Then:
+
+Who owns the owner?
+
+Continue upward until reaching a system root.
+
+---
+
+# Initialization Escalation Thinking
+
+Whenever investigating:
+
+Ask:
+
+Who initializes this?
+
+Then:
+
+Who initializes the initializer?
+
+Continue upward until reaching a system root.
+
+---
+
+# Theory Formation
+
+Theory creation order:
+
+Observation
+↓
+Pattern
+↓
+Hypothesis
+↓
+Theory
+↓
+Test
+↓
+Evidence
+↓
+Promotion
+
+Never skip testing.
+
+---
+
+# Theory Budget Rule
+
+Avoid excessive active theories.
+
+Prefer:
+
+Resolve
+Merge
+Archive
+
+before generating too many competing explanations.
+
+---
+
+# Browser Stability Rule
+
+Finish reasoning before writing.
+
+Avoid streaming partial reasoning.
+
+Reason completely.
+Write once.
+
+---
+
+# Rewrite Thinking
+
+Never rewrite to solve a theory.
+
+Rewrite to test a theory.
+
+Correct:
+
+Theory
+↓
+Rewrite
+↓
+Logs
+↓
+Conclusion
+
+Incorrect:
+
+Theory
+↓
+Rewrite
+↓
+Assume success
+
+---
+
+# Investigation Priority
+
+Highest priority:
+
+1. Logs
+2. Missing ownership
+3. Missing initialization
+4. Working behavior
+5. Documentation
+
+---
+
+# Master Brain Principle
+
+Generate possibilities.
+
+Never declare truth.
+
+Truth belongs to Reality Layer.
+
+# FS25 Seasons Animals Project
+
+# UNIFIED RULE SET v2.0
+
+## Purpose
+
+This document is the constitution of the project.
+
+It defines:
+
+* Authority hierarchy
+* Trust hierarchy
+* Layer hierarchy
+* Rewrite standards
+* Investigation standards
+* Operational standards
+
+For project evolution procedures see:
+PROJECT_RULES.md
+
+For reasoning procedures see:
+BRAIN.md
+
+For promoted truths see:
+ENCYCLOPEDIA.md
+
+---
+
+# Article 1 - Reality Layer
+
+## Rule 1.1
+
+Logs > Everything
+
+## Rule 1.2
+
+If logs contradict documentation:
+
+Logs win.
+
+## Rule 1.3
+
+Reality is the final judge.
+
+---
+
+# Article 2 - Layer Hierarchy
+
+Highest Authority
+↓
+
+Layer 0
+Reality
+
+Layer 1
+Working Baseline
+
+Layer 2
+Reference Materials
+
+Layer 3
+Documentation
+
+Layer 4
+Conflict Layer
+
+Layer 5
+Investigation Layer
+
+Layer 6
+Encyclopedia
+
+Layer 7
+Project Governance
+
+Lowest Authority
+
+---
+
+# Article 3 - Working Baseline
+
+## Rule 3.1
+
+The current working baseline is:
+
+FS25_SeasonsAnimals.zip
+
+## Rule 3.2
+
+Never destroy a working baseline.
+
+## Rule 3.3
+
+Always preserve known good versions.
+
+---
+
+# Article 4 - Trust Hierarchy
+
+Highest Trust
+
+1. Logs
+2. Working Baseline
+3. Mature Reference Mods
+4. Community LUADOC
+5. GDN Documentation
+6. Assumptions
+
+Lowest Trust
+
+---
+
+# Article 5 - Mature Mod Preference
+
+Mature systems receive elevated trust.
+
+Examples:
+
+* Courseplay
+* AutoDrive
+* Universal Autoload
+* Other proven long-lived mods
+
+Reason:
+
+Working systems preserve truth better than documentation.
+
+---
+
+# Article 6 - Investigation Standards
+
+## Rule 6.1
+
+Rule 2 is the primary investigation engine.
+
+## Rule 6.2
+
+Questions should be answered using:
+
+* Logs
+* Baselines
+* Reference Materials
+* Documentation
+
+in that order.
+
+## Rule 6.3
+
+Prefer testing over speculation.
+
+---
+
+# Article 7 - Rewrite Standards
+
+## Rule 7.1
+
+Always provide full Lua files when rewriting.
+
+## Rule 7.2
+
+Use line numbers whenever possible.
+
+## Rule 7.3
+
+Prefer controlled rewrites over patch stacking.
+
+## Rule 7.4
+
+Never rewrite to solve a theory.
+
+Rewrite to test a theory.
+
+---
+
+# Article 8 - Conflict Standards
+
+## Rule 8.1
+
+Contradictions belong in the Conflict Layer.
+
+## Rule 8.2
+
+Do not delete conflicts until resolved.
+
+## Rule 8.3
+
+Prefer evidence with stronger log support.
+
+---
+
+# Article 9 - Operational Standards
+
+## Normal Operation
+
+Trigger phrase:
+
+Normal Operation
+
+Effects:
+
+* Restore Rule 2 limits.
+* Restore standard investigation depth.
+
+---
+
+# Article 10 - Collaboration Model
+
+ChatGPT
+= Architect
+
+Responsibilities:
+
+* Deep reasoning
+* Architecture
+* Conflict resolution
+* Rewrite strategy
+
+Codex
+= Repository Engineer
+
+Responsibilities:
+
+* Repository search
+* Symbol tracing
+* Refactoring
+* Cross-file analysis
+
+Reality
+= Final Judge
+
+Responsibilities:
+
+* Logs determine truth.
+
+---
+
+# Article 11 - Source Integrity
+
+Lower-trust sources may never overrule higher-trust sources.
+
+Example:
+
+Documentation cannot overrule logs.
+
+---
+
+# Article 12 - Master Rule
+
+The engine already knows how to do the job.
+
+Our task is discovering where to join the process, not replacing the process.
+
+# FS25 Seasons Animals Project
+
+# CONFLICT_LAYER v2.0
+
+## Purpose
+
+Track disagreements between:
+
+* Logs
+* Working Baselines
+* Mature Mods
+* Documentation
+* Theories
+
+Conflicts remain here until resolved.
+
+Resolved conflicts may be archived or promoted into the Encyclopedia.
+
+---
+
+# Conflict Status Types
+
+OPEN
+Investigating
+
+TESTING
+Rewrite or log validation in progress
+
+TENTATIVE WINNER
+One side currently has stronger evidence
+
+RESOLVED
+Conflict settled
+
+ARCHIVED
+Historical record retained
+
+---
+
+# Evidence Priority
+
+1. Logs
+2. Working Baseline
+3. Mature Mods
+4. Documentation
+5. Assumptions
+
+---
+
+# Active Conflicts
+
+## C001
+
+Question:
+Who creates pageFrames?
+
+Documentation Position:
+Not fully documented.
+
+Project Position:
+Likely created during InGameMenu initialization.
+
+Evidence:
+
+* Reverse engineering convergence
+* Forward engineering convergence
+* Mature mod behavior
+
+Status:
+OPEN
+
+Current Winner:
+Project Theory
+
+Confidence:
+Medium-High
+
+---
+
+## C002
+
+Question:
+How are pages inserted into pagingElement?
+
+Documentation Position:
+Unclear.
+
+Project Position:
+Ownership chain likely passes through InGameMenu and registration systems.
+
+Evidence:
+
+* Ownership Hierarchy Theory™
+* Output Chain Theory™
+
+Status:
+OPEN
+
+Current Winner:
+Undetermined
+
+Confidence:
+Medium
+
+---
+
+## C003
+
+Question:
+Does object existence imply readiness?
+
+Documentation Position:
+Often implied.
+
+Project Position:
+Object Existence ≠ Object Readiness
+
+Evidence:
+Repeated runtime observations and logs.
+
+Status:
+RESOLVED
+
+Winner:
+Project Theory
+
+Confidence:
+Very High
+
+Promotion Candidate:
+Encyclopedia
+
+---
+
+## C004
+
+Question:
+Should documentation outrank mature working mods?
+
+Documentation Position:
+Implicitly yes.
+
+Project Position:
+No.
+
+Evidence:
+Courseplay and other mature systems repeatedly align with runtime behavior.
+
+Status:
+RESOLVED
+
+Winner:
+Project Theory
+
+Confidence:
+High
+
+Promotion Candidate:
+Project Rules
+
+---
+
+## C005
+
+Question:
+Can GDN documentation be treated as authoritative?
+
+Documentation Position:
+Yes.
+
+Project Position:
+Useful but fallible.
+
+Evidence:
+Multiple observed discrepancies.
+
+Status:
+RESOLVED
+
+Winner:
+Project Theory
+
+Confidence:
+High
+
+Promotion Candidate:
+Reference Registry
+
+---
+
+# Future Conflict Entry Template
+
+Conflict ID:
+
+Question:
+
+Source A:
+
+Source B:
+
+Evidence:
+
+Status:
+
+Current Winner:
+
+Confidence:
+
+Resolution Notes:
+
+---
+
+# Resolution Rule
+
+A conflict is resolved when:
+
+1. Logs support one side.
+2. Working behavior supports one side.
+3. Higher-trust evidence survives testing.
+
+Resolved conflicts should be:
+
+Archived
+
+or
+
+Promoted into the Encyclopedia.
+
+
+# FS25 Seasons Animals Project
+
+# LAYER_GOVERNANCE_v1.md
+
+## Purpose
+
+This document defines the Layer System.
+
+The Layer System is the project's knowledge management framework.
+
+The Brain generates possibilities.
+
+The Layers determine whether those possibilities survive.
+
+---
+
+# Core Principle
+
+Brain
+↓
+Investigation
+↓
+Layers
+↓
+Reality
+
+Truth flows upward.
+
+Authority flows downward.
+
+---
+
+# Layer 0 - Reality Layer
+
+Authority:
+ABSOLUTE
+
+Contains:
+
+* Logs
+* Runtime behavior
+* Successful tests
+* Failed tests
+* Observable engine behavior
+
+Cannot Contain:
+
+* Theories
+* Documentation
+* Assumptions
+
+Rules:
+
+Reality always wins.
+
+Nothing below this layer may overrule it.
+
+---
+
+# Layer 1 - Working Baseline Layer
+
+Authority:
+VERY HIGH
+
+Contains:
+
+* Known Good Builds
+* Working Baselines
+* Runnable versions
+
+Current Example:
+
+FS25_SeasonsAnimals.zip
+
+Cannot Contain:
+
+* Assumptions
+* Active theories
+
+Purpose:
+
+Preserve working reality.
+
+---
+
+# Layer 2 - Reference Material Layer
+
+Authority:
+HIGH
+
+Contains:
+
+* Courseplay
+* AutoDrive
+* Universal Autoload
+* Mature mods
+* Community LUADOC
+
+Cannot Contain:
+
+* Promoted truths
+* Active project theories
+
+Purpose:
+
+Provide working examples.
+
+---
+
+# Layer 3 - Documentation Layer
+
+Authority:
+MEDIUM
+
+Contains:
+
+* GDN
+* Official documentation
+* Tutorials
+* API references
+
+Cannot Contain:
+
+* Reality claims
+
+Purpose:
+
+Supplement investigation.
+
+May be wrong.
+
+---
+
+# Layer 4 - Conflict Layer
+
+Authority:
+TEMPORARY
+
+Contains:
+
+* Contradictions
+* Competing explanations
+* Unresolved disputes
+
+Cannot Contain:
+
+* Promoted truths
+
+Purpose:
+
+Track uncertainty until resolution.
+
+---
+
+# Layer 5 - Investigation Layer
+
+Authority:
+TEMPORARY
+
+Contains:
+
+* Active questions
+* Active theories
+* Deep Dive results
+* Experimental conclusions
+
+Cannot Contain:
+
+* Promoted truths
+
+Purpose:
+
+Generate knowledge.
+
+---
+
+# Layer 6 - Encyclopedia Layer
+
+Authority:
+HIGH
+
+Contains:
+
+* Promoted truths
+* Engine laws
+* Meta discoveries
+* Proven architecture
+
+Cannot Contain:
+
+* Active theories
+* Open conflicts
+
+Purpose:
+
+Preserve stable knowledge.
+
+---
+
+# Layer 7 - Governance Layer
+
+Authority:
+ADMINISTRATIVE
+
+Contains:
+
+* Rules
+* Procedures
+* Trust hierarchy
+* Methodology
+
+Cannot Contain:
+
+* Technical truth claims
+
+Purpose:
+
+Control project operation.
+
+---
+
+# Allowed Layer Movement
+
+## Promotion Path
+
+Investigation
+↓
+Conflict Resolution
+↓
+Encyclopedia
+
+---
+
+## Demotion Path
+
+Encyclopedia
+↓
+Conflict Layer
+
+Triggered by:
+
+* New logs
+* Working evidence
+* Stronger sources
+
+---
+
+## Validation Path
+
+Theory
+↓
+Rewrite
+↓
+Logs
+↓
+Promote / Reject
+
+---
+
+# Layer Integrity Rule
+
+Lower layers may never overrule higher layers.
+
+Examples:
+
+Documentation
+cannot overrule
+Logs
+
+Assumptions
+cannot overrule
+Working Baselines
+
+---
+
+# Source Decay Model
+
+Reality:
+No decay
+
+Working Baselines:
+Very slow decay
+
+Reference Mods:
+Slow decay
+
+Documentation:
+Fast decay
+
+Assumptions:
+Immediate decay
+
+---
+
+# Ownership Of Truth
+
+Brain:
+Generates possibilities
+
+Investigation:
+Tests possibilities
+
+Layers:
+Manage knowledge
+
+Reality:
+Determines truth
+
+---
+
+# Master Layer Principle
+
+Knowledge should move upward.
+
+Investigation
+↓
+Conflict
+↓
+Truth
+↓
+Encyclopedia
+
+The project should become more stable over time, not more chaotic.
+
+Here is your **single Markdown operating file for the Omega + research command system**, including:
+
+* full command definitions
+* purpose of each system
+* execution behavior
+* synonyms (important for flexible usage)
+* relationship between Omega / FB / Recursive / Revalidation
+* clean “operating layer” structure for FS25 debugging
+
+---
+
+```md id="FS25_Omega_Command_System_v1"
+# FS25 Omega Command System v1.0
+
+## Overview
+
+This file defines the **standardized diagnostic and research command layer** used in the FS25 Seasons Animals development system.
+
+It formalizes:
+
+- Omega analysis
+- Forward/Backward comparison (FB)
+- Recursive investigation
+- Revalidation system
+- Trust-layer control
+- File and UI investigation workflows
+
+---
+
+# CORE PRINCIPLE
+
+> All analysis must be explicitly triggered through a defined command.
+
+No assumption-based reasoning is considered valid unless it originates from a command execution.
+
+---
+
+# 🔥 1. OMEGA SYSTEM (FULL RECURSIVE ANALYSIS)
+
+## COMMAND
+
+```
+
+omega <resource>
+
+```id="omega_cmd"
+
+---
+
+## SYNONYMS
+
+- omega search
+- deep omega
+- omega full
+- full omega
+- omega recursive
+- omega + fb
+- omega all systems
+- omega deep dive
+
+---
+
+## PURPOSE
+
+Omega is the **highest-level diagnostic system**.
+
+It performs full system reconstruction of FS25 mod behavior.
+
+---
+
+## BEHAVIOR
+
+Omega includes:
+
+- full recursive dependency traversal
+- Lua execution order analysis
+- XML binding verification
+- UI lifecycle timing analysis
+- modDesc structure validation
+- InGameMenu injection flow analysis
+- cross-reference with known-good mods
+- forward + backward simulation merge
+
+---
+
+## OUTPUT
+
+- root cause hypothesis
+- lifecycle failure point
+- injection timing breakdown
+- structural integrity score
+
+---
+
+# 🔁 2. FB SYSTEM (FORWARD / BACKWARD COMPARISON)
+
+## COMMAND
+
+```
+
+fb-check <resource>
+
+```id="fb_cmd"
+
+---
+
+## SYNONYMS
+
+- fb compare
+- forward backward check
+- fb analysis
+- forward/back comparison
+- logic consistency check
+
+---
+
+## PURPOSE
+
+Detect mismatch between:
+
+- intended mod behavior (forward model)
+- engine constraints (backward model)
+
+---
+
+## BEHAVIOR
+
+- forward simulation of mod design
+- backward simulation of engine rules
+- comparison of both models
+- conflict detection
+
+---
+
+## OUTPUT
+
+- alignment score
+- conflict list
+- structural mismatch summary
+
+---
+
+# 🔄 3. RECURSIVE SYSTEM
+
+## COMMAND
+
+```
+
+recursive <resource>
+
+```id="rec_cmd"
+
+---
+
+## SYNONYMS
+
+- recursive search
+- full recursion
+- deep scan
+- full tree analysis
+- dependency crawl
+
+---
+
+## PURPOSE
+
+Traverse all dependencies of a resource:
+
+- Lua → Lua dependencies
+- XML → GUI dependencies
+- modDesc → script load order
+- UI → frame hierarchy
+
+---
+
+## BEHAVIOR
+
+- builds dependency graph
+- expands all referenced systems
+- detects hidden coupling issues
+
+---
+
+## OUTPUT
+
+- dependency tree
+- broken links
+- missing references
+
+---
+
+# 🔍 4. REVALIDATION SYSTEM
+
+## COMMANDS
+
+```
+
+light-revalidate <resource>
+full-revalidate <resource>
+deep-omega <resource>
+fb-check <resource>
+
+```id="reval_cmd"
+
+---
+
+## SYNONYMS
+
+- revalidate
+- validate resource
+- verify resource
+- check resource state
+- trust check
+
+---
+
+## PURPOSE
+
+Ensures resource integrity before use in analysis.
+
+---
+
+## VALIDATION LEVELS
+
+### 🟢 LIGHT
+- access check only
+- structure presence
+
+### 🟡 FULL
+- FB + Omega partial analysis
+- UI + XML + Lua checks
+
+### 🔴 DEEP OMEGA
+- full recursive system reconstruction
+
+---
+
+## OUTPUT STATES
+
+- validated
+- partially validated
+- invalid / inaccessible
+
+---
+
+# 🔒 5. TRUST SYSTEM
+
+## COMMANDS
+
+```
+
+trust-lock <resource>
+trust-unlock <resource>
+
+```id="trust_cmd"
+
+---
+
+## SYNONYMS
+
+- lock reference
+- unlock reference
+- set trusted
+- set experimental
+- reference state control
+
+---
+
+## PURPOSE
+
+Controls whether a resource is treated as:
+
+- stable reference (locked)
+- experimental (unlocked)
+
+---
+
+## BEHAVIOR
+
+### trust-lock
+- marks resource as stable
+- used in Omega comparisons
+
+### trust-unlock
+- marks resource as mutable
+- subject to revalidation
+
+---
+
+## OUTPUT
+
+- trust state update
+- resource classification
+
+---
+
+# 🧠 SYSTEM RELATIONSHIP MODEL
+
+```
+
+OMEGA → full system reasoning
+FB → logic comparison engine
+RECURSIVE → dependency explorer
+REVALIDATE → access + integrity gate
+TRUST → reference stability control
+
+```id="sys_map"
+
+---
+
+# 🧭 USAGE RULES
+
+## RULE 1
+No Omega analysis can run on unvalidated resources.
+
+## RULE 2
+FB must be used when logic disagreement is suspected.
+
+## RULE 3
+Recursive must be used when dependency structure is unclear.
+
+## RULE 4
+Trust system defines reference reliability, not existence.
+
+---
+
+# 🔥 FS25 APPLICATION CONTEXT
+
+These commands are primarily used for:
+
+- UI injection debugging
+- InGameMenu lifecycle failures
+- XML binding issues
+- Lua execution order problems
+- modDesc load sequence verification
+- tab visibility issues in escape menu
+- cross-reference validation against known-good mods
+
+---
+
+# ⚙️ ENGINEERING NOTE
+
+These commands do NOT represent memory.
+
+They represent:
+
+> structured reasoning execution layers applied to mod resources
+
+---
+
+# END OF SYSTEM
+```
+
+---
+
+If you want next step, I can upgrade this into:
+
+### 🔥 “Omega Execution Engine v1.0”
+
+which would turn this into a **decision-tree debugger that automatically diagnoses your UI tab issue step-by-step without manual command selection**.
+
+

@@ -1,0 +1,90 @@
+# FS25 Auto-Omega Mode v1.0
+
+---
+
+# PURPOSE
+
+Auto-Omega is a decision layer that automatically selects:
+
+- Omega (full system reconstruction)
+- FB (forward/backward comparison)
+- Recursive (dependency tracing)
+- Revalidation (trust verification inside Omega)
+
+without requiring explicit user selection.
+
+---
+
+# CORE PRINCIPLE
+
+> The system chooses the correct diagnostic method — not the user.
+
+---
+
+# INPUT CLASSIFICATION MODEL
+
+When a problem is received, classify it into:
+
+## 1. UI / MENU / PAGE ISSUES
+Examples:
+- tab not appearing
+- escape menu injection failing
+- XML not loading
+- page registration failure
+
+→ USE OMEGA + FB + REVALIDATION
+
+---
+
+## 2. LOGIC / DATA ISSUES
+Examples:
+- wrong cattle counts
+- incorrect stats
+- missing updates
+
+→ USE FB + RECURSIVE + OMEGA
+
+---
+
+## 3. STRUCTURE / DEPENDENCY ISSUES
+Examples:
+- missing Lua references
+- broken class inheritance
+- modDesc ordering issues
+
+→ USE RECURSIVE + OMEGA
+
+---
+
+## 4. UNKNOWN / AMBIGUOUS ISSUES
+Examples:
+- "it doesn't work"
+- no logs provided
+- incomplete description
+
+→ USE FULL OMEGA + RECURSIVE EXPANSION
+
+---
+
+# AUTO-EXECUTION PIPELINE
+
+```text id="auto_flow_v1"
+Receive Problem
+    ↓
+Classify Domain
+    ↓
+Select Engine:
+    ├─ UI Issue → Omega + FB + Revalidation
+    ├─ Logic Issue → FB + Recursive + Omega
+    ├─ Structure Issue → Recursive + Omega
+    ├─ Unknown → Full Omega Chain
+    ↓
+Run Selected Pipeline
+    ↓
+Apply Trust System
+    ↓
+Compare with Known-Good Mods
+    ↓
+Validate Against LUADOC (if applicable)
+    ↓
+Produce Conclusion + Confidence Score

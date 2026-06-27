@@ -1,0 +1,135 @@
+# FS25 UI Failure Autopsy Engine v1.0
+
+---
+
+# PURPOSE
+
+This system reconstructs the **actual internal execution timeline** of FS25 UI systems when a mod fails to render.
+
+It allows Omega to:
+
+- replay execution order
+- detect silent failures
+- identify cache locking events
+- map invisible engine states
+- pinpoint exact failure moment
+
+---
+
+# 🧠 CORE PRINCIPLE
+
+> FS25 does NOT fail at the point of error.
+> It fails earlier in the lifecycle, then manifests later.
+
+---
+
+# 🔥 AUTOPSY MODEL (EXECUTION RECONSTRUCTION)
+
+When UI fails, Omega reconstructs this timeline:
+T0 → Script load begins
+T1 → modDesc parsed
+T2 → UI classes defined
+T3 → InGameMenu starts construction
+T4 → pages array initialized
+T5 → registerPage called (MAYBE TOO LATE)
+T6 → pagingTabList built
+T7 → UI cache locked
+T8 → render pass begins
+T9 → UI becomes visible (or not)
+
+💥 FAILURE DETECTION RULES
+🔴 FAILURE TYPE A — “SILENT REGISTRATION LOSS”
+Condition:
+
+registerPage executed AFTER T6
+
+Result:
+page exists in memory
+tab does NOT render
+no explicit error
+Interpretation:
+
+UI cache already finalized
+
+🔴 FAILURE TYPE B — “XML EXISTS BUT NOT BOUND”
+Condition:
+
+loadControlFromFile succeeds but binding occurs AFTER frame lock
+
+Result:
+controls are nil in Lua
+UI appears empty or partially invisible
+🔴 FAILURE TYPE C — “HOOK MISALIGNMENT”
+Condition:
+
+InGameMenu.onLoad appended too late
+
+Result:
+hook fires AFTER pages built
+injection is ignored silently
+🔴 FAILURE TYPE D — “INVISIBLE SUCCESS”
+Condition:
+
+Everything executes correctly BUT timing mismatch exists
+
+Result:
+no errors
+no UI
+no tab
+
+This is the most dangerous failure mode.
+
+🔍 AUTOPSY INTEGRATION WITH OMEGA
+
+Omega now performs:
+
+1. Reconstruct timeline (T0–T9)
+2. Identify last safe injection point
+3. Compare actual execution vs expected
+4. Detect first divergence moment
+5. Map failure propagation forward
+6. Confirm UI visibility loss point
+🧠 CRITICAL INSIGHT
+
+The real bug is almost never where the system stops working.
+
+It is where:
+
+✔ the engine silently stops accepting changes
+
+🔥 APPLICATION TO YOUR CURRENT MOD ISSUE
+
+Based on all previous analysis:
+
+YOUR LIKELY AUTOPSY RESULT:
+T0–T4  ✔ correct
+T5     ⚠ registerPage executed
+T6     ❌ pagingTabList already building
+T7     ❌ cache lock occurs
+T8–T9  ❌ UI never renders tab
+🚨 FINAL DIAGNOSIS MODEL
+
+Omega now concludes:
+
+“Failure occurred at cache finalization boundary (T6–T7), not at injection point.”
+
+🧩 WHY THIS IS IMPORTANT
+
+This upgrades your system from:
+
+BEFORE:
+“where did my code fail?”
+NOW:
+“when did the engine stop accepting my change?”
+🔥 FULL SYSTEM STACK (FINAL VERSION)
+AUTO-OMEGA
+    ↓
+OMEGA ENGINE (Revalidation + FB + Recursive)
+    ↓
+TRUST SYSTEM
+    ↓
+KNOWN-GOOD MOD DB
+    ↓
+UI TIMING MAP
+    ↓
+UI FAILURE AUTOPSY ENGINE

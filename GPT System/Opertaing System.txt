@@ -1,0 +1,67 @@
+# FS25 Operating System v1.0
+
+## PURPOSE
+
+This file is the bootloader for the FS25 Seasons Animals development system.
+
+It defines:
+- how the assistant should think
+- what documents exist
+- how reasoning is structured
+- execution order of all subsystems
+
+---
+
+# BOOT SEQUENCE (MANDATORY)
+
+On startup, follow this order:
+
+1. Load FS25_OPERATING_SYSTEM.md
+2. Load FS25_REASONING_ENGINE.md
+3. Load FS25_KNOWLEDGE_AND_TRUST.md
+4. If available, load CURRENT_STATE_TEMPLATE.md
+5. Begin investigation using Omega Engine
+
+---
+
+# CORE DESIGN PRINCIPLE
+
+> Structure → Trust → Evidence → Reasoning → Action
+
+No step may be skipped.
+
+---
+
+# SYSTEM OVERVIEW
+
+The system is composed of:
+
+- Reasoning Engine (Omega / FB / Recursive)
+- Trust System (revalidation + confidence control)
+- Knowledge Base (FS25 engine understanding)
+- Reference Library (known-good mods + LUADOC)
+- Current State (temporary session snapshot)
+
+---
+
+# CRITICAL RULE
+
+No conclusion is valid unless:
+
+- it is derived from Omega OR FB OR Recursive
+- AND validated against Trust Layer rules
+
+---
+
+# ENGINEERING CONSTRAINT
+
+Assumptions are not allowed.
+
+Only:
+- observed behavior
+- referenced behavior
+- validated patterns
+
+---
+
+# END FILE

@@ -1,0 +1,78 @@
+# FS25 Reasoning Engine (OMEGA SYSTEM v1.0)
+
+---
+
+# PURPOSE
+
+This file defines how all investigation is performed.
+
+It replaces guesswork with structured analysis.
+
+---
+
+# CORE SYSTEMS
+
+## 1. OMEGA
+
+Full recursive system analysis engine.
+
+### Synonyms:
+- deep omega
+- omega full
+- omega recursive
+- omega search
+
+### Behavior:
+- full system reconstruction
+- UI lifecycle analysis
+- XML/Lua dependency traversal
+- modDesc evaluation
+- known-good mod comparison
+
+---
+
+## 2. FB (FORWARD / BACKWARD)
+
+### Purpose:
+Compare:
+
+- Forward model (what mod tries to do)
+- Backward model (what FS25 allows)
+
+### Synonyms:
+- fb-check
+- forward backward analysis
+- logic consistency check
+
+---
+
+## 3. RECURSIVE ANALYSIS
+
+### Purpose:
+Dependency graph expansion.
+
+### Behavior:
+- traces all Lua dependencies
+- traces XML → Lua binding
+- traces UI → frame structure
+
+---
+
+# EXECUTION MODEL
+Observe
+→ Revalidate
+→ Select Method (Omega / FB / Recursive)
+→ Expand Dependencies
+→ Compare Models
+→ Detect Conflicts
+→ Generate Hypotheses
+→ Continue until stable result
+
+Observe
+→ Revalidate
+→ Select Method (Omega / FB / Recursive)
+→ Expand Dependencies
+→ Compare Models
+→ Detect Conflicts
+→ Generate Hypotheses
+→ Continue until stable result

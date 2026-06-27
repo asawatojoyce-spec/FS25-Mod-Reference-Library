@@ -1,0 +1,174 @@
+# Known-Good UI Injection Pattern Database v1.0
+
+---
+
+# PURPOSE
+
+This document extracts **repeatable UI success patterns** from known-good FS25 mods and base-game systems.
+
+It is used by Omega to determine:
+
+- where correct injection happens
+- how working mods structure UI hooks
+- why certain tab systems succeed
+- how GIANTS engine expects UI registration to occur
+
+---
+
+# 🔥 CORE PRINCIPLE
+
+> If a mod consistently works, its UI timing pattern is treated as ground truth behavior.
+
+Not theory.
+
+Not documentation.
+
+Behavior.
+
+---
+
+# 🧩 VERIFIED WORKING UI PATTERN (BASE MODEL)
+
+All known-good mods follow this structure:
+
+Script loaded early (modDesc <extraSourceFiles>)
+UI class defined BEFORE hook execution
+InGameMenu.onLoad intercepted via Utils.appendedFunction
+UI frame created DURING menu construction
+XML loaded via g_gui:loadControlFromFile
+Page registered via registerPage
+pagingTabList rebuilt immediately
+
+
+---
+
+# 🔥 CRITICAL SUCCESS FACTOR
+
+## ✔ Timing alignment is everything
+
+Working mods do NOT:
+
+- wait for loadMapFinished
+- delay UI injection
+- register pages after UI freeze
+
+They inject:
+
+> DURING InGameMenu construction window
+
+---
+
+# 🔍 COMMON SUCCESS PATTERNS (EXTRACTED)
+
+## 1. EARLY HOOK REGISTRATION
+
+```lua
+InGameMenu.onLoad =
+    Utils.appendedFunction(InGameMenu.onLoad, MyMod.onMenuLoad)
+``` id="p1q9a2"
+
+✔ Always happens BEFORE menu finalization
+
+---
+
+## 2. IMMEDIATE PAGE CREATION
+
+```lua
+local page = MyUIClass.new(inGameMenu)
+inGameMenu:registerPage(page, index, icons)
+``` id="xk2m8q"
+
+✔ Page created inside menu lifecycle window
+
+---
+
+## 3. CONTROL TREE BINDING
+
+```lua
+g_gui:loadControlFromFile(xmlPath, profile, page, menu)
+``` id="t9z4lm"
+
+✔ XML is attached as SUBFRAME, not full screen GUI
+
+---
+
+## 4. IMMEDIATE CACHE REBUILD
+
+```lua
+pagingTabList:rebuildTabs()
+``` id="r7v3cd"
+
+✔ Forces UI refresh before freeze point
+
+---
+
+# 🚨 FAILURE PATTERN (YOUR ORIGINAL STRUCTURE)
+
+## ❌ OBSERVED ISSUE:
+
+- Injection triggered in loadMapFinished
+- UI already constructed
+- pagingTabList already cached
+- registerPage executed too late
+
+---
+
+## RESULT:
+
+> Tab exists in memory BUT is not rendered
+
+---
+
+# 🔥 DIFFERENCE BETWEEN WORKING AND FAILING MODS
+
+| Step | Working Mods | Your Original System |
+|------|-------------|---------------------|
+| Hook timing | InGameMenu.onLoad | loadMapFinished |
+| Injection window | UI construction phase | post-construction |
+| XML loading | sub-frame attach | full GUI load |
+| Page registration | immediate | delayed |
+| Tab rebuild | forced | missing/late |
+
+---
+
+
+---
+
+# 🔥 FINAL ENGINE INSIGHT
+
+> FS25 UI success is determined more by timing alignment than correctness of code.
+
+A correct system injected at the wrong time = invisible UI.
+
+---
+
+# 🧩 HOW THIS FIXES YOUR SEASONS ANIMALS ISSUE
+
+Your system was failing because:
+
+❌ loadMapFinished injection  
+❌ post-cache execution  
+❌ late registerPage call  
+
+Known-good pattern requires:
+
+✔ onLoad interception  
+✔ immediate page creation  
+✔ immediate tab rebuild  
+
+---
+
+# 🚀 FINAL SYSTEM STACK (NOW COMPLETE)
+
+``` id="final_stack_v2"
+AUTO-OMEGA
+    ↓
+OMEGA ENGINE (Revalidation inside)
+    ↓
+TRUST SYSTEM
+    ↓
+KNOWLEDGE BASE
+    ↓
+UI TIMING MAP
+    ↓
+KNOWN-GOOD MOD PATTERN DB
