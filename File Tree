@@ -1,0 +1,326 @@
+```
+FS25-Mod-Reference-Library/
+├── FS25_CropRotation/
+│   ├── gui/
+│   │   └── InGameMenuCropRotationPlanner.xml
+│   ├── icon_cropRotation.dds
+│   ├── images/
+│   │   ├── helplineCropRotation.xml
+│   │   ├── menuIcon.dds
+│   │   ├── menuIcon_black.dds
+│   │   └── planner_scrolling.dds
+│   ├── modDesc.xml
+│   ├── src/
+│   │   ├── CropRotation.lua
+│   │   ├── CropRotationPlanner.lua
+│   │   ├── DebugCropRotation.lua
+│   │   ├── FSDensityMapUtilExtension.lua
+│   │   ├── FieldManagerExtension.lua
+│   │   ├── MessageTypeExtension.lua
+│   │   ├── PlayerHUDUpdaterExtension.lua
+│   │   ├── UILoader.lua
+│   │   ├── YieldCalculator.lua
+│   │   ├── events/
+│   │   │   ├── CropRotationEntryEvent.lua
+│   │   │   ├── DebugCropRotationEvent.lua
+│   │   │   └── SyncCropRotationPlannerEvent.lua
+│   │   ├── gui/
+│   │   │   └── InGameMenuCropRotationPlanner.lua
+│   │   ├── manager/
+│   │   │   ├── CatchCropManager.lua
+│   │   │   ├── FallowStateManager.lua
+│   │   │   └── HistoryStateManager.lua
+│   │   └── maps/
+│   │       ├── CatchCropMap.lua
+│   │       ├── CropRotationMap.lua
+│   │       ├── FallowStateMap.lua
+│   │       └── HistoryStateMap.lua
+│   ├── translations/
+│   │   ├── translation_de.xml
+│   │   ├── translation_en.xml
+│   │   ├── translation_es.xml
+│   │   ├── translation_fr.xml
+│   │   └── translation_it.xml
+│   └── xmls/
+│       ├── cropRotation.xml
+│       └── crops.xml
+├── FS25_EasyDevControls/
+│   ├── gui/
+│   │   ├── EasyDevControlsEnvironmentFrame.xml
+│   │   ├── EasyDevControlsFarmlandsFrame.xml
+│   │   ├── EasyDevControlsGeneralFrame.xml
+│   │   ├── EasyDevControlsHelpFrame.xml
+│   │   ├── EasyDevControlsMenu.xml
+│   │   ├── EasyDevControlsObjectsFrame.xml
+│   │   ├── EasyDevControlsPermissionsFrame.xml
+│   │   ├── EasyDevControlsPlaceablesFrame.xml
+│   │   ├── EasyDevControlsPlayerFrame.xml
+│   │   ├── EasyDevControlsVehiclesFrame.xml
+│   │   ├── dialogs/
+│   │   │   ├── EasyDevControlsDynamicListDialog.xml
+│   │   │   ├── EasyDevControlsDynamicSelectionDialog.xml
+│   │   │   └── EasyDevControlsTeleportScreen.xml
+│   │   └── shared/
+│   │       ├── guiPages.xml
+│   │       └── guiProfiles.xml
+│   ├── icon_easyDevControls.dds
+│   ├── menu/
+│   │   ├── gui.dds
+│   │   └── gui.xml
+│   ├── modDesc.xml
+│   ├── scripts/
+│   │   ├── EasyDevControls.lua
+│   │   ├── events/
+│   │   │   ├── EasyDevControlsAddRemoveDeltaEvent.lua
+│   │   │   ├── EasyDevControlsAdminEvent.lua
+│   │   │   ├── EasyDevControlsClearHeightTypeEvent.lua
+│   │   │   ├── EasyDevControlsDeleteObjectEvent.lua
+│   │   │   ├── EasyDevControlsMoneyEvent.lua
+│   │   │   ├── EasyDevControlsObjectFarmChangeEvent.lua
+│   │   │   ├── EasyDevControlsPermissionsEvent.lua
+│   │   │   ├── EasyDevControlsRemoveAllObjectsEvent.lua
+│   │   │   ├── EasyDevControlsSetFieldEvent.lua
+│   │   │   ├── EasyDevControlsSetFillUnitFillLevel.lua
+│   │   │   ├── EasyDevControlsSetProductionPointFillLevelsEvent.lua
+│   │   │   ├── EasyDevControlsSpawnObjectEvent.lua
+│   │   │   ├── EasyDevControlsSuperStrengthEvent.lua
+│   │   │   ├── EasyDevControlsTeleportEvent.lua
+│   │   │   ├── EasyDevControlsTimeEvent.lua
+│   │   │   ├── EasyDevControlsTimeScaleEvent.lua
+│   │   │   ├── EasyDevControlsTipFillTypeToTrigger.lua
+│   │   │   ├── EasyDevControlsTipHeightTypeEvent.lua
+│   │   │   ├── EasyDevControlsUpdateSetGrowthPeriodEvent.lua
+│   │   │   ├── EasyDevControlsUpdateSnowAndSaltEvent.lua
+│   │   │   ├── EasyDevControlsVehicleConditionEvent.lua
+│   │   │   ├── EasyDevControlsVehicleOperatingValueEvent.lua
+│   │   │   └── EasyDevControlsVineSystemSetStateEvent.lua
+│   │   ├── gui/
+│   │   │   ├── EasyDevControlsBaseFrame.lua
+│   │   │   ├── EasyDevControlsEnvironmentFrame.lua
+│   │   │   ├── EasyDevControlsFarmlandsFrame.lua
+│   │   │   ├── EasyDevControlsGeneralFrame.lua
+│   │   │   ├── EasyDevControlsHelpFrame.lua
+│   │   │   ├── EasyDevControlsMenu.lua
+│   │   │   ├── EasyDevControlsObjectsFrame.lua
+│   │   │   ├── EasyDevControlsPermissionsFrame.lua
+│   │   │   ├── EasyDevControlsPlaceablesFrame.lua
+│   │   │   ├── EasyDevControlsPlayerFrame.lua
+│   │   │   ├── EasyDevControlsVehiclesFrame.lua
+│   │   │   ├── base/
+│   │   │   │   └── EasyDevControlsGuiManager.lua
+│   │   │   ├── dialogs/
+│   │   │   │   ├── EasyDevControlsDynamicListDialog.lua
+│   │   │   │   ├── EasyDevControlsDynamicSelectionDialog.lua
+│   │   │   │   └── EasyDevControlsTeleportScreen.lua
+│   │   │   └── elements/
+│   │   │       └── EasyDevControlsTextInputElement.lua
+│   │   ├── main.lua
+│   │   └── misc/
+│   │       ├── EasyDevControlsAccessLevel.lua
+│   │       ├── EasyDevControlsAwaiter.lua
+│   │       ├── EasyDevControlsDebugManager.lua
+│   │       ├── EasyDevControlsErrorCodes.lua
+│   │       ├── EasyDevControlsHotspotsManager.lua
+│   │       ├── EasyDevControlsLogging.lua
+│   │       ├── EasyDevControlsMessageTypes.lua
+│   │       ├── EasyDevControlsObjectTypes.lua
+│   │       ├── EasyDevControlsSettings.lua
+│   │       └── EasyDevControlsUtils.lua
+│   ├── shared/
+│   │   ├── colours.xml
+│   │   ├── defaultUserSettings.xml
+│   │   └── fillablePallet.xml
+│   └── translations/
+│       ├── translation_br.xml
+│       ├── translation_cs.xml
+│       ├── translation_cz.xml
+│       ├── translation_de.xml
+│       ├── translation_en.xml
+│       ├── translation_es.xml
+│       ├── translation_fr.xml
+│       ├── translation_it.xml
+│       ├── translation_no.xml
+│       ├── translation_pl.xml
+│       ├── translation_ru.xml
+│       ├── translation_tr.xml
+│       └── translation_uk.xml
+├── FS25_EnhancedHelpMenu/
+│   ├── gui/
+│   │   └── EnhancedHelpMenuSettingsPage.xml
+│   ├── icon_ehm.dds
+│   ├── modDesc.xml
+│   ├── scripts/
+│   │   └── EnhancedHelpMenu.lua
+│   ├── textures/
+│   │   ├── ehm_eye_hidden.dds
+│   │   ├── ehm_eye_open.dds
+│   │   ├── ehm_pill_bg.dds
+│   │   └── ehm_row_bg.dds
+│   └── translations/
+│       ├── translation_de.xml
+│       └── translation_en.xml
+├── FS25_EnhancedLoanSystem/
+│   ├── gui/
+│   │   ├── ELS_guiProfiles.xml
+│   │   ├── ELS_inGameMenuLoanSystem.xml
+│   │   ├── ELS_specialRedemptionPaymentDialog.xml
+│   │   └── ELS_takeLoanDialog.xml
+│   ├── icon_enhancedLoanSystem.dds
+│   ├── images/
+│   │   └── menuIcon.dds
+│   ├── modDesc.xml
+│   ├── src/
+│   │   ├── ELS_loan.lua
+│   │   ├── ELS_loanManager.lua
+│   │   ├── ELS_loanManagerProperties.lua
+│   │   ├── ELS_loanType.lua
+│   │   ├── ELS_main.lua
+│   │   ├── ELS_statisticNamesFix.lua
+│   │   ├── events/
+│   │   │   └── ELS_addRemoveMoneyEvent.lua
+│   │   └── gui/
+│   │       ├── ELS_inGameMenuLoanSystem.lua
+│   │       ├── ELS_settingsMenuExtension.lua
+│   │       ├── ELS_specialRedemptionPaymentDialog.lua
+│   │       └── ELS_takeLoanDialog.lua
+│   └── translations/
+│       ├── translation_br.xml
+│       ├── translation_de.xml
+│       └── translation_en.xml
+├── FS25_ObjectBaleStorage/
+│   ├── i3d/
+│   │   ├── storageBale150.i3d
+│   │   ├── storageBale150.i3d.shapes
+│   │   ├── storageBale350.i3d
+│   │   ├── storageBale350.i3d.shapes
+│   │   ├── storageBale800.i3d
+│   │   └── storageBale800.i3d.shapes
+│   ├── iconBaleStorage.dds
+│   ├── modDesc.xml
+│   ├── store/
+│   │   ├── store_baleStorage150.dds
+│   │   ├── store_baleStorage350.dds
+│   │   └── store_baleStorage800.dds
+│   └── xml/
+│       ├── objectStorageBale150.xml
+│       ├── objectStorageBale350.xml
+│       └── objectStorageBale800.xml
+├── FS25_ObjectStorageExtension/
+│   ├── gui/
+│   │   ├── InGameMenuObjectStorageExtensionFrame.xml
+│   │   └── InGameMenuObjectStorageExtensionFrameRef.xml
+│   ├── icon_objectStorageExtension.dds
+│   ├── menu/
+│   │   ├── gui.dds
+│   │   └── gui.xml
+│   ├── modDesc.xml
+│   ├── scripts/
+│   │   ├── events/
+│   │   │   └── PlaceableObjectStorageExtensionEvent.lua
+│   │   ├── gui/
+│   │   │   └── InGameMenuObjectStorageExtensionFrame.lua
+│   │   ├── main.lua
+│   │   ├── misc/
+│   │   │   └── ObjectStorageExtension.lua
+│   │   └── placeables/
+│   │       └── PlaceableObjectStorageExtension.lua
+│   ├── shared/
+│   │   ├── markerIconNoUnload.i3d
+│   │   ├── markerIconNoUnload.i3d.shapes
+│   │   └── markerIcons_diffuse.dds
+│   └── translations/
+│       ├── translation_de.xml
+│       ├── translation_en.xml
+│       └── translation_fr.xml
+├── FS25_RDM_PriceMenuFilters/
+│   ├── RDM_PriceMenuFilters.lua
+│   ├── icon_RDM_PriceMenuFilters.dds
+│   ├── lib/
+│   │   ├── DebugHelper.lua
+│   │   ├── LogHelper.lua
+│   │   └── ModHelper.lua
+│   ├── modDesc.xml
+│   └── xml/
+│       ├── RDMPriceMenu_fillCategories.xml
+│       ├── filterGui.xml
+│       └── guiProfiles.xml
+├── FS25_additionalGameSettings/
+│   ├── addons/
+│   │   ├── clockColors.xml
+│   │   ├── lighting/
+│   │   │   ├── colorGrading.xml
+│   │   │   ├── colorGradingNight.xml
+│   │   │   ├── lighting.xml
+│   │   │   └── name.xml
+│   │   └── uiColors.xml
+│   ├── gui/
+│   │   ├── AdditionalSettingsPage.xml
+│   │   └── ui_elements.dds
+│   ├── icon_additionalGameSettings.dds
+│   ├── localization/
+│   │   ├── l10n_cs.xml
+│   │   ├── l10n_de.xml
+│   │   ├── l10n_en.xml
+│   │   ├── l10n_fr.xml
+│   │   ├── l10n_pl.xml
+│   │   ├── l10n_ru.xml
+│   │   └── l10n_uk.xml
+│   ├── modDesc.xml
+│   └── scripts/
+│       ├── AdditionalSettings.lua
+│       ├── AdditionalSettingsManager.lua
+│       ├── gui/
+│       │   ├── AdditionalSettingsGui.lua
+│       │   └── AdditionalSettingsPage.lua
+│       └── utils/
+│           └── AdditionalSettingsUtil.lua
+├── FS25_netWorthTracker/
+│   ├── gui/
+│   │   ├── NWT_guiProfiles.xml
+│   │   └── NWT_inGameMenuNetWorthTracker.xml
+│   ├── icon_NetWorthTracker.dds
+│   ├── images/
+│   │   └── menuIcon.dds
+│   ├── modDesc.xml
+│   ├── src/
+│   │   ├── NWT_historyManager.lua
+│   │   ├── NWT_netWorthTracker.lua
+│   │   ├── dao/
+│   │   │   └── NWT_historyDao.lua
+│   │   ├── dev/
+│   │   │   └── NWT_console.lua
+│   │   ├── gui/
+│   │   │   ├── NWT_farmValueDelegate.lua
+│   │   │   ├── NWT_historyDelegate.lua
+│   │   │   └── NWT_inGameMenuNetWorthTracker.lua
+│   │   ├── model/
+│   │   │   ├── NWT_entry.lua
+│   │   │   └── NWT_history.lua
+│   │   └── util/
+│   │       ├── NWT_csvUtil.lua
+│   │       ├── NWT_fillCalcUtil.lua
+│   │       ├── NWT_historyUtil.lua
+│   │       └── NWT_netWorthCalcUtil.lua
+│   └── translations/
+│       ├── translation_de.xml
+│       ├── translation_en.xml
+│       └── translation_pl.xml
+└── GPT System/
+    ├── Auto Omega Mode.txt
+    ├── Boot Prompt.txt
+    ├── Command Trust Omega.txt
+    ├── Engine Failure Model.txt
+    ├── Knowledge and Trust.txt
+    ├── Known Good.txt
+    ├── Opertaing System.txt
+    ├── Reasoning engine.txt
+    ├── Repository Index.txt
+    ├── Self-Healing Debug.txt
+    ├── UI Failure Autopsy.txt
+    ├── UI Timing Map.txt
+    ├── architecture.xml
+    ├── encyclopedia.txt
+    ├── future ideas.xml
+    └── references.txt
+
+```
