@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="95">
+    <author>Omega Fixed Build</author>
+    <version>1.0-final</version>
+
+    <title>
+        <en>Seasons Animals (FINAL FIXED UI)</en>
+    </title>
+
+    <description>
+        <en>Clean FS25 UI pipeline with resolved injection timing and single-frame architecture.</en>
+    </description>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/SeasonsAnimalUI.lua"/>
+        <sourceFile filename="scripts/SeasonsAnimalUIController.lua"/>
+        <sourceFile filename="scripts/SeasonsAnimalUIHook.lua"/>
+        <sourceFile filename="scripts/SeasonsAnimals.lua"/>
+    </extraSourceFiles>
+</modDesc>
