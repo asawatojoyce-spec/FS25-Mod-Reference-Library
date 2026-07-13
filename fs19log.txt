@@ -1,110 +1,37 @@
-GIANTS Engine Runtime 8.0.0 (22969) 64bit Steam (Build Date: Oct 28 2020)
-Copyright (c) 2008-2019, GIANTS Software GmbH (giants-software.com), All Rights Reserved.
-Copyright (c) 2003-2019, Christian Ammann and Stefan Geiger, All Rights Reserved.
-Application: FarmingSimulator2019
-Main System
-  CPU: AMD Ryzen 7 5700X3D 8-Core Processor           
-  Memory: 32690 MB
-  OS: Windows NT 10.0 64-bit
-Physics System
-  Version: 5.9.5
-  Thread(s): 2
-Input System
-  Keyboard enabled
-  Mouse enabled
-  Gamepad/Joystick enabled
-  Force Feedback disabled
-  Devices:
-    Controller (XBOX 360 For Windows) (VID: 1532 PID: 022B VER: 0101 Cat: UNKNOWN)
-Audio System
-  Driver: SoftMixer WASAPI Stereo
-  Version: 2018.11
-  Frequency: 44100
-  Max. active sources: 256
-Render System
-  Driver: Direct 3D 11
-  Card Vendor: AMD/ATI
-  Renderer: AMD Radeon RX 6800 XT
-  Version: 32.0.21043.19003 (26.6.2026)
-  Revision: 193
-  Feature level: DirectX 11
-  Windowed Mode : on
-  V-Sync        : on
-  Effective Window Resolution:  2560 x 1440
-Started 3 threads for threadpool 'Render threadpool'
-Hardware Profile
-  Level: Medium (forced)
-  View Distance Factor: 1.000000
-  Shadow Quality: 1.000000 Base-Size: 2048 Filter-Size: 4 Shadow Focus Box false
-  Shader Quality: 1
-  Skip Mipmaps: 1
-  LOD Distance Factor: 1.000000
-  Terrain LOD Distance Factor: 1.000000
-  Terrain Normal Mapping: Yes
-  Foliage View Distance Factor: 1.000000
-  Volume Mesh Tessellation Factor: 1.000000
-  Tyre Tracks Segments Factor: 1.000000
-  Max. Number of Shadow Lights: 1
-  Max. Number of Lights: 512
-  Max. Number of Lights Per Cluster: 32
-  MSAA: 1
-  Bloom Quality: 3
-  SSAO Quality: 8
-  DOF: Disabled
-  Cloud Quality: 2
-  EnvMap Blending: Enabled
-  Setting 'Master Volume': 0.5
-  Setting 'Is Train Tabbable': true
-  Setting 'Radio Vehicle Only': true
-  Setting 'Radio Active': false
-  Setting 'Use Colorblind Mode': false
-  Setting 'Easy Arm Control': true
-  Setting 'Show Trigger Marker': true
-  Setting 'Show Field-Info': true
-  Setting 'Invert Y-Look': false
-  Setting 'Show Help Icons': true
-  Setting 'Radio Volume': 0.5
-  Setting 'Vehicle Volume': 0.80000001192093
-  Setting 'Environment Volume': 0.80000001192093
-  Setting 'GUI Volume': 0.5
-  Setting 'Master Volume': 0.5
-  Setting 'Music Volume': 0
-Farming Simulator 19 (Steam)
-  Version: 1.7.1.0 b10490
-  Available Languages: en de jp pl cz fr es ru it pt hu nl cs ct br tr ro kr
-  Language: en
-  Time: 2026-07-12 17:03:07
 Available mod: (Hash: 3266b9e838b49100e8b3610fb07ea808) (Version: 1.0.2.0) FS19_holmerPack
+Available mod: (Hash: 11b65320d12e68e420ea60d91bce11ab) (Version: 1.3) FS19PlaceAnywhere
+Available mod: (Hash: 63c40770b85365f9009edbb45fb82bfe) (Version: 1.1.2.0) FS19_1TidyShop_UsedEquipment
 Available mod: (Hash: d54a1cc4b64ac55cb9fe8224d71a8564) (Version: 1.0.0.1) FS19_22_Series
 Available mod: (Hash: 6aa02b5ecfa49a9f99fd872369d6ccfa) (Version: 1.0.0.2) FS19_4940
 Available mod: (Hash: 0871b741e152b3583e977ea952673227) (Version: 1.1.0.0) FS19_82s_TLX3500
 Available mod: (Hash: 502736bf6b68a75ff6b972d582fd5983) (Version: 1.0.0.0) FS19_82s_TLX48ft_Livestock
 Available mod: (Hash: 3f36800cdbb8bd62a94bd20df7097d79) (Version: 1.3.0.0) FS19_82s_TLX_Phoenix
 Warning: Duplicate l10n entry 'configuration_decals' in 'C:/Users/Lunarin/Documents/My Games/FarmingSimulator2019/mods/FS19_82s_TLX_Phoenix/translations/l10n_en.xml'. Ignoring this definition.
+dataS2/character/humans/characterAnimation.i3d (56.00 ms)
 Available mod: (Hash: c238a27227c754d7f70fb486b6057ebd) (Version: 1.0.0.1) FS19_8RT_Series
-dataS2/character/humans/characterAnimation.i3d (63.46 ms)
 Available mod: (Hash: c059bb67269a53161392dafee03287b9) (Version: 1.0.0.0) FS19_A30_flatbed_truck
 Available mod: (Hash: 14f992f51c0c13bcd26130a34338133e) (Version: 1.0.2.4) FS19_additionalFieldInfo
-Available mod: (Hash: 729c43b67aaf051cb4fcea981da63b0c) (Version: 1.1.0.0) FS19_addon_strawHarvest
 Available mod: (Hash: 5c7f41301bf09cbb3fc9743ee6998e5f) (Version: 1.1.0.0) FS19_adjustWorkingSpeed
 Available mod: (Hash: 6c702094dabde19635822356f182e82c) (Version: 1.3.0.0) FS19_AFSConnectMagnum
-dataS2/character/humans/pedestrians/pedestrianAnimation.i3d (28.56 ms)
 Available mod: (Hash: f786a9b1790fa5195c63734a094e3eea) (Version: 1.0.0.0) FS19_AGCO_ChallengerMT900
 Available mod: (Hash: e4d757a4a7a77fedccf068b553edadd3) (Version: 1.0.0.0) FS19_Agco_Ideal
 Available mod: (Hash: 6dc7739b91195e7526abe44c0599b37d) (Version: 1.0.2.6) FS19_AgraZLandtrade
 Available mod: (Hash: eb0b5abeee998fe3cca0085ff04c3478) (Version: 2.0.0.2) FS19_Agribumper
 Available mod: (Hash: f7729d8db6b3f42ba3919e398d69114a) (Version: 1.0.0.0) FS19_AgroFactory
+dataS2/character/humans/pedestrians/pedestrianAnimation.i3d (26.08 ms)
 Available mod: (Hash: 526e5e0538a31353b16b83fd094baccd) (Version: 1.0.0.1) FS19_AgromataxFertiMax
 Available mod: (Hash: 5763b0f419c36a634bcd766c65a0c0db) (Version: 1.0.0.1) FS19_Agromet_Brzeg_N_022_pc
 Available mod: (Hash: 627d3aa1195f7103d51762e574d723d5) (Version: 1.0.0.0) FS19_Agromet_T050_1
 Available mod: (Hash: 8cb4fd31244e6e34497e609e82db9953) (Version: 1.0.0.3) FS19_Agronic_WR500_fn
 Available mod: (Hash: 5f1f210b207acb10b3c91b8dd173b861) (Version: 1.0.0.0) FS19_AllisChalmers_8550
+Available mod: (Hash: 296566e84168d013abd47b7cb0c04840) (Version: 1.0.0.0) FS19_AlpineCowsBarnPack
 Available mod: (Hash: 51d81005c479edeeac71b6856a745274) (Version: 1.0.0.0) FS19_AmazoneBlackPantera_console
 Available mod: (Hash: 963b7aafed3c6895e58ccf17bc16947d) (Version: 1.0.0.0) FS19_amazoneD8_40
 Available mod: (Hash: bcba18e32e4545efb95ac4bbcdda8fba) (Version: 1.1.0.0) FS19_amazoneD9Pack
 Available mod: (Hash: b4fa9ec9b22872430ebf95b6e00f6048) (Version: 1.0.0.1) FS19_amazonePantera
 Available mod: (Hash: 06bf7a183eceafd10fdc0161a65718cd) (Version: 1.0.0.0) FS19_Amazone_D8_25
 Available mod: (Hash: f33a34c5754d5a44016893f2ae9287e1) (Version: 1.3.0.0) FS19_Americanshed
+Available mod: (Hash: a9f4ceed82050c5447608aa03a218a83) (Version: 1.0.0.0) FS19_American_Life_Barn_Pack
 Available mod: (Hash: c91eae42f7cb964af07401b64e2c1627) (Version: 1.0.0.4) FS19_AnimalFoodPack
 Available mod: (Hash: f4446151e99029059bf7fd4c1a66b886) (Version: 1.2.0.0) FS19_AnimalPenExtension
 Available mod: (Hash: f0ba3061b1aa3b437b8a7b7f563ea6c0) (Version: 1.1.0.0) FS19_AnimalScreenExtended
@@ -124,7 +51,9 @@ Available mod: (Hash: 3f2e12669d1dccb024c52e7412ba8dbe) (Version: 1.0.0.1) FS19_
 Available mod: (Hash: cb9436e6c4bbc5f3caa0b1c1fd200003) (Version: 1.0.1.1) FS19_bigBud747
 Available mod: (Hash: 3c26902b4d2f90f3bfed33c9e9659e91) (Version: 1.1.0.0) FS19_BigBud_16V747
 Available mod: (Hash: ae91ddae2345ab285c7aeccc38221854) (Version: 1.0.0.0) FS19_BigBud_450
+Available mod: (Hash: 145d9ef5e51e78681046775e1d156e1c) (Version: 1.0.0.0) FS19_bigPolishCowsBarn
 Available mod: (Hash: 0f9d9d13a8c1041bdca39b5094ad4727) (Version: 1.0.0.1) FS19_Big_Brute
+Available mod: (Hash: 4cd27c298f08c11e800d582c836e7c27) (Version: 1.0.0.0) FS19_big_cow_barn
 Available mod: (Hash: 615cee2572b6cda8a78e23e167ef4f60) (Version: 1.0.0.0) FS19_BizonZ056
 Available mod: (Hash: 1f08931b4b3ccee4892dbfea5b29e831) (Version: 1.0.0.0) FS19_Bizon_BS_Z110
 Available mod: (Hash: 5fe826ad5f27a4c59a6273521dfce9bd) (Version: 1.1.0.0) FS19_BM_VOLVO_LM620_640
@@ -134,8 +63,10 @@ Available mod: (Hash: 2779b615e5e7fcb6a2e3fd2c63d54877) (Version: 1.1.0.0) FS19_
 Warning: Duplicate l10n entry 'action_openGate' in mod 'FS19_BritishCowBarn'. Ignoring this definition.
 Warning: Duplicate l10n entry 'action_closeGate' in mod 'FS19_BritishCowBarn'. Ignoring this definition.
 Available mod: (Hash: 72b66527cadd1fef2d3213035f223ce4) (Version: 1.1.0.0) FS19_British_Cow_Sheep_Pigs_Placeables
+Available mod: (Hash: 48d023935996fe23fb6fd19d3731b945) (Version: 1.0.4.0) FS19_BulkBuy
 Available mod: (Hash: fb4c7380ba68ec377110b8167e9b698f) (Version: 1.0.0.0) FS19_caffiniRiderVario_TrackX30
 Available mod: (Hash: 05cabcddb157de3593565d1af598e26b) (Version: 1.1.0.0) FS19_camara_pf65_tandem
+Available mod: (Hash: 0d49b76dea4573356ef07ad4a0160952) (Version: 1.0.0) FS19_camper_placeable
 Available mod: (Hash: a6212846b2934f7b3b7899fa13b8436a) (Version: 1.0.0.0) FS19_canAgroHD922VT
 Available mod: (Hash: 2db2abeb34c56cc4e15d4851615776fe) (Version: 1.0.0.0) FS19_caruelleNicolasStilla460
 Available mod: (Hash: d318abaff7211696200f8c272179b3c1) (Version: 1.2.0.0) FS19_Case8575
@@ -179,13 +110,21 @@ Available mod: (Hash: 6c0f098e1e62d4b3469818c802be1007) (Version: 1.1.0.0) FS19_
 Available mod: (Hash: 0c52ae5fb1272a40ca663cfc19cf74ed) (Version: 1.1.0.0) FS19_CLAAS_Xerion_5000_G1
 Available mod: (Hash: 34dc2cbd23b3e701a5ce2874eabb5ca9) (Version: 1.0.0.0) FS19_CompactBP503L
 Available mod: (Hash: 44bc4c0783bb7f4bc0b4068a4dbdf3e4) (Version: 6.5.0.0) FS19_Courseplay
+Available mod: (Hash: aa8cbf7713c9922c32e67d2ef04297f2) (Version: 1.1.0.0) FS19_CowBarn
+Available mod: (Hash: 63685bfa84a7d2ca87cf01596a81c751) (Version: 1.0.0.3) FS19_CowBarnEuropean
+Available mod: (Hash: 1b383a1b759c432594f2ffc153a47066) (Version: 1.0.0.0) FS19_CowBarnEuropeanModern
+Available mod: (Hash: 84fcf964eeeb88171f485a0856fd2f87) (Version: 1.0.0.0) FS19_CowFarmPack
+Available mod: (Hash: c49423d1358afa251ae597ef2a6fc6e2) (Version: 1.0.0.0) FS19_cowsBarnWithManureSpliter
+Available mod: (Hash: a033a7d0239f8e0a8761d9e8f49770d8) (Version: 1.1.0.0) FS19_cowshed3_0stable
 Available mod: (Hash: eb1690b581082e27553b4d8d7f289808) (Version: 1.0.0.0) FS19_cowShedGB
+Available mod: (Hash: 2711a04c96573185d6607a87363670cb) (Version: 1.1.0.0) FS19_Cowshed_Europe
 Available mod: (Hash: 9bcabd8c68fe116f6b9aaa55bc8a6b6a) (Version: 1.0.0.1) FS19_CR10_US
 Available mod: (Hash: d8d4d2ca1bbee50a4af784705158ac92) (Version: 1.1.0.0) FS19_Creina6000
 Available mod: (Hash: 3a7decdc22eea62cd28620d4c13baf39) (Version: 1.3.0.0) FS19_crosetto_NL28
 Available mod: (Hash: efa8bd2433fd1776f7ebf9a3391a60f0) (Version: 4.0.0.0) FS19_crosetto_pack
 Available mod: (Hash: 86008bab59698c8484e5fdfa51797745) (Version: 1.0.0.0) FS19_Cultivator_13
 Available mod: (Hash: d01dd48aaeff45324394a2397285733b) (Version: 1.0.0.0) FS19_CuttingBar
+Available mod: (Hash: 941c9467851e17399ad6b0b11e7c9da9) (Version: 1.0.0.0) FS19_DairyBarn
 Available mod: (Hash: 4fcb3800c4e11191a43fa5d03232a297) (Version: 1.0.0.0) FS19_DammannProfiClaas50
 Available mod: (Hash: 29982af04ec9886ccb910253e35c1810) (Version: 1.0.0.1) FS19_deutzAgroStar661
 Available mod: (Hash: 229de8e2c3c3344fb9b172a0c0c7fe6d) (Version: 1.0.0.0) FS19_deutzAgroStar661_Rebuild
@@ -196,8 +135,10 @@ Available mod: (Hash: d06fcc9b74290ae4200c2e3bacf7b3df) (Version: 2.2.0.0) FS19_
 Available mod: (Hash: a42eef1e4b2094f4ad2a5115ae274707) (Version: 1.0.0.1) FS19_deutzSeries7
 Available mod: (Hash: e84c3d6e17bd22381edbb12b7cbd2f3f) (Version: 1.3.0.0) FS19_DeutzTTV7Series
 Available mod: (Hash: 8afebb2eeaba1b7ea3603c594f4bb8b2) (Version: 1.0.0.1) FS19_Deutz_AgroStar_671
+Available mod: (Hash: f30e42be356a20c3e431a0d0f02a6949) (Version: 1.0.0.0) FS19_disableVehicleCameraCollision
 Available mod: (Hash: 3c6004403dfb35c77a4133606a757ff5) (Version: 1.1.0.0) FS19_E281_Pack
 Available mod: (Hash: 226943e73eee43672d959ff830d4f6f6) (Version: 1.0.0.0) FS19_EasyDevControls
+Available mod: (Hash: a00c9aefc29e63b8a596229cef58d9fb) (Version: 1.0.1.0) FS19_EmptyBalers
 Available mod: (Hash: 7cea973eff149ce7728b8f9483bb892b) (Version: 1.0.0.0) FS19_Ermo_Arrow
 Available mod: (Hash: f5d7f9335a339cc4db721d1c59ef4b49) (Version: 1.0.0.1) FS19_Esnr_17
 Available mod: (Hash: 91cd4612738cb4d47ed3d083068bc2f2) (Version: 1.1.0.0) FS19_extendedFinances
@@ -231,6 +172,7 @@ Available mod: (Hash: 20803e2767da6d4a44a31a1cd12e181b) (Version: 1.3.5.0) FS19_
 Available mod: (Hash: bbe965c5ea5a428ff6fc92a13417a8c7) (Version: 1.0.0.2) FS19_Fiatagri160_55
 Available mod: (Hash: 3a8463751422221c7a5f2bac70875e39) (Version: 1.1.0.1) FS19_Fiatagri180_90
 Available mod: (Hash: 346214b74a197bedfdceb3f5f1d804ff) (Version: 1.1.0.0) FS19_FieldLiner_HTS_31_06
+Available mod: (Hash: 61253429585528ee9ee374ece26f364b) (Version: 1.1.0.0) FS19_fixAttacherJointRot
 Available mod: (Hash: 2c9bf1b89091eb18173d49c5fbc832e0) (Version: 1.2.0.0) FS19_FI_FeedMixers
 Available mod: (Hash: 32bcc2e96e7b846403f9cb68e905f7d1) (Version: 1.0.0.0) FS19_FKMachinerySet
 Available mod: (Hash: b052435d42e8f56cc14ca82290f0c572) (Version: 1.0.0.0) FS19_flieglASS298
@@ -248,16 +190,19 @@ Available mod: (Hash: be1e0be65ad0313aac1ad73ba08c4794) (Version: 1.0.0.0) FS19_
 Available mod: (Hash: b995391038c02f260afcfff43e38b5ac) (Version: 1.0.3.0) FS19_GC_baleStoragePlaceable
 Warning: Duplicate l10n entry 'function_strawbalestorage' in 'C:/Users/Lunarin/Documents/My Games/FarmingSimulator2019/mods/FS19_GC_baleStoragePlaceable/languages/l10n_en.xml'. Ignoring this definition.
 Available mod: (Hash: fbe97b0f2698291f37fc74bd1bc3d465) (Version: 1.0.0.1) FS19_GKP_RSM
+Error: Invalid mod name 'FS19_GlobalCompany-1.0.0.0'! Characters allowed: (_, A-Z, a-z, 0-9). The first character must not be a digit
 Available mod: (Hash: bc88426351a1acf40c14d5e1edb744d0) (Version: 1.7.1.0) FS19_GlobalCompany
 Available mod: (Hash: a4dcd59ec53381b1d8dd2e61f1ccbc91) (Version: 1.0.0.0) FS19_GlobalCompanyAddOn_FieldCalculator
 Available mod: (Hash: c3914bbe22ff4a4712b30689d064eb59) (Version: 1.0.0.0) FS19_GlobalCompanyAddOn_FieldLease
 Available mod: (Hash: 6375235e5bbb724b0219e106af00446a) (Version: 1.2.0.0) FS19_GlobalCompanyAddOn_Icons
+Available mod: (Hash: 9f3c289d488c606c1616d1ed27f84a3d) (Version: 1.0.0.0) FS19_GlobalCompanyAddOn_MilkingTime
 Available mod: (Hash: 50d85bc3fd50ded0881a3b92ab8b58b5) (Version: 1.0.0.0) FS19_GlobalCompanyAddOn_Productions
 Available mod: (Hash: c96aa615b93bbdafe89a266c56d4d7bb) (Version: 1.0.0.0) FS19_GlobalCompanyAddOn_Productions_Honey
 Available mod: (Hash: 25cc13e519def116ef4342841b83f99b) (Version: 1.0.0.0) FS19_GlobalCompanyAddOn_Productions_TreeFruits
 Available mod: (Hash: bffbb0aef37464c0967b027f3fd7adea) (Version: 1.1.0.0) FS19_GlobalCompanyPlaceable_Mill
 Available mod: (Hash: b51ee989e34e697da4ab53f7f850ed3e) (Version: 1.5.0.0) FS19_grainquidStorage
 Available mod: (Hash: 07ed81bf9040796d64ef00b24ce1f809) (Version: 1.0.0.0) FS19_greatPlains3P1006NT
+Available mod: (Hash: 6de16924ad604fd2cdee020872d1a146) (Version: 1.0.0.0) FS19_greenMowing
 Available mod: (Hash: a47961d180cad43008b9e3fdd9d16137) (Version: 1.0.0.1) FS19_guettlerMatador610S
 Available mod: (Hash: a500d7470823d2259f1f383b93c49eb6) (Version: 1.1.0.0) FS19_guidanceSteering
 Available mod: (Hash: c23f6196416494bc94b5d2a10711cb76) (Version: 1.0.0.0) FS19_GVS_6U_RAT
@@ -321,7 +266,8 @@ Available mod: (Hash: 0679c635b9d1803e9d6bc03a06ae515f) (Version: 1.0.0.1) FS19_
 Available mod: (Hash: 3e72981b1109da8cc5f655d5cc72953d) (Version: 1.0.0.3) FS19_JohnDeere_9600_9610
 Available mod: (Hash: 44b7d7e3d3df240211a914cd298021b9) (Version: 1.2.0.0) FS19_JohnDeere_W200Series
 Available mod: (Hash: 60b6b6c1f609cd0e2a4414bda7bca828) (Version: 1.0.0.1) FS19_John_Deere_40_Series
-Available mod: (Hash: 33d75c3736f81e00e95d538b50fadb33) (Version: 1.0.0.0) FS19_John_Deere_446
+Available mod:  (Version: 1.0.0.0) FS19_John_Deere_446
+Warning: Only zip mods are supported in multiplayer. You need to zip the mod FS19_John_Deere_446 to use it in multiplayer.
 Available mod: (Hash: 9d410382a4ca7ed14bd55bd6e5ddc860) (Version: 1.0.0.0) FS19_John_Deere_S550
 Available mod: (Hash: 72a3fb15163fe93e97a58a54b8ba2dbe) (Version: 1.0.0.0) FS19_JoskinBetimxRDS
 Available mod: (Hash: 6f0c82e0eeffe7f7eec26baaca4cdc40) (Version: 2.1.0.0) FS19_JoskinSilospace_2245
@@ -361,6 +307,7 @@ Available mod: (Hash: 2b406f385ff5833cb54e81748dbfaa97) (Version: 1.2.0.1) FS19_
 Available mod: (Hash: 9bfb80327a140e4a049761c7fb95b09c) (Version: 1.0.0.1) FS19_Lair_Baletrailer_Pack
 Available mod: (Hash: 2708d1c3c4bc6b74cc5d79edf2b21a82) (Version: 1.0.0.1) FS19_lamborghiniMachVRT
 Available mod: (Hash: 6214566bc98b48101baf6a84ab702eb7) (Version: 1.0.0.1) FS19_Lamborghini_MachVRT
+Available mod: (Hash: 6e43ce1e2b682c109a66e4b6c4cd7a51) (Version: 1.0.0.0) FS19_largeCowshed3_3_pconly
 Available mod: (Hash: 778925f31498e2aab0a17a178390c4f0) (Version: 1.0.0.1) FS19_LDG_10
 Available mod: (Hash: f12e3371c4edf2867b3ef7521169d2a3) (Version: 1.0.0.2) FS19_liebherrL538
 Available mod: (Hash: c70ecbf936de829d01f2fc7575ce6cde) (Version: 1.0.1.0) FS19_LindnerGeotracSerie4
@@ -390,6 +337,7 @@ Available mod: (Hash: 8d9948d935a2edf7cd45b50bc5e71428) (Version: 1.0.0.0) FS19_
 Available mod: (Hash: 0fa6d587f07744acb42509f18bd912a8) (Version: 1.0.0.0) FS19_LizardZ234
 Available mod: (Hash: 28fe78c614f8ef4197d64e07602f0a05) (Version: 1.2.0.0) FS19_lizardZ525
 Available mod: (Hash: ded3b596bdb5af90a54c4a6f1aee8825) (Version: 1.0.0.0) FS19_Lizard_6m_Cultivator
+Available mod: (Hash: 81c8c24f1b3281e0a965a82cbfcf66ee) (Version: 1.0.0.1) FS19_Lizard_A5000
 Available mod: (Hash: d9c44e61031185791419dd9d04cf59a6) (Version: 1.0.0.0) FS19_Lizard_ASTH
 Available mod: (Hash: b21ce3b7fd50afdb6f3a8a6e1705a8ee) (Version: 1.0.0.0) FS19_Lizard_BL45
 Available mod: (Hash: c2089d88499709c51cfa1bcd21b5b097) (Version: 2.0.0.0) FS19_Lizard_F350
@@ -407,9 +355,8 @@ Available mod: (Hash: bfa2ed830b050c0af4cb27c36fdb7e46) (Version: 1.0.0.2) FS19_
 Available mod: (Hash: f41917276c9f3f52b1f01fc86b84c3d3) (Version: 1.1.0.0) FS19_Lizard_Thunder
 Available mod: (Hash: 8c2d302fdd5f5f27ca13b20880c64081) (Version: 1.0.1.0) FS19_Lizard_Underbelly
 Available mod: (Hash: 599a5ef2f3433690e875afb02aa14dd8) (Version: 1.0.1.0) FS19_Lizard_VilaSXHV
-Error: Failed to open xml file 'C:/Users/Lunarin/Documents/My Games/FarmingSimulator2019/mods/FS19_Loneoak/modDesc.xml'.
-Available mod: (Hash: 85df7d9ed24c81c9f13f1beb7e618d5a) FS19_Loneoak
-Error: Missing descVersion attribute in mod FS19_Loneoak
+Available mod: (Hash: e62da540011b074e2830ed6645396dfb) (Version: 1.2.0.0) FS19_LoneOak_CowHusbandry
+Available mod: (Hash: 2da8030b4852cc33312b79884e30230b) (Version: 2.0.3.0) FS19_LumberJack
 Available mod: (Hash: 4ec0fce3c3775c6886fc7cdf202f016b) (Version: 1.0.0.0) FS19_Maitre_Pack
 Available mod: (Hash: 521dbe3fd14d8aed285a95d9e6ddacf5) (Version: 1.5.2.0) FS19_MaizePlus
 Available mod: (Hash: 3c86a14947c258f7abe7359068cb20e8) (Version: 1.0.0.1) FS19_maizePlus_animalFoodAdditions
@@ -441,6 +388,8 @@ Available mod: (Hash: 780f4eb6bca6a6bb3663fe37130690b1) (Version: 2.0.0.0) FS19_
 Available mod: (Hash: 877543e7a424204a3f4b774ed7520db1) (Version: 1.0.0.0) FS19_MFSSeries
 Available mod: (Hash: 7fe3192dbe95318804b925fe1ae65bc5) (Version: 1.0.0.0) FS19_MF_3000
 Available mod: (Hash: 9b7e67693f1af9897b0bed274ea482f0) (Version: 1.1.0.0) FS19_michielettoAM19
+Available mod:  (Version: 1.3.1.S) FS19_MidwestHorizon
+Warning: Only zip mods are supported in multiplayer. You need to zip the mod FS19_MidwestHorizon to use it in multiplayer.
 Available mod: (Hash: 72acfca4a09170873856c4714b20c7b1) (Version: 1.0.0.0) FS19_MKS_16
 Available mod: (Hash: f92aaf29094ec9a1bc436b12152aef10) (Version: 1.0.0.0) FS19_modernClassicsDLC
 Available mod: (Hash: ee678ea978de537b18901159dcf3b0a2) (Version: 1.0.0.0) FS19_ModernFarmPack
@@ -472,6 +421,7 @@ Available mod: (Hash: 3c5a62648efcf8c62f948fcb6db7f69f) (Version: 1.0.0.0) FS19_
 Available mod: (Hash: 5fa2c4d01e4ef53d2e41cc5c2ca353f7) (Version: 3.0.0.0) FS19_New_Holland_TL75
 Available mod: (Hash: a71c8766d0f1a53140f01cb8ea7e4e50) (Version: 1.4.0.0) FS19_NH_CR_6_7_8_9_90_UniversalPassenger_PC
 Available mod: (Hash: 2f8d3ab9af6c6c64426fee314c51041f) (Version: 1.0.0.0) FS19_NOVACAT_varia_pack
+Available mod: (Hash: af87941221b0871e8763d8a55584ed07) (Version: 1.2.0.0) FS19_OldCowPGRBarn
 Available mod: (Hash: 849e0b9cca1c439434e9b94e24cca4c9) (Version: 1.0.0.0) FS19_OldForageWagons_Tandem
 Available mod: (Hash: 7283ca6c2e2e4e4ea4272a78c507730b) (Version: 1.0.0.0) FS19_OP2000
 Available mod: (Hash: b8f813d25ea86e886a1c3bfcddc1a27c) (Version: 1.0.0.0) FS19_OP2000_sprayer
@@ -480,7 +430,8 @@ Warning: Duplicate l10n entry 'configuration_trailer' in mod 'FS19_Pack_Tank_Tra
 Available mod: (Hash: 26af6fb8533c2cc99d3ed0e916365dce) (Version: 1.1.6.0) FS19_pavelli_pack
 Available mod: (Hash: 7a5bd6176fc443991160c62623aaeddf) (Version: 1.0.0.0) FS19_Pigsty_D96
 Available mod: (Hash: 20ee4fa9a636327e55cf3e7e8c01e22a) (Version: 1.0.0.2) FS19_PK_Kuzbass
-Available mod: (Hash: 54d8c47ec7965ddfa1feac64e725f9d1) (Version: 1.0.0.0) FS19_PlaceableDustyBarn
+Available mod:  (Version: 1.0.0.0) FS19_PlaceableDustyBarn
+Warning: Only zip mods are supported in multiplayer. You need to zip the mod FS19_PlaceableDustyBarn to use it in multiplayer.
 Available mod: (Hash: 2694253f78e023066110fbb297b33815) (Version: 1.0.0.0) FS19_placeableRefillStation
 Available mod: (Hash: c50385dc76bc1cf83e6e086b6682ebbe) (Version: 1.0.0.0) FS19_PoettingerBoss1T
 Available mod: (Hash: 66c386f9f9819bc9dfbc191d742196f0) (Version: 1.0.0.0) FS19_poettingerNovaCat306F
@@ -489,8 +440,7 @@ Available mod: (Hash: c69340ecd7791e788d607ed6b027d838) (Version: 1.1.0.0) FS19_
 Available mod: (Hash: 05fd6c98feef70b21d2a3b3af2bb9262) (Version: 2.0.1.0) FS19_PoettingerTorroCombiline
 Available mod: (Hash: 88ed568f14c779d474a5d0e31c3aea60) (Version: 1.0.0.0) FS19_polishMediumCowsBarnPack
 Available mod: (Hash: 50d5354e3b39ecf50c841c515e9ce494) (Version: 1.0.0.0) FS19_PolishPack
-Available mod: (Hash: 9ee98e5deb56d5f8026fb1a846328272) (Version: 1.0.2.1) FS19_precisionFarming
-Available mod: (Hash: fe7a8b0bbe176759ba778e8ab1b3b0b3) (Version: 2.0.0.0) FS19_PrecisionFarmingAddon
+Available mod: (Hash: 2f73eec640a7debcc850a7323f53d433) (Version: 1.1.0.0) FS19_ProgressiveSteering
 Available mod: (Hash: 07e80e453fcdbec68816ed4e8b7611bb) (Version: 1.0.0.2) FS19_Pronar_T680
 Available mod: (Hash: 0b2811aae5060741747877989a38e0ab) (Version: 1.0.0.4) FS19_PRT_10
 Available mod: (Hash: 21da81cabd9f398ec9ca6bc50c34abaa) (Version: 1.0.0.0) FS19_Quivogne_HV
@@ -500,13 +450,15 @@ Available mod: (Hash: 321c27f2ea8915c0b7fcaa74ef946944) (Version: 1.0.0.0) FS19_
 Available mod: (Hash: 97f1a6b308047c4432ed8da1cad8bd88) (Version: 1.0.0.0) FS19_Reime9500
 Available mod: (Hash: 27eee970405950da47660a16d9bcfbb9) (Version: 1.0.0.0) FS19_reischAgriMaxx1060
 Available mod: (Hash: 0cb937875cfbc379f5bff55fa31c60f1) (Version: 1.0.0.1) FS19_reischRTWK
-Available mod: (Hash: 8e3367a6695a515fc94a86190a717018) (Version: 1.3.2.0) FS19_RM_Seasons
+Available mod:  (Version: 1.3.2.0) FS19_RM_Seasons
+Warning: Only zip mods are supported in multiplayer. You need to zip the mod FS19_RM_Seasons to use it in multiplayer.
 Available mod: (Hash: 0419cdc3dc8c9710feeb374137b7a835) (Version: 1.0.0.2) FS19_RollandPack
 Available mod: (Hash: dd7f8c4edc5068cebcde65ab13525e34) (Version: 1.0.0.2) FS19_rootCropStorage
 Available mod: (Hash: 98e95cdbacd60c5632c2bbb5bd96fa0e) (Version: 1.0.0.0) FS19_RostselmashDP
 Available mod: (Hash: c5efe9bcb0a54a64e8645b65829c47c9) (Version: 1.0.0.0) FS19_rostselmashPack
 Available mod: (Hash: e7036b13029a7fcaec0888cf3a6a4c26) (Version: 1.0.0.0) FS19_RostselmashTorum
 Available mod: (Hash: a39ea34c7c01c1e6b62ee8ee7c78cabb) (Version: 1.0.0.0) FS19_Rostselmash_Argus870
+Available mod: (Hash: 688cd3e6c26689c606fa607ea39e487d) (Version: 1.5.1.0) FS19_RoundbalerExtension
 Available mod: (Hash: c667ef66a4efebf82b9e0ad3c907cd25) (Version: 1.0.0.1) FS19_rsm1403Pack
 Available mod: (Hash: 2b245c5a6e0f5d4165ed3efaeb55d669) (Version: 1.3.0.0) FS19_rsmAcros595
 Available mod: (Hash: 0bc39b1f0f4803fd15a415cfd277a4f9) (Version: 1.0.0.1) FS19_rsmNivaSk5
@@ -515,6 +467,7 @@ Available mod: (Hash: 97b75ed869d25fba0cbe290a72b216fa) (Version: 1.2.0.0) FS19_
 Available mod: (Hash: af54ac95eda636df5f0ea2b844099dae) (Version: 1.0.0.0) FS19_Ryc_one_wm_xl
 Available mod: (Hash: 9f3a0b2726f50def811af37112a8a05a) (Version: 1.3.0.0) FS19_SamePack
 Warning: Duplicate l10n entry 'configuration_design' in mod 'FS19_SamePack'. Ignoring this definition.
+Available mod: (Hash: 23fbfefc4e777518db3323456ae8c721) (Version: 1.0.0.1) FS19_savePlayerPosition
 Available mod: (Hash: 12c2b4e1131062e5e398aba932600933) (Version: 1.0.0.0) FS19_schlueter2500
 Available mod: (Hash: 3bf2e7b0f9fb29c1ea1c7ff60de8c7f2) (Version: 1.0.0.0) FS19_schlueter2500turbo
 Available mod: (Hash: a26d7c0be3f34370edec13d73019cecd) (Version: 1.0.0.0) FS19_schuitemakerSiwa180
@@ -576,6 +529,7 @@ Available mod: (Hash: 772fbc89bd3a64f6cc5c0d9f7ad2db08) (Version: 1.0.0.1) FS19_
 Available mod: (Hash: 32e4cdb0a47bba7cdfee425e9ed9d673) (Version: 1.1.0.0) FS19_ValtraTSeries
 Available mod: (Hash: e470bd3d6865380d65997a8b41115434) (Version: 1.0.0.1) FS19_valtraTSeriesCowEdition
 Available mod: (Hash: f1cde05857e13b7b8edaec1bb1504546) (Version: 1.0.0.1) FS19_valtraTSeriesWREdition
+Available mod: (Hash: b7bc773f72794272f75269c9dcd54bf4) (Version: 1.0.0.3) FS19_Variable_Spray_Usage
 Available mod: (Hash: 69759c176104dfad178e9f23b7f66eac) (Version: 1.2.0.0) FS19_VehicleControlAddon
 Available mod: (Hash: 5237d7dd5ddc9643fa3f0930979e7156) (Version: 1.1.0.1) FS19_Versatile_4WD
 Available mod: (Hash: 21fc83619e02483b038a092bceda7d94) (Version: 1.0.1.0) FS19_VStRuk_PT_281
@@ -595,4 +549,5 @@ Available mod: (Hash: 0a4fa5fcf226fda0128c34c7623e923d) (Version: 1.0.0.0) FS19_
 Available mod: (Hash: 9cd5af20c2fc00b39328c11ae8193891) (Version: 3.1.0.0) FS19_zetorCrystal12011
 Available mod: (Hash: 5d97e335285bb9eb92ed0432e7da300f) (Version: 1.0.0.0) FS19_zjv
 Available mod: (Hash: 36cc245bfba452b2657ae06d0b2bb88f) (Version: 2.1.0.0) FS19_ZT300
-2026-07-12 17:03 Application quit
+Available mod: (Hash: b232450e7178e009e53058b74bb39781) (Version: 1.5 Beta) VehicleInspector
+2026-07-14 02:52 Application quit
