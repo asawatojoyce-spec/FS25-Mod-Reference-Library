@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wheatParticleSystem" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor" version="5.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="grassParticle.png" relativePath="true"/>
+    <File fileId="2" filename="particleSystemShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="wheatParticleSystem_mat" materialId="7" ambientColor="1 1 1" alphaBlending="true" customShaderId="2">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes>
+    <IndexedTriangleSet name="chafftParticleSystemAreaShapeShape" shapeId="2" bvCenter="0 0 0" bvRadius="0.113137" isOptimized="true">
+      <Vertices count="4" normal="true" uv0="true">
+        <v p="-0.08 0 -0.08" n="0 -1 0" t0="0 0"/>
+        <v p="0.08 0 -0.08" n="0 -1 0" t0="1 0"/>
+        <v p="0.08 0 0.08" n="0 -1 0" t0="1 1"/>
+        <v p="-0.08 0 0.08" n="0 -1 0" t0="0 1"/>
+      </Vertices>
+      <Triangles count="2">
+        <t vi="0 1 2"/>
+        <t vi="0 2 3"/>
+      </Triangles>
+      <Subsets count="1">
+        <Subset firstVertex="0" numVertices="4" firstIndex="0" numIndices="6"/>
+      </Subsets>
+    </IndexedTriangleSet>
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="wheatParticleSystem_emitter1Ref" dynamicId="1" type="sprite" rate="0.075" lifespan="500" maxCount="100" speed="0.009" speedRandom="0" tangentSpeed="0" normalSpeed="1" emitterShapeVelocityScale="0.75" spriteScaleX="0.5" spriteScaleY="0.5" spriteScaleXGain="0.0002" spriteScaleYGain="0.0002" blendFactor="1" blendInFactor="0" blendOutFactor="0" randomInitRotation="true" deltaRotateMin="-0.00471239" deltaRotateMax="0.00471239">
+      <Gravity force="0 -0.002 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic name="wheatParticleSystem_emitter1" clipDistance="200" nodeId="15" materialIds="7" dynamicId="1" emitterShapeNodeId="16">
+      <Shape name="wheatParticleSystemAreaShape" nodeId="16" materialIds="8" shapeId="2" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic name="wheatParticleSystem_emitter1" translation="0 -0.7 0" clipDistance="200" nodeId="18" materialIds="7" dynamicId="1" emitterShapeNodeId="19">
+      <Shape name="wheatParticleSystemAreaShape" nodeId="19" materialIds="8" shapeId="2" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

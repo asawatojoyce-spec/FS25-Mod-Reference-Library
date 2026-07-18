@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="9">
+    <author>NI Modding</author>
+    <version>1.0</version>	
+	<title>
+        <en>Kidd 346 Forage Harvester</en>
+        <de>Kidd 346 Forage Harvester</de>
+    </title>
+     <description>
+       <en>By NI Modding: alwyn, henly20, rh.</en>
+       <de>Mit NI Modding:alwyn, henly20, rh.</de>
+    </description>
+	<multiplayer supported="true" />
+	<iconFilename>
+		<en>store.png</en>
+	</iconFilename>
+	
+	
+    <l10n>
+		<text name="turnON_Error">
+            <en>PTO needs to be attached before the harvester can be turned on.</en>
+            <de>Zapfwelle muss befestigt sein, bevor harvester eingeschaltet werden kann.</de>
+		</text>
+		<text name="ATTACHPTO">
+            <en>Attach PTO to Tractor</en>
+            <de>Zapfwelle Befestigen</de>
+		</text>
+		<text name="DETACHPTO">
+            <en>Detach PTO from Tractor</en>
+            <de>Zapfwelle Trennen</de>
+		</text>
+		 <text name="FIELD">
+            <en>Field Position</en>
+            <de>Feld-Position</de>
+        </text>
+		 <text name="TRANSPORT">
+            <en>Transport Position</en>
+            <de>Transport Position</de>
+        </text>	
+		 <text name="HITCHDOWNFH">
+            <en>Kidd Trailer Hitch Down</en>
+            <de>Trailer Hitch Down</de>
+        </text>
+		 <text name="HITCHUPFH">
+            <en>Kidd Trailer Hitch Up</en>
+            <de>Kidd Trailer Hitch Up</de>
+        </text>	
+		 <text name="Grass">
+            <en>Switch Output (Current output is Grass)</en>
+            <de>Schaltausgang (Stromausgang Grass)</de>
+        </text>
+		 <text name="Chaff">
+            <en>Switch Output (Current output is Chaff)</en>
+            <de>Schaltausgang (Stromausgang Chaff)</de>
+        </text>		
+		 <text name="TOGGLEOUPUT">
+            <en>Toggle to Output Grass</en>
+            <de>Umschalten zur Output Grass</de>
+        </text>			
+    </l10n>	
+	
+	
+	<extraSourceFiles>
+		<sourceFile filename="scripts/CutAreaEvent.lua" />
+	</extraSourceFiles>
+
+
+    <specializations>
+		<specialization name="Kidd346" className="Kidd346" filename="scripts/Kidd346.lua"/>
+		<specialization name="animationhitch" className="AnimationHitch" filename="scripts/AnimationHitch.lua" />	
+		<specialization name="ImplementLinks" className="ImplementLinks" filename="scripts/ImplementLinks.lua"/>			
+	</specializations>
+	
+    <vehicleTypes>
+	    <type name="kidd346" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="attachable" />
+			<specialization name="animatedVehicle" />
+			<specialization name="cylindered" />
+			<specialization name="fillable" />		
+			<specialization name="animationhitch" />			
+		    <specialization name="ImplementLinks" />	
+			<specialization name="Kidd346" />			
+	    </type>
+	</vehicleTypes>
+    <storeItems>
+        <storeItem>
+            <en>
+                <name>Kidd 346 Forage Harvester</name>
+
+                <description>
+<![CDATA[Kidd was a popular manufacturer of double chop forage harvesters in the 1970s and 1980s. 
+
+By NI Modding
+alwyn, henly20, rh
+Follow us on Twitter @ni_modding
+ni_modding@hotmail.com
+http://nimodding.wordpress.com]]>
+                </description>
+				<specs><![CDATA[Power Requirement: 70hp+
+Cutting width: 1.8m (6ft)
+Maintenance: %s / day
+Accepted fruits: maize grass barley wheat rape
+Output: Grass/Chaff]]>
+				</specs>					
+            </en>
+            <de>
+                <name>Kidd 346 Forage Harvester</name>
+                <description>
+<![CDATA[Kidd war ein beliebter Hersteller von Doppel-chop Häcksler in den 1970er und 1980er Jahren.
+By NI Modding
+alwyn, henly20, rh
+Follow us on Twitter @ni_modding
+ni_modding@hotmail.com
+http://nimodding.wordpress.com]]>
+                </description>
+				<specs><![CDATA[Power Requirement: 70hp+
+Schnittbreite: 1,8m (6ft)
+Maintenance: %s / day
+Akzeptierte Früchten: maize grass barley wheat rape
+Ausgangsleistung: Grass/Chaff]]>
+				</specs>					
+            </de>
+            <rotation>0</rotation>
+            <image active="store.png" brand="brand_NI.png"/>
+            <price>18000</price>
+            <xmlFilename>Kidd_346.xml</xmlFilename>
+			<brand>Kidd</brand>
+			<machineType>harvesters</machineType>		
+			<dailyUpkeep>30</dailyUpkeep>				
+        </storeItem>
+	
+    </storeItems>
+	
+	<inputBindings>
+		<input name="TOGGLEOUPUT" 	category="VEHICLE" key1="KEY_z" key2="" button="" device="0" mouse="" />	
+		<input name="HITCHDOWNFH" 	category="VEHICLE" key1="KEY_leftbracket" key2="" button="" device="0" mouse="" />
+		<input name="HITCHUPFH" 	category="VEHICLE" key1="KEY_rightbracket" key2="" button="" device="0" mouse="" />	
+    </inputBindings>
+
+</modDesc>
